@@ -1,0 +1,13 @@
+# POST http://localhost:3000/api/users
+# Content-Type: application/json
+
+# {
+#     "nomor_pelanggan": "1234567890",
+#     "nama": "John Doe",
+#     "alamat": "123 Main St, Anytown, USA",
+#     "email": "email8@example.com",
+#     "password": "securepassword"
+# }
+
+# GET http://localhost:3000/api/users?page=3&limit=10\
+# Content-Type: application/json

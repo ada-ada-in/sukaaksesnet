@@ -8,6 +8,10 @@ export class UserRepository {
     return await this.model.create(data);
     }
 
+    async findByEmail(email) {
+    return await this.model.findOne({ where: { email }  });
+    }
+
     async getById(id) {
     return await this.model.findByPk(id);
     }
@@ -34,6 +38,7 @@ export class UserRepository {
       const { rows, count } = await this.model.findAndCountAll({
           limit,
           offset,
+          order: [['createdAt', 'DESC']],
       });
       return {
           data: rows,

@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 // Route
-app.use(usersRouter);
+app.use('/api',usersRouter);
 
 
 

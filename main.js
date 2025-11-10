@@ -27,7 +27,7 @@ const start = async () => {
     // Sync Database
     const database = await sequelize.sync(); // use this for first time
     // const database = await sequelize.sync({ force: false }); // use this to reset db
-    // const datanase = await sequelize.sync({force: true}); // use this to drop and recreate db
+    // const database = await sequelize.sync({force: true}); // use this to drop and recreate db
     // const database = await sequelize.authenticate(); // use this to check connection
     // const database = await sequelize.sync({ alter: true }); // use this to update db according to models
     if (!database) {

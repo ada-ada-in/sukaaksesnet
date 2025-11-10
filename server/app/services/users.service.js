@@ -5,8 +5,12 @@ export class UsersService {
     this.userRepository = new UserRepository();
   }
 
-    async getAllUsers() {  
-    return await this.userRepository.findAll();
+    async getAllUsers({page, limit}) {  
+    return await this.userRepository.findAll({limit, page});
+    }
+
+    async getUserByEmail(email) {
+    return await this.userRepository.findByEmail(email);
     }
 
     async createUser(data) {

@@ -26,6 +26,12 @@ export class UserController {
         if (!nomor_pelanggan || !alamat || !email || !password || !nama) {
             return new ResponseHandler(res).error400("Missing required fields: nomor_pelanggan, alamat, email, password, nama");
         }
+
+        const existingUser = await this.usersService.getUserByEmail(email);
+        if (existingUser) {
+            return new ResponseHandler(res).error400("Email already in use");
+        }
+        
         const newUser = await this.usersService.createUser({
             nomor_pelanggan,
             nama,
