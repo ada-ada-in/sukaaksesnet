@@ -1,29 +1,27 @@
-import { UsersService } from "../services/users.service.js";
 import ResponseHandler from "../../utils/response.js";
+import { UsersService } from "../services/users.service.js";
+import { asyncHandler } from "../../middleware/asyncHandler.middleware.js";
 
 export class UserController {
   constructor() {
     this.usersService = new UsersService();
   }
-    async getAllUsers(req, res) {  
-    try {
+    getAllUsers = asyncHandler(async (req, res, next) => {  
         const page = parseInt(req.query.page) || 1;
         const limit = parseInt(req.query.limit) || 10;
         const users = await this.usersService.getAllUsers({page, limit});
-        if(users.length === 0){
-            return new ResponseHandler(res).success200("No users found");
-        }
         if(!users){
             const message = "Failed to retrieve users";
             return new ResponseHandler(res).error400(message);
         }
+        if(users.length === 0){
+            return new ResponseHandler(res).success200("No users found");
+        }
         return new ResponseHandler(res).success200(users);
-    } catch (error) {
-        return new ResponseHandler(res).error500(error.message);}
- }
+    });
 
-    async createUser(req, res) {
-    try {
+
+    createUser = asyncHandler(async (req, res, next) => {
         const { nomor_pelanggan, nama, alamat, email, password } = req.body;
         if (!nomor_pelanggan || !alamat || !email || !password || !nama) {
             return new ResponseHandler(res).error400("Missing required fields: nomor_pelanggan, alamat, email, password, nama");
@@ -36,25 +34,19 @@ export class UserController {
             password,
         });
         return new ResponseHandler(res).success201(newUser);
-    } catch (error) {
-        return new ResponseHandler(res).error500(error.message);}
-    }
+    });
     
-    async getUserById(req, res) {
-    try {
+    getUserById = asyncHandler(async (req, res, next) => {
         const { id } = req.params;
         const user = await this.usersService.getUserById(id);
         if (!user) {
             return new ResponseHandler(res).error404();
         }
         return new ResponseHandler(res).success200(user);
-    } catch (error) {
-        return new ResponseHandler(res).error500(error.message);
-    }
-}
+    });
 
-    async deleteUser(req, res) {
-    try {
+
+    deleteUser = asyncHandler(async (req, res, next) => {
         const { id } = req.params;
         const deleted = await this.usersService.deleteUser(id);
         if (!deleted) {
@@ -62,13 +54,9 @@ export class UserController {
             return new ResponseHandler(res).error404(message);
         }
         return new ResponseHandler(res).success200(`User with id ${id} deleted successfully`);
-    } catch (error) {
-        return new ResponseHandler(res).error500(error.message);
-    }
-}
+    });
 
-    async updateUser(req, res) {
-    try {
+    updateUser = asyncHandler(async (req, res, next) => {
         const { id } = req.params;
         const { nomor_pelanggan, nama, alamat, email, password } = req.body;
         const updatedUser = await this.usersService.updateUser(id, {
@@ -83,9 +71,6 @@ export class UserController {
             return new ResponseHandler(res).error404(message);
         }   
         return new ResponseHandler(res).success200(updatedUser);
-    } catch (error) {
-        return new ResponseHandler(res).error500(error.message);
-    }
-}
+    } );
 
 }

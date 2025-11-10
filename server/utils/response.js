@@ -73,13 +73,14 @@ class ResponseHandler {
     });
   }
 
-  error500(error) {
+  error500(message, stack) {
     this.res.status(500).json({
       status: {
         code: 500,
-        message: `Server error! - ${error}`,
+        message: `Server error! - ${message}`,
+        stack: stack || null,
       },
-    });
+    });   
   }
 }
 
