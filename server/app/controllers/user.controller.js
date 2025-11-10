@@ -13,6 +13,7 @@ export class UserController {
         if(!users){
             const message = "Failed to retrieve users";
             return new ResponseHandler(res).error400(message);
+            
         }
         if(users.length === 0){
             return new ResponseHandler(res).success200("No users found");

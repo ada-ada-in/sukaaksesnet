@@ -83,7 +83,7 @@ class ResponseHandler {
         stack: stack || null,
       },
     }); 
-    logger.error(`Server error! - ${message}`);  
+    logger.error(`Server error! - ${message}, Stack: ${stack}`);  
   }
 }
 

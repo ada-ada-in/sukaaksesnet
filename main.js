@@ -24,11 +24,11 @@ const server = http.createServer(app);
 const PORT = process.env.PORT || 8000;
 
 process.on("unhandledRejection", (err) => {
-  logger.error("❌ Unhandled Rejection:", err);
+  logger.error(`❌ Unhandled Rejection: ${err.message}`, { stack: err.stack });
 });
 
 process.on("uncaughtException", (err) => {
-  logger.error(`💀 Uncaught Exception: ${err.message}\n${err.stack}`);
+  logger.error(`💀 Uncaught Exception: ${err.message}`, { stack: err.stack });
   setTimeout(() => process.exit(1), 100);
 });
 
