@@ -23,7 +23,7 @@ class ResponseHandler {
     });
   }
 
-  fail400(message) {
+  error400(message) {
     this.res.status(400).json({
       status: {
         code: 400,
@@ -33,7 +33,7 @@ class ResponseHandler {
     });
   }
 
-  fail401() {
+  error401() {
     this.res.status(401).json({
       status: {
         code: 401,
@@ -43,7 +43,7 @@ class ResponseHandler {
     });
   }
 
-  fail403(message) {
+  error403(message) {
     this.res.status(403).json({
       status: {
         code: 403,
@@ -53,7 +53,7 @@ class ResponseHandler {
     });
   }
 
-  fail404() {
+  error404() {
     this.res.status(404).json({
       status: {
         code: 404,
@@ -63,7 +63,7 @@ class ResponseHandler {
     });
   }
 
-  fail405() {
+  error405() {
     this.res.status(405).json({
       status: {
         code: 405,
@@ -73,7 +73,7 @@ class ResponseHandler {
     });
   }
 
-  fail500(error) {
+  error500(error) {
     this.res.status(500).json({
       status: {
         code: 500,
