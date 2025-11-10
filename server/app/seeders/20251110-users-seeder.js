@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import bcrypt from "bcrypt";
+import { logger } from "../../configs/logger.js";
 
 export async function up(queryInterface, Sequelize) {
   const users = [];
@@ -20,10 +21,10 @@ export async function up(queryInterface, Sequelize) {
   }
 
   await queryInterface.bulkInsert("users", users);
-  console.log(`✅ Successfully seeded ${stopValue} users!`);
+  logger.info(`✅ Successfully seeded ${stopValue} users!`);
 }
 
 export async function down(queryInterface, Sequelize) {
   await queryInterface.bulkDelete("users", null, {});
-  console.log("🧹 Users table cleared.");
+  logger.info("🧹 Users table cleared.");
 }

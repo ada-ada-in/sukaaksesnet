@@ -9,5 +9,5 @@
 #     "password": "securepassword"
 # }
 
-# GET http://localhost:3000/api/users?page=3&limit=10\
-# Content-Type: application/json
+GET http://localhost:3000/api/users?page=3&limit=10
+Content-Type: application/json

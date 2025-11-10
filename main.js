@@ -5,6 +5,7 @@ import path from "path";
 import express from "express";
 import { sequelize } from "./server/configs/database.js";
 import { fileURLToPath } from "url";
+import { logger } from "./server/configs/logger.js";
 import cors  from "cors";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -22,27 +23,33 @@ app.use(cors());
 const server = http.createServer(app);
 const PORT = process.env.PORT || 8000;
 
+process.on("unhandledRejection", (err) => {
+  logger.error("❌ Unhandled Rejection:", err);
+});
+
+process.on("uncaughtException", (err) => {
+  logger.error(`💀 Uncaught Exception: ${err.message}\n${err.stack}`);
+  setTimeout(() => process.exit(1), 100);
+});
+
+
 const start = async () => {
   try {
     // Sync Database
-    const database = await sequelize.sync(); // use this for first time
-    // const database = await sequelize.sync({ force: false }); // use this to reset db
-    // const database = await sequelize.sync({force: true}); // use this to drop and recreate db
-    // const database = await sequelize.authenticate(); // use this to check connection
-    // const database = await sequelize.sync({ alter: true }); // use this to update db according to models
-    if (!database) {
-      console.log("database cannot sync");
-    } else {
-      console.log("====================================================");
-      console.log("Database Connected Successfully");
-    }
+    // await sequelize.sync(); // use this for first time
+    // await sequelize.sync({ force: false }); // use this to reset db
+    // await sequelize.sync({force: true}); // use this to drop and recreate db
+       await sequelize.authenticate(); // use this to check connection
+    // await sequelize.sync({ alter: true }); // use this to update db according to models
+      console.log("=================================================================================");
+      logger.info("Database Connected Successfully");
 
     server.listen(PORT, () =>
-      console.log(`🚀 [SERVER] is running on port http://localhost:${PORT}`)
+      logger.info(`🚀 [SERVER] is running on port http://localhost:${PORT}`)
     );
-    console.log("====================================================");
+    console.log("=================================================================================");
   } catch (error) {
-    console.error(`⚠️ [ERROR] ${error.message}`);
+    logger.info(`⚠️ [ERROR] ${error.message}`);
   }
 };
 

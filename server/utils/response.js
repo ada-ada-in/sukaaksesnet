@@ -1,3 +1,5 @@
+import { logger } from "../configs/logger.js";
+
 class ResponseHandler {
   constructor(res) {
     this.res = res;
@@ -80,7 +82,8 @@ class ResponseHandler {
         message: `Server error! - ${message}`,
         stack: stack || null,
       },
-    });   
+    }); 
+    logger.error(`Server error! - ${message}`);  
   }
 }
 

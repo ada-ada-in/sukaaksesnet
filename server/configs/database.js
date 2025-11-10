@@ -1,20 +1,20 @@
 import { Sequelize } from "sequelize";
-import "dotenv/config";
+import { ENV } from "./env.js";
 
 export const sequelize = new Sequelize(
-  process.env.DB_DATABASE,
-  process.env.DB_USERNAME,
-  process.env.DB_PASSWORD,
+  ENV.db.name,
+  ENV.db.user,
+  ENV.db.pass,
   {
-    host: process.env.DB_HOST,
-    timezone: process.env.DB_TIMEZONE || "+07:00",
-    dialect: process.env.DB_DIALECT,
+    host: ENV.db.host,
+    timezone: ENV.db.timezone,
+    dialect: ENV.db.dialect,
     dialectOptions: {
       useUTC: false ,
       dateStrings: true,
     },
     logging:
-      process.env.ENV === "development"
+      ENV.app.env === "development"
         ? (...msg) => console.log(msg[0])
         : false,
   }
