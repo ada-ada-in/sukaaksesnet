@@ -3,8 +3,9 @@ import bcrypt from "bcrypt";
 
 export async function up(queryInterface, Sequelize) {
   const users = [];
+  const stopValue = 30;
 
-  for (let i = 1; i <= 30; i++) {
+  for (let i = 1; i <= stopValue; i++) {
     const hashedPassword = await bcrypt.hash("password123", 10); 
     users.push({
       id: uuidv4(),
@@ -19,7 +20,7 @@ export async function up(queryInterface, Sequelize) {
   }
 
   await queryInterface.bulkInsert("users", users);
-  console.log("✅ Successfully seeded 30 users!");
+  console.log(`✅ Successfully seeded ${stopValue} users!`);
 }
 
 export async function down(queryInterface, Sequelize) {
