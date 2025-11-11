@@ -29,7 +29,7 @@ class ResponseHandler {
     this.res.status(400).json({
       status: {
         code: 400,
-        message: `Client side error! - ${message}`,
+        message: `${message}`,
       },
       data: null,
     });
@@ -70,6 +70,16 @@ class ResponseHandler {
       status: {
         code: 405,
         message: "Request method not allowed!",
+      },
+      data: null,
+    });
+  }
+
+  error429(message) {
+    this.res.status(429).json({
+      status: {
+        code: 429,
+        message: `${message} - try again later`,
       },
       data: null,
     });

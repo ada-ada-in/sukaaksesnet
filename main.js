@@ -49,7 +49,7 @@ const start = async () => {
     );
     console.log("=================================================================================");
   } catch (error) {
-    logger.info(`⚠️ [ERROR] ${error.message}`);
+    logger.error(`⚠️ [ERROR] ${error.message}`);
   }
 };
 

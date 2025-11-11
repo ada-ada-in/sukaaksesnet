@@ -51,3 +51,93 @@
 [2025-11-11 01:53:09] [31merror[39m: ❌ Unhandled Rejection: Test error handling
 [2025-11-11 01:53:29] [32minfo[39m: Database Connected Successfully
 [2025-11-11 01:53:29] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 01:53:58] [32minfo[39m: Database Connected Successfully
+[2025-11-11 01:53:58] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 22:51:01] [32minfo[39m: ⚠️ [ERROR] 
+[2025-11-11 22:51:29] [31merror[39m: ⚠️ [ERROR] 
+[2025-11-11 22:52:19] [31merror[39m: ⚠️ [ERROR] 
+[2025-11-11 22:52:58] [31merror[39m: ⚠️ [ERROR] 
+[2025-11-11 22:53:29] [31merror[39m: ⚠️ [ERROR] 
+[2025-11-11 22:54:31] [32minfo[39m: Database Connected Successfully
+[2025-11-11 22:54:31] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 22:54:47] [32minfo[39m: Database Connected Successfully
+[2025-11-11 22:54:47] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 22:55:25] [32minfo[39m: Database Connected Successfully
+[2025-11-11 22:55:25] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 22:57:15] [32minfo[39m: Database Connected Successfully
+[2025-11-11 22:57:15] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 22:58:13] [32minfo[39m: Database Connected Successfully
+[2025-11-11 22:58:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 22:59:13] [32minfo[39m: Database Connected Successfully
+[2025-11-11 22:59:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:01:24] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:01:24] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:01:45] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:01:45] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:02:26] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:02:26] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:02:54] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:02:54] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:06:20] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:06:20] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:07:08] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:07:08] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:09:58] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:09:58] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:12:25] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:12:25] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:14:45] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:14:45] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:17:49] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:17:49] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:17:56] [32minfo[39m: [RATE LIMIT] GET /api/users?page=3&limit=10 - Too many requests from this IP, please try again later.
+[2025-11-11 23:18:00] [32minfo[39m: [RATE LIMIT] GET /api/users?page=3&limit=10 - Too many requests from this IP, please try again later.
+[2025-11-11 23:18:00] [32minfo[39m: [RATE LIMIT] GET /api/users?page=3&limit=10 - Too many requests from this IP, please try again later.
+[2025-11-11 23:18:00] [32minfo[39m: [RATE LIMIT] GET /api/users?page=3&limit=10 - Too many requests from this IP, please try again later.
+[2025-11-11 23:18:00] [32minfo[39m: [RATE LIMIT] GET /api/users?page=3&limit=10 - Too many requests from this IP, please try again later.
+[2025-11-11 23:18:01] [32minfo[39m: [RATE LIMIT] GET /api/users?page=3&limit=10 - Too many requests from this IP, please try again later.
+[2025-11-11 23:18:09] [32minfo[39m: [RATE LIMIT] GET /api/users?page=3&limit=10 - Too many requests from this IP, please try again later.
+[2025-11-11 23:18:09] [32minfo[39m: [RATE LIMIT] GET /api/users?page=3&limit=10 - Too many requests from this IP, please try again later.
+[2025-11-11 23:18:17] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:18:17] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:24:28] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:24:28] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:24:40] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:24:40] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:25:06] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:25:06] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:25:32] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:25:32] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:26:21] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:26:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:26:37] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:26:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:27:28] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:27:28] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:27:58] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:27:58] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:28:10] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:28:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:29:42] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:29:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:30:13] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:30:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:30:57] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:30:57] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:31:04] [31merror[39m: [ERROR] POST /api/users - Unexpected non-whitespace character after JSON at position 185 (line 9 column 1)
+[2025-11-11 23:31:04] [31merror[39m: Server error! - Unexpected non-whitespace character after JSON at position 185 (line 9 column 1), Stack: SyntaxError: Unexpected non-whitespace character after JSON at position 185 (line 9 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-11 23:34:14] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:34:14] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:35:17] [32minfo[39m: Database Connected Successfully
+[2025-11-11 23:35:17] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-11 23:35:40] [32minfo[39m: [REGISTER RATE LIMIT] POST /users - Too many registration attempts from this IP, please try again later.
