@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import ResponseHandler from "../utils/response";
+import ResponseHandler from "../utils/response.js";
 
 export const authMiddleware = (req, res, next) => {
   const token = req.headers.authorization?.split(" ")[1];
@@ -15,3 +15,7 @@ export const authMiddleware = (req, res, next) => {
     return new ResponseHandler(res).error401();
   }
 };
+
+export const jwtSign = (payload, expiresIn) => {
+  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn });
+}

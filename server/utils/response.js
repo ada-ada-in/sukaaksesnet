@@ -15,6 +15,26 @@ class ResponseHandler {
     });
   }
 
+  successLogin(data, token) {
+    this.res.status(200).json({
+      status: {
+        code: 200,
+        message: "Login successful",
+      },
+      data,
+      token
+    });
+  }
+
+  successDelete(message) {
+    this.res.status(200).json({
+      status: {
+        code: 200,
+        message: `${message}`,
+      },
+    });
+  }
+
   success201(data) {
     this.res.status(201).json({
       status: {

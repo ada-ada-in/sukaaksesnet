@@ -1,5 +1,6 @@
 import Joi from "joi";
 import ResponseHandler from "../utils/response.js";
+import bcrypt from "bcrypt";
 
 export const validateUser = (req, res, next) => {
   const schema = Joi.object({
@@ -14,3 +15,18 @@ export const validateUser = (req, res, next) => {
   if (error) return new ResponseHandler(res).error400(error.details[0].message);
   next();
 };
+
+export const validateLogin = (req, res, next) => {
+  const schema = Joi.object({
+    email: Joi.string().email().required(),
+    password: Joi.string().min(6).required(),
+  });
+  const { error } = schema.validate(req.body);
+  if (error) return new ResponseHandler(res).error400(error.details[0].message);
+  next();
+};
+
+
+export const validatePassword = async (plainPassword, hashedPassword) => {
+  return await bcrypt.compare(plainPassword, hashedPassword);
+}
