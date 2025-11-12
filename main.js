@@ -3,6 +3,7 @@ import app from "./server/server.js";
 import http from "http";
 import path from "path";
 import express from "express";
+import cookieParser from "cookie-parser";
 import { sequelize } from "./server/configs/database.js";
 import { fileURLToPath } from "url";
 import { logger } from "./server/configs/logger.js";
@@ -12,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(express.json());
-
+app.use(cookieParser());
 
 // Middleware untuk melayani file statis (CSS, JS)
 app.use(express.static(path.join(__dirname, "public")));
@@ -49,7 +50,7 @@ const start = async () => {
     );
     console.log("=================================================================================");
   } catch (error) {
-    logger.error(`⚠️ [ERROR] ${error.message}`);
+    logger.error(`⚠️ [ERROR] database error ${error.message}`);
   }
 };
 

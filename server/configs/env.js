@@ -9,15 +9,17 @@ export const ENV = {
   },
   db: {
     host: process.env.DB_HOST,
-    port: process.env.DB_PORT || 3306,
+    port: process.env.DB_PORT,
     name: process.env.DB_NAME,
     user: process.env.DB_USER,
     pass: process.env.DB_PASS,
-    timezone: process.env.DB_TIMEZONE || "+07:00",
-    dialect: process.env.DB_DIALECT || "mysql",
+    timezone: process.env.DB_TIMEZONE,
+    dialect: process.env.DB_DIALECT,
   },
   jwt: {
     secret: process.env.JWT_SECRET,
-    expiresIn: process.env.JWT_EXPIRES_IN || "7d",
+    expiresIn: process.env.JWT_EXPIRES_IN,
+    refreshSecret: process.env.JWT_REFRESH_SECRET,
+    refreshExpiresIn: process.env.JWT_REFRESH_EXPIRES_IN,
   },
 };

@@ -7,7 +7,8 @@ export class AuthRepository {
     async findByEmail(email) {
         return await this.model.findOne({ where: { email } });
     }
-    async findById(id) {
-        return await this.model.findByPk(id);
-    }
+
+    async createUser(userData) {
+        return await this.model.create(userData);
+    }   
 }

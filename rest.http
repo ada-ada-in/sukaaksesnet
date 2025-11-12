@@ -5,7 +5,7 @@
 #     "nomor_pelanggan": "1234567890",
 #     "nama": "John Doe",
 #     "alamat": "123 Main St, Anytown, USA",
-#     "email": "email1@example.com",
+#     "email": "email2@example.com",
 #     "password": "securepassword"
 # }
 
@@ -13,11 +13,14 @@
 # Content-Type: application/json
 
 # {
-#     "email": "email1@example.com",
+#     "email": "email2@example.com",
 #     "password": "securepassword"
 # }
 
+# POST http://localhost:3000/api/logout
+# Content-Type: application/json
 
 
 # GET http://localhost:3000/api/users?page=3&limit=10
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyYzA4YWUyLWRiMTgtNGU3Ny05ZDI2LWM1ZmE0NGYxMWNmZCIsImVtYWlsIjoiZW1haWwyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzYyOTY1NjcwLCJleHAiOjE3NjM1NzA0NzB9.28GUZEkIl4YbkLNCZ1zlEiogGmOQ56G4j44u-MbXq_0
 # Content-Type: application/json

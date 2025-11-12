@@ -5,6 +5,24 @@ class ResponseHandler {
     this.res = res;
   }
 
+  cookieSuccess200(data) {
+    this.res.status(200).cookie('refreshToken', data.refreshToken, {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'Strict',
+      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+    })
+  }
+
+  cookieClear() {
+    this.res.clearCookie('refreshToken', {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'Strict',
+      path: '/',
+    });
+  }
+
   success200(data) {
     this.res.status(200).json({
       status: {
@@ -15,18 +33,28 @@ class ResponseHandler {
     });
   }
 
-  successLogin(data, token) {
+  successLogin(data, token, refreshToken) {
     this.res.status(200).json({
       status: {
         code: 200,
         message: "Login successful",
       },
       data,
-      token
+      token,
+      refreshToken
     });
   }
 
   successDelete(message) {
+    this.res.status(200).json({
+      status: {
+        code: 200,
+        message: `${message}`,
+      },
+    });
+  }
+
+  successLogout(message) {
     this.res.status(200).json({
       status: {
         code: 200,

@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken";
+import { ENV } from "../configs/env.js";
 import ResponseHandler from "../utils/response.js";
 
 export const authMiddleware = (req, res, next) => {
@@ -8,7 +9,7 @@ export const authMiddleware = (req, res, next) => {
   };
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, ENV.jwt.secret);
     req.user = decoded;
     next();
   } catch (error) {
@@ -16,6 +17,10 @@ export const authMiddleware = (req, res, next) => {
   }
 };
 
-export const jwtSign = (payload, expiresIn) => {
-  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn });
+export const jwtSign = (payload, expiresIn = ENV.jwt.expiresIn) => {
+  return jwt.sign(payload, ENV.jwt.secret, { expiresIn });
+}
+
+export const refreshTokenSign = (payload, expiresIn = ENV.jwt.refreshExpiresIn) => {
+  return jwt.sign(payload, ENV.jwt.refreshSecret, { expiresIn });
 }

@@ -7,7 +7,7 @@ export class AuthService {
     async getUserByEmail(email) {
         return await this.authRepository.findByEmail(email);
     }   
-    async getUserById(id) {
-        return await this.authRepository.findById(id);
+    async registerUser(userData) {
+        return await this.authRepository.createUser(userData);
     }
 }
