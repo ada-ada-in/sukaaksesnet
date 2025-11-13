@@ -16,4 +16,4 @@ export class AuthService {
         newPassword = await bcrypt.hash(newPassword, salt);
         return await this.authRepository.updatePassword(email, newPassword);
     }
-}
+}   
