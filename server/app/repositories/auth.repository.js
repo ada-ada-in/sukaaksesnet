@@ -10,5 +10,11 @@ export class AuthRepository {
 
     async createUser(userData) {
         return await this.model.create(userData);
+    }
+    async updatePassword(email, newPassword) {
+        return await this.model.update(
+            { password: newPassword },
+            { where: { email } }
+        );
     }   
 }

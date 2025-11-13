@@ -1,7 +1,7 @@
 import ResponseHandler from "../../utils/response.js";
 import { AuthService } from "../services/auth.service.js";
 import { asyncHandler } from "../../middleware/asyncHandler.middleware.js";
-import { jwtSign, refreshTokenSign, resetAccountMiddleware } from "../../utils/auth.js";
+import { jwtSign, refreshTokenSign, generateResetToken } from "../../utils/auth.js";
 import { validatePassword } from "../../middleware/validate.middleware.js";
 import { sendEmail } from "../../utils/nodemailer.js";
 import { ENV } from "../../configs/env.js";
@@ -15,11 +15,11 @@ export class AuthController {
     const { email, password } = req.body;
     const user = await this.authService.getUserByEmail(email);
     if (!user) {
-        return new ResponseHandler(res).error400("Invalid email");
+        return new ResponseHandler(res).error400("Invalid credentials");
     }
     const isPasswordValid = await validatePassword(password, user.password);
     if (!isPasswordValid) {
-        return new ResponseHandler(res).error400("Invalid password");
+        return new ResponseHandler(res).error400("Invalid credentials");
     }  
     const token = jwtSign({ id: user.id, email: user.email });
     const refreshToken = refreshTokenSign({ id: user.id, email: user.email });
@@ -41,14 +41,17 @@ export class AuthController {
     });
 
     forgetPassword = asyncHandler(async (req, res, next) => {
-        const resetToken = resetAccountMiddleware({ email: req.body.email });
+        const resetToken = generateResetToken({ email: req.body.email });
         const resetLink = `${ENV.app.front_end_url}/reset-password?token=${resetToken}`;
         await sendEmail(req.body.email, resetLink);
         return new ResponseHandler(res).successReset("password reset email sent",resetLink);
     });
 
     resetPassword = asyncHandler(async (req, res, next) => {
-        // Implementation for reset password
+        const { newPassword } = req.body;
+        console.log(req.user.email)
+        const data = await this.authService.updateUserPassword(req.user.email, newPassword);
+        return new ResponseHandler(res).success200Custom("Password has been reset successfully", data);
     });
 
 } 

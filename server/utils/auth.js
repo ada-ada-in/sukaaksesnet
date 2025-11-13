@@ -9,7 +9,7 @@ export const refreshTokenSign = (payload, expiresIn = ENV.jwt.refreshExpiresIn) 
   return jwt.sign(payload, ENV.jwt.refreshSecret, { expiresIn });
 }
 
-export const resetAccountMiddleware = (payload, expiresIn = ENV.jwt.expiresIn, resetAccountToken = ENV.jwt.resetPasswordSecret) => {
+export const generateResetToken = (payload, expiresIn = ENV.jwt.expiresIn, resetAccountToken = ENV.jwt.resetPasswordSecret) => {
   return jwt.sign(payload, resetAccountToken, { expiresIn });
 }
 
@@ -23,4 +23,8 @@ export const deleteCookie = (res) => {
   });
 
   res.clearCookie(cookieName, cookieOptions)
+}
+
+export const verifyToken = (token, jwtToken) => {
+  return jwt.verify(token, jwtToken);
 }

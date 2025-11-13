@@ -56,6 +56,16 @@ class ResponseHandler {
     });
   }
 
+  success200Custom(message, data) {
+    this.res.status(200).json({
+      status: {
+        code: 200,
+        message: `${message}`,
+      },
+      data,
+    });
+  }
+
   successDelete(message) {
     this.res.status(200).json({
       status: {

@@ -26,6 +26,24 @@ export const validateLogin = (req, res, next) => {
   next();
 };
 
+export const validateForgetPassword = (req, res, next) => {
+  const schema = Joi.object({
+    email: Joi.string().email().required(),
+  });
+  const { error } = schema.validate(req.body);
+  if (error) return new ResponseHandler(res).error400(error.details[0].message);
+  next();
+};
+
+export const validateResetPassword = (req, res, next) => {
+  const schema = Joi.object({
+    newPassword: Joi.string().min(6).required(),
+  });
+  const { error } = schema.validate(req.body);
+  if (error) return new ResponseHandler(res).error400(error.details[0].message);
+  next();
+};
+
 
 export const validatePassword = async (plainPassword, hashedPassword) => {
   return await bcrypt.compare(plainPassword, hashedPassword);

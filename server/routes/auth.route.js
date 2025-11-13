@@ -1,6 +1,7 @@
 import { AuthController } from "../app/controllers/auth.controller.js";
-import { validateLogin, validateUser } from "../middleware/validate.middleware.js";
-import { loginLimiter, registerLimiter } from "../middleware/rateLimiter.middleware.js";
+import { validateForgetPassword, validateLogin, validateResetPassword, validateUser } from "../middleware/validate.middleware.js";
+import { verifyResetTokenMiddleware, authMiddleware } from "../middleware/auth.middleware.js";
+import { forgetPasswordLimiter, loginLimiter, logoutLimiter, registerLimiter, resetPasswordLimiter } from "../middleware/rateLimiter.middleware.js";
 import express from "express";
 
 
@@ -9,7 +10,8 @@ const authController = new AuthController();
 
 authRouter.post("/login", validateLogin, loginLimiter, authController.login);
 authRouter.post("/register", validateUser, registerLimiter, authController.register);
-authRouter.post("/logout", authController.logout);
-authRouter.post("/forget-password", authController.forgetPassword);
+authRouter.post("/logout", logoutLimiter, authMiddleware, authController.logout);
+authRouter.post("/forget-password", validateForgetPassword, forgetPasswordLimiter, authController.forgetPassword);
+authRouter.post("/reset-password", validateResetPassword, resetPasswordLimiter, verifyResetTokenMiddleware, authController.resetPassword);
 
 export default authRouter;

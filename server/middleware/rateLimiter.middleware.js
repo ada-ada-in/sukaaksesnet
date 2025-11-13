@@ -24,6 +24,42 @@ export const loginLimiter = expressRateLimiter({
   headers: true,
 });
 
+
+export const logoutLimiter = expressRateLimiter({
+  windowMs: 1 * 60 * 1000,  // 1 minute
+  max: 10,
+  message: "Too many login attempts from this IP, please try again later.",
+  handler: (req, res, next, options) => {
+    logger.info(`[LOGIN RATE LIMIT] ${req.method} ${req.url} - ${options.message}`);
+    new ResponseHandler(res).error429("Too many login attempts");
+  },
+  headers: true,
+});
+
+
+export const forgetPasswordLimiter = expressRateLimiter({
+  windowMs: 1 * 60 * 1000,  // 1 minute
+  max: 5,
+  message: "Too many login attempts from this IP, please try again later.",
+  handler: (req, res, next, options) => {
+    logger.info(`[LOGIN RATE LIMIT] ${req.method} ${req.url} - ${options.message}`);
+    new ResponseHandler(res).error429("Too many login attempts");
+  },
+  headers: true,
+});
+
+export const resetPasswordLimiter = expressRateLimiter({
+  windowMs: 1 * 60 * 1000,  // 1 minute
+  max: 5,
+  message: "Too many login attempts from this IP, please try again later.",
+  handler: (req, res, next, options) => {
+    logger.info(`[LOGIN RATE LIMIT] ${req.method} ${req.url} - ${options.message}`);
+    new ResponseHandler(res).error429("Too many login attempts");
+  },
+  headers: true,
+});
+
+
 export const registerLimiter = expressRateLimiter({
   windowMs: 1 * 60 * 1000,  // 1 minute
   max: 10,

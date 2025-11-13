@@ -10,4 +10,7 @@ export class AuthService {
     async registerUser(userData) {
         return await this.authRepository.createUser(userData);
     }
+    async updateUserPassword(email, newPassword) {
+        return await this.authRepository.updatePassword(email, newPassword);
+    }
 }
