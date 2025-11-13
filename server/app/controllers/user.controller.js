@@ -30,6 +30,14 @@ export class UserController {
         return new ResponseHandler(res).success200(user);
     });
 
+    getProfile = asyncHandler(async (req, res, next) => {
+        const userId = req.user.id;
+        const user = await this.usersService.getUserById(userId);
+        if (!user) {
+            return new ResponseHandler(res).error404();
+        }
+        return new ResponseHandler(res).success200(user);
+    });
 
     deleteUser = asyncHandler(async (req, res, next) => {
         const { id } = req.params;

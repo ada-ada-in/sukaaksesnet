@@ -36,3 +36,182 @@
     at IncomingMessage.emit (node:events:518:28)
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-13 13:01:39] [31merror[39m: ⚠️ [ERROR] database error 
+[2025-11-13 13:35:39] [31merror[39m: [ERROR] POST /api/forget-password - secretOrPrivateKey must have a value
+[2025-11-13 13:35:39] [31merror[39m: Server error! - secretOrPrivateKey must have a value, Stack: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\jsonwebtoken\sign.js:111:20)
+    at resetAccountMiddleware (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/auth.middleware.js:29:14)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:49:28
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+[2025-11-13 13:38:05] [31merror[39m: [ERROR] POST /api/forget-password - secretOrPrivateKey must have a value
+[2025-11-13 13:38:05] [31merror[39m: Server error! - secretOrPrivateKey must have a value, Stack: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\jsonwebtoken\sign.js:111:20)
+    at resetAccountMiddleware (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/auth.middleware.js:29:14)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:49:28
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+[2025-11-13 13:38:07] [31merror[39m: [ERROR] POST /api/forget-password - secretOrPrivateKey must have a value
+[2025-11-13 13:38:07] [31merror[39m: Server error! - secretOrPrivateKey must have a value, Stack: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\jsonwebtoken\sign.js:111:20)
+    at resetAccountMiddleware (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/auth.middleware.js:29:14)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:49:28
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+[2025-11-13 13:38:07] [31merror[39m: [ERROR] POST /api/forget-password - secretOrPrivateKey must have a value
+[2025-11-13 13:38:07] [31merror[39m: Server error! - secretOrPrivateKey must have a value, Stack: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\jsonwebtoken\sign.js:111:20)
+    at resetAccountMiddleware (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/auth.middleware.js:29:14)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:49:28
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+[2025-11-13 13:46:54] [31merror[39m: [ERROR] POST /api/forget-password - secretOrPrivateKey must have a value
+[2025-11-13 13:46:54] [31merror[39m: Server error! - secretOrPrivateKey must have a value, Stack: Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\jsonwebtoken\sign.js:111:20)
+    at resetAccountMiddleware (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/auth.middleware.js:29:14)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:49:28
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+[2025-11-13 13:47:30] [31merror[39m: [ERROR] POST /api/forget-password - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2985c244e13sm13158365ad.29 - gsmtp
+[2025-11-13 13:47:30] [31merror[39m: Server error! - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2985c244e13sm13158365ad.29 - gsmtp, Stack: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2985c244e13sm13158365ad.29 - gsmtp
+    at SMTPConnection._formatError (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:1595:34)
+    at SMTPConnection.<anonymous> (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at SMTPConnection._onSocketData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2025-11-13 13:48:02] [31merror[39m: [ERROR] POST /api/forget-password - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b924aea005sm1133346b3a.3 - gsmtp
+[2025-11-13 13:48:02] [31merror[39m: Server error! - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b924aea005sm1133346b3a.3 - gsmtp, Stack: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b924aea005sm1133346b3a.3 - gsmtp
+    at SMTPConnection._formatError (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:1595:34)
+    at SMTPConnection.<anonymous> (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at SMTPConnection._onSocketData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2025-11-13 13:54:38] [31merror[39m: [ERROR] POST /api/forget-password - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b927c230aesm1136129b3a.68 - gsmtp
+[2025-11-13 13:54:38] [31merror[39m: Server error! - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b927c230aesm1136129b3a.68 - gsmtp, Stack: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b927c230aesm1136129b3a.68 - gsmtp
+    at SMTPConnection._formatError (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:1595:34)
+    at SMTPConnection.<anonymous> (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at SMTPConnection._onSocketData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2025-11-13 13:56:02] [31merror[39m: [ERROR] POST /api/forget-password - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b924aea0f8sm1173125b3a.5 - gsmtp
+[2025-11-13 13:56:02] [31merror[39m: Server error! - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b924aea0f8sm1173125b3a.5 - gsmtp, Stack: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b924aea0f8sm1173125b3a.5 - gsmtp
+    at SMTPConnection._formatError (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:1595:34)
+    at SMTPConnection.<anonymous> (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at SMTPConnection._onSocketData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2025-11-13 13:56:07] [31merror[39m: [ERROR] POST /api/forget-password - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2985c242003sm13505785ad.24 - gsmtp
+[2025-11-13 13:56:07] [31merror[39m: Server error! - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2985c242003sm13505785ad.24 - gsmtp, Stack: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2985c242003sm13505785ad.24 - gsmtp
+    at SMTPConnection._formatError (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:1595:34)
+    at SMTPConnection.<anonymous> (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at SMTPConnection._onSocketData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2025-11-13 13:56:58] [31merror[39m: [ERROR] POST /api/forget-password - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-343ed4c9440sm1308485a91.7 - gsmtp
+[2025-11-13 13:56:59] [31merror[39m: Server error! - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-343ed4c9440sm1308485a91.7 - gsmtp, Stack: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-343ed4c9440sm1308485a91.7 - gsmtp
+    at SMTPConnection._formatError (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:1595:34)
+    at SMTPConnection.<anonymous> (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at SMTPConnection._onSocketData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2025-11-13 13:57:31] [31merror[39m: [ERROR] POST /api/forget-password - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b9250cda04sm1150259b3a.19 - gsmtp
+[2025-11-13 13:57:31] [31merror[39m: Server error! - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b9250cda04sm1150259b3a.19 - gsmtp, Stack: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7b9250cda04sm1150259b3a.19 - gsmtp
+    at SMTPConnection._formatError (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:1595:34)
+    at SMTPConnection.<anonymous> (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:556:26)
+    at SMTPConnection._processResponse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:993:20)
+    at SMTPConnection._onData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:774:14)
+    at SMTPConnection._onSocketData (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2025-11-13 14:00:19] [31merror[39m: [ERROR] POST /api/forget-password - Cannot read properties of undefined (reading 'status')
+[2025-11-13 14:00:19] [31merror[39m: Server error! - Cannot read properties of undefined (reading 'status'), Stack: TypeError: Cannot read properties of undefined (reading 'status')
+    at ResponseHandler.successReset (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/response.js:37:14)
+    at sendEmail (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/nodemailer.js:25:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-13 14:05:15] [31merror[39m: [ERROR] POST /api/forget-password - res is not defined
+[2025-11-13 14:05:15] [31merror[39m: Server error! - res is not defined, Stack: ReferenceError: res is not defined
+    at sendEmail (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/nodemailer.js:23:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-13 14:05:17] [31merror[39m: [ERROR] POST /api/forget-password - res is not defined
+[2025-11-13 14:05:17] [31merror[39m: Server error! - res is not defined, Stack: ReferenceError: res is not defined
+    at sendEmail (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/nodemailer.js:23:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

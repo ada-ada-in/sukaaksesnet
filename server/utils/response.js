@@ -33,6 +33,16 @@ class ResponseHandler {
     });
   }
 
+  successReset(message, link) {
+    this.res.status(200).json({
+      status: {
+        code: 200,
+        message: `${message}`,
+      },
+      resetLink: link
+    });
+  }
+
   successLogin(data, token, refreshToken) {
     this.res.status(200).json({
       status: {

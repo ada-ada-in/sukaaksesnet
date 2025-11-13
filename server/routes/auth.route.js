@@ -10,5 +10,6 @@ const authController = new AuthController();
 authRouter.post("/login", validateLogin, loginLimiter, authController.login);
 authRouter.post("/register", validateUser, registerLimiter, authController.register);
 authRouter.post("/logout", authController.logout);
+authRouter.post("/forget-password", authController.forgetPassword);
 
 export default authRouter;
