@@ -249,3 +249,85 @@
 [2025-11-13 14:10:52] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-11-13 14:10:54] [32minfo[39m: Database Connected Successfully
 [2025-11-13 14:10:54] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:11:19] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:11:19] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:18:46] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:18:46] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:21:50] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:21:50] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:24:55] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:24:55] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:29:34] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:29:34] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:30:03] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:30:03] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:30:43] [31merror[39m: [ERROR] POST /api/logout - Cannot read properties of undefined (reading 'refreshToken')
+[2025-11-13 14:30:43] [31merror[39m: Server error! - Cannot read properties of undefined (reading 'refreshToken'), Stack: TypeError: Cannot read properties of undefined (reading 'refreshToken')
+    at deleteCookie (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/auth.middleware.js:33:39)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:40:9
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:280:10)
+[2025-11-13 14:32:45] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:32:45] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:33:38] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:33:38] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:36:26] [31merror[39m: [ERROR] POST /api/logout - Cannot read properties of undefined (reading 'refreshToken')
+[2025-11-13 14:36:26] [31merror[39m: Server error! - Cannot read properties of undefined (reading 'refreshToken'), Stack: TypeError: Cannot read properties of undefined (reading 'refreshToken')
+    at deleteCookie (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/auth.middleware.js:33:39)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:40:9
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:280:10)
+[2025-11-13 14:38:22] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:38:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:38:44] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:38:44] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:39:06] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:39:06] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:43:09] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:43:09] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:43:22] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:43:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:45:07] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:45:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:46:49] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:46:49] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:46:59] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:46:59] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:48:46] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:48:46] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:49:14] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:49:14] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:50:35] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:50:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:51:20] [31merror[39m: [ERROR] POST /api/login - ENV is not defined
+[2025-11-13 14:51:20] [31merror[39m: Server error! - ENV is not defined, Stack: ReferenceError: ENV is not defined
+    at jwtSign (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/auth.js:1:46)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:24:19
+[2025-11-13 14:52:26] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:52:26] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 14:55:08] [31merror[39m: [ERROR] POST /api/forget-password - jwt is not defined
+[2025-11-13 14:55:08] [31merror[39m: Server error! - jwt is not defined, Stack: ReferenceError: jwt is not defined
+    at resetAccountMiddleware (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/auth.js:12:3)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:44:28
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:280:10)
+[2025-11-13 14:55:33] [32minfo[39m: Database Connected Successfully
+[2025-11-13 14:55:33] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000

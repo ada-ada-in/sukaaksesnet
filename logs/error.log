@@ -215,3 +215,43 @@
 [2025-11-13 14:05:17] [31merror[39m: Server error! - res is not defined, Stack: ReferenceError: res is not defined
     at sendEmail (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/nodemailer.js:23:25)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-13 14:30:43] [31merror[39m: [ERROR] POST /api/logout - Cannot read properties of undefined (reading 'refreshToken')
+[2025-11-13 14:30:43] [31merror[39m: Server error! - Cannot read properties of undefined (reading 'refreshToken'), Stack: TypeError: Cannot read properties of undefined (reading 'refreshToken')
+    at deleteCookie (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/auth.middleware.js:33:39)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:40:9
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:280:10)
+[2025-11-13 14:36:26] [31merror[39m: [ERROR] POST /api/logout - Cannot read properties of undefined (reading 'refreshToken')
+[2025-11-13 14:36:26] [31merror[39m: Server error! - Cannot read properties of undefined (reading 'refreshToken'), Stack: TypeError: Cannot read properties of undefined (reading 'refreshToken')
+    at deleteCookie (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/auth.middleware.js:33:39)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:40:9
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:280:10)
+[2025-11-13 14:51:20] [31merror[39m: [ERROR] POST /api/login - ENV is not defined
+[2025-11-13 14:51:20] [31merror[39m: Server error! - ENV is not defined, Stack: ReferenceError: ENV is not defined
+    at jwtSign (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/auth.js:1:46)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:24:19
+[2025-11-13 14:55:08] [31merror[39m: [ERROR] POST /api/forget-password - jwt is not defined
+[2025-11-13 14:55:08] [31merror[39m: Server error! - jwt is not defined, Stack: ReferenceError: jwt is not defined
+    at resetAccountMiddleware (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/auth.js:12:3)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:44:28
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:280:10)

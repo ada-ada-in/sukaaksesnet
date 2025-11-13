@@ -1,4 +1,5 @@
 import { logger } from "../configs/logger.js";
+import { deleteCookie } from "./auth.js";
 
 class ResponseHandler {
   constructor(res) {
@@ -65,6 +66,7 @@ class ResponseHandler {
   }
 
   successLogout(message) {
+    deleteCookie(this.res);
     this.res.status(200).json({
       status: {
         code: 200,

@@ -1,7 +1,7 @@
 import ResponseHandler from "../../utils/response.js";
 import { AuthService } from "../services/auth.service.js";
 import { asyncHandler } from "../../middleware/asyncHandler.middleware.js";
-import { jwtSign, refreshTokenSign, resetAccountMiddleware } from "../../middleware/auth.middleware.js";
+import { jwtSign, refreshTokenSign, resetAccountMiddleware } from "../../utils/auth.js";
 import { validatePassword } from "../../middleware/validate.middleware.js";
 import { sendEmail } from "../../utils/nodemailer.js";
 import { ENV } from "../../configs/env.js";
@@ -23,15 +23,11 @@ export class AuthController {
     }  
     const token = jwtSign({ id: user.id, email: user.email });
     const refreshToken = refreshTokenSign({ id: user.id, email: user.email });
-    new ResponseHandler(res).cookieSuccess200({ refreshToken });
-    return new ResponseHandler(res).successLogin(user, token);
+    return new ResponseHandler(res).successLogin(user, token, refreshToken);
     })
     
     register = asyncHandler(async (req, res, next) => {
         const { nomor_pelanggan, nama, alamat, email, password } = req.body;
-        if(!nomor_pelanggan || !alamat || !email || !password || !nama) {
-            return new ResponseHandler(res).error400("Missing required fields: nomor_pelanggan, alamat, email, password, nama");
-        }
         const existingUser = await this.authService.getUserByEmail(email);
         if (existingUser) {
             return new ResponseHandler(res).error400("Email already in use");
@@ -41,7 +37,6 @@ export class AuthController {
     });
 
     logout = asyncHandler(async (req, res, next) => {
-        new ResponseHandler(res).cookieClear();
         return new ResponseHandler(res).successLogout("Logged out successfully");
     });
 
