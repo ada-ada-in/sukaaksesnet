@@ -27,12 +27,12 @@
 #     "email": "email1@example.com"  
 # }
 
-POST http://localhost:3000/api/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsMUBleGFtcGxlLmNvbSIsImlhdCI6MTc2MzAyNDA0MiwiZXhwIjoxNzYzNjI4ODQyfQ.bv73uScPhWAb7ijH-jDZId_AR2nnm-oNuLQHrlBYuso
-Content-Type: application/json
+# POST http://localhost:3000/api/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsMUBleGFtcGxlLmNvbSIsImlhdCI6MTc2MzAyNDA0MiwiZXhwIjoxNzYzNjI4ODQyfQ.bv73uScPhWAb7ijH-jDZId_AR2nnm-oNuLQHrlBYuso
+# Content-Type: application/json
 
-{
-    "newPassword": "newsecurepassword4"
-}
+# {
+#     "newPassword": "newsecurepassword4"
+# }
 
 # GET http://localhost:3000/api/users?page=3&limit=10
 # Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyYzA4YWUyLWRiMTgtNGU3Ny05ZDI2LWM1ZmE0NGYxMWNmZCIsImVtYWlsIjoiZW1haWwyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzYyOTY1NjcwLCJleHAiOjE3NjM1NzA0NzB9.28GUZEkIl4YbkLNCZ1zlEiogGmOQ56G4j44u-MbXq_0

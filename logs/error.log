@@ -267,3 +267,4 @@
 [2025-11-13 15:06:30] [31merror[39m: Server error! - Cannot read properties of null (reading 'password'), Stack: TypeError: Cannot read properties of null (reading 'password')
     at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:17:67
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-13 20:42:21] [31merror[39m: ⚠️ [ERROR] database error 

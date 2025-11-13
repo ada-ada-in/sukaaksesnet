@@ -423,3 +423,8 @@
 [2025-11-13 15:47:56] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-11-13 15:49:51] [32minfo[39m: Database Connected Successfully
 [2025-11-13 15:49:51] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 15:53:18] [32minfo[39m: Database Connected Successfully
+[2025-11-13 15:53:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-13 20:42:21] [31merror[39m: ⚠️ [ERROR] database error 
+[2025-11-13 20:42:43] [32minfo[39m: Database Connected Successfully
+[2025-11-13 20:42:43] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
