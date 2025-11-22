@@ -10,7 +10,7 @@ export class PaymentServices {
         }
     }
 
-    async postPaymentServices(amount, product, customerName, customerEmail) {
+    async postPaymentServices(amount, product, customerName, customerEmail, phoneNumber) {
         try {
             if (!amount || amount <= 0) throw new Error("Invalid amount");
             if (!customerEmail) throw new Error("Email required");
@@ -30,8 +30,11 @@ export class PaymentServices {
                 merchantOrderId,
                 paymentAmount: amount,
                 productDetails: product,
-                email: customerEmail,
-                customerVaName: customerName,
+                customerDetail: {
+                    firstName: customerName,
+                    email: customerEmail,
+                    phoneNumber: phoneNumber
+                },
                 callbackUrl,
                 returnUrl
             };

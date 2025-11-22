@@ -348,3 +348,39 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:48:30)
     at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
+[2025-11-22 21:38:36] [31merror[39m: DUITKU ERROR: timeout of 10000ms exceeded
+[2025-11-22 21:38:36] [31merror[39m: [ERROR] POST /api/payment - timeout of 10000ms exceeded
+[2025-11-22 21:38:36] [31merror[39m: Server error! - timeout of 10000ms exceeded, Stack: AxiosError: timeout of 10000ms exceeded
+    at RedirectableRequest.handleRequestTimeout (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:854:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\follow-redirects\index.js:221:12)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:40:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
+[2025-11-22 21:38:42] [31merror[39m: DUITKU ERROR: timeout of 10000ms exceeded
+[2025-11-22 21:38:42] [31merror[39m: [ERROR] POST /api/payment - timeout of 10000ms exceeded
+[2025-11-22 21:38:42] [31merror[39m: Server error! - timeout of 10000ms exceeded, Stack: AxiosError: timeout of 10000ms exceeded
+    at RedirectableRequest.handleRequestTimeout (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:854:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\follow-redirects\index.js:221:12)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:40:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
+[2025-11-22 21:38:55] [31merror[39m: DUITKU ERROR: timeout of 10000ms exceeded
+[2025-11-22 21:38:55] [31merror[39m: [ERROR] POST /api/payment - timeout of 10000ms exceeded
+[2025-11-22 21:38:55] [31merror[39m: Server error! - timeout of 10000ms exceeded, Stack: AxiosError: timeout of 10000ms exceeded
+    at RedirectableRequest.handleRequestTimeout (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:854:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\follow-redirects\index.js:221:12)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:40:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24

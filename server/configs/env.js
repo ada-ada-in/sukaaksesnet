@@ -34,5 +34,10 @@ export const ENV = {
     callbackUrl: process.env.DUITKU_CALLBACKURL,
     returnUrl:  process.env.DUITKU_RETURNURL,
     postPaymentUrl: process.env.DUITKU_POSTPAYMENTURL
+  },
+  wablas: {
+    apihost: process.env.WABLAS_APIHOST,
+    token: process.env.WABLAS_TOKEN,
+    secretkey: process.env.WABLAS_SECRETKEY
   }
 };

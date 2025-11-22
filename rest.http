@@ -45,5 +45,6 @@ Content-Type: application/json
     "amount": 150000,
     "product": "Paket B",
     "customerEmail": "chan.halim98@gmail.com",
-    "customerName": "chandra"
+    "customerName": "chandra",
+    "phoneNumber": "081231712311"
 }

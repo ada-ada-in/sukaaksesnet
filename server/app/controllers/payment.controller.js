@@ -9,8 +9,8 @@ export class PaymentController {
     } 
 
     postPayment = asyncHandler(async(req, res, next)=> {
-        const {amount, product, customerEmail, customerName} = req.body
-        const result = await this.paymentservices.postPaymentServices(amount,product,customerName,customerEmail)
+        const {amount, product, customerEmail, customerName, phoneNumber} = req.body
+        const result = await this.paymentservices.postPaymentServices(amount,product,customerName,customerEmail, phoneNumber)
         return new ResponseHandler(res).success201(result)
     })
 }
