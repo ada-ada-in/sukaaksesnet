@@ -1,0 +1,12 @@
+import { PaymentController } from "../app/controllers/payment.controller.js";
+import { validatePayment } from "../middleware/validate.middleware.js";
+import { paymentLimiter } from "../middleware/rateLimiter.middleware.js";
+import express from "express";
+
+
+const paymentRouter = express.Router();
+const paymentController = new PaymentController();
+
+paymentRouter.post("/payment", validatePayment, paymentLimiter, paymentController.postPayment);
+
+export default paymentRouter;

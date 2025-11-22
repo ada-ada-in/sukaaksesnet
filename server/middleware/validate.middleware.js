@@ -2,6 +2,18 @@ import Joi from "joi";
 import ResponseHandler from "../utils/response.js";
 import bcrypt from "bcrypt";
 
+export const validatePayment = (req, res, next) => {
+  const schema = Joi.object({
+    amount: Joi.number().required(),
+    product: Joi.string().required(),
+    customerName: Joi.string().required(),
+    customerEmail: Joi.string().email().required()
+  })
+  const { error } = schema.validate(req.body);
+  if (error) return new ResponseHandler(res).error400(error.details[0].message);
+  next();
+}
+
 export const validateUser = (req, res, next) => {
   const schema = Joi.object({
     nama: Joi.string().required(),

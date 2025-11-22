@@ -28,4 +28,11 @@ export const ENV = {
     refreshExpiresIn: process.env.JWT_REFRESH_EXPIRES_IN,
     resetPasswordSecret: process.env.JWT_RESET_PASSWORD_SECRET,
   },
+  duitku: {
+    merchantCode : process.env.DUITKU_MERCHANTCODE,
+    apiKey : process.env.DUITKU_APIKEY,
+    callbackUrl: process.env.DUITKU_CALLBACKURL,
+    returnUrl:  process.env.DUITKU_RETURNURL,
+    postPaymentUrl: process.env.DUITKU_POSTPAYMENTURL
+  }
 };

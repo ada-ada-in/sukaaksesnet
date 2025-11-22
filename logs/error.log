@@ -269,3 +269,82 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 [2025-11-13 20:42:21] [31merror[39m: ⚠️ [ERROR] database error 
 [2025-11-13 21:01:03] [31merror[39m: ⚠️ [ERROR] database error 
+[2025-11-22 20:30:14] [31merror[39m: ❌ Unhandled Rejection: data and hash must be strings
+[2025-11-22 20:30:27] [31merror[39m: ❌ Unhandled Rejection: data and hash must be strings
+[2025-11-22 20:33:34] [31merror[39m: [ERROR] POST /api/payment - Joi.email is not a function
+[2025-11-22 20:33:34] [31merror[39m: Server error! - Joi.email is not a function, Stack: TypeError: Joi.email is not a function
+    at validatePayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/validate.middleware.js:10:24)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\index.js:47:12)
+[2025-11-22 20:34:08] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:34:08] [31merror[39m: [ERROR] POST /api/payment - res is not defined
+[2025-11-22 20:34:08] [31merror[39m: Server error! - res is not defined, Stack: ReferenceError: res is not defined
+    at PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:62:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
+[2025-11-22 20:34:43] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:34:48] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:36:44] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:39:14] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:39:15] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:43:24] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:43:40] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:44:13] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:44:56] [31merror[39m: DUITKU ERROR: Invalid URL
+[2025-11-22 20:46:34] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:46:34] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:46:34] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:46:40] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:47:37] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:49:01] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:50:49] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:53:19] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:54:39] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:55:11] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:56:25] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:59:16] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 20:59:49] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 21:00:38] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 21:02:31] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 21:03:17] [31merror[39m: DUITKU ERROR: Request failed with status code 401
+[2025-11-22 21:06:32] [31merror[39m: DUITKU ERROR: getaddrinfo ENOTFOUND api-sandbox.duitku.com
+[2025-11-22 21:06:32] [31merror[39m: [ERROR] POST /api/payment - getaddrinfo ENOTFOUND api-sandbox.duitku.com
+[2025-11-22 21:06:32] [31merror[39m: Server error! - getaddrinfo ENOTFOUND api-sandbox.duitku.com, Stack: Error: getaddrinfo ENOTFOUND api-sandbox.duitku.com
+    at AxiosError.from (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/AxiosError.js:96:14)
+    at RedirectableRequest.handleRequestError (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:817:25)
+    at RedirectableRequest.emit (node:events:530:35)
+    at eventHandlers.<computed> (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\follow-redirects\index.js:49:24)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:38:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
+[2025-11-22 21:07:01] [31merror[39m: DUITKU ERROR: getaddrinfo ENOTFOUND api-sandbox.duitku.com
+[2025-11-22 21:07:01] [31merror[39m: [ERROR] POST /api/payment - getaddrinfo ENOTFOUND api-sandbox.duitku.com
+[2025-11-22 21:07:01] [31merror[39m: Server error! - getaddrinfo ENOTFOUND api-sandbox.duitku.com, Stack: Error: getaddrinfo ENOTFOUND api-sandbox.duitku.com
+    at AxiosError.from (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/AxiosError.js:96:14)
+    at RedirectableRequest.handleRequestError (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:817:25)
+    at RedirectableRequest.emit (node:events:530:35)
+    at eventHandlers.<computed> (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\follow-redirects\index.js:49:24)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:48:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
