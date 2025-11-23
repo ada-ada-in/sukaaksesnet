@@ -1,4 +1,4 @@
-# POST http://localhost:3000/api/register
+# POST http://localhost:3000/api/v1/register
 # Content-Type: application/json
 
 # {
@@ -9,7 +9,7 @@
 #     "password": "securepassword"
 # }
 
-# POST http://localhost:3000/api/login
+# POST http://localhost:3000/api/v1/login
 # Content-Type: application/json
 
 # {
@@ -17,28 +17,39 @@
 #     "password": "securepassword"
 # }
 
-# POST http://localhost:3000/api/logout
+# POST http://localhost:3000/api/v1/logout
 # Content-Type: application/json
 
-# POST http://localhost:3000/api/forget-password
+# POST http://localhost:3000/api/v1/forget-password
 # Content-Type: application/json
 
 # {
 #     "email": "email1@example.com"  
 # }
 
-# POST http://localhost:3000/api/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsMUBleGFtcGxlLmNvbSIsImlhdCI6MTc2MzAyNDA0MiwiZXhwIjoxNzYzNjI4ODQyfQ.bv73uScPhWAb7ijH-jDZId_AR2nnm-oNuLQHrlBYuso
+# POST http://localhost:3000/api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsMUBleGFtcGxlLmNvbSIsImlhdCI6MTc2MzAyNDA0MiwiZXhwIjoxNzYzNjI4ODQyfQ.bv73uScPhWAb7ijH-jDZId_AR2nnm-oNuLQHrlBYuso
 # Content-Type: application/json
 
 # {
 #     "newPassword": "newsecurepassword4"
 # }
 
-# GET http://localhost:3000/api/users?page=3&limit=10
+# GET http://localhost:3000/api/v1/users?page=3&limit=10
 # Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyYzA4YWUyLWRiMTgtNGU3Ny05ZDI2LWM1ZmE0NGYxMWNmZCIsImVtYWlsIjoiZW1haWwyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzYyOTY1NjcwLCJleHAiOjE3NjM1NzA0NzB9.28GUZEkIl4YbkLNCZ1zlEiogGmOQ56G4j44u-MbXq_0
 # Content-Type: application/json
 
-POST http://localhost:3000/api/payment
+# POST https://0d9f78d7e467.ngrok-free.app/api/v1/payment
+# Content-Type: application/json
+
+# {
+#     "amount": 150000,
+#     "product": "Paket B",
+#     "customerEmail": "chan.halim98@gmail.com",
+#     "customerName": "chandra",
+#     "phoneNumber": "0895342754470"
+# }
+
+POST https://0d9f78d7e467.ngrok-free.app/api/v1/payment/callback
 Content-Type: application/json
 
 {
@@ -46,5 +57,6 @@ Content-Type: application/json
     "product": "Paket B",
     "customerEmail": "chan.halim98@gmail.com",
     "customerName": "chandra",
-    "phoneNumber": "081231712311"
+    "phoneNumber": "085366383088", 
+    "resultCode": "002"
 }

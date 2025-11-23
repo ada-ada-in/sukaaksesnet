@@ -38,6 +38,8 @@ export const ENV = {
   wablas: {
     apihost: process.env.WABLAS_APIHOST,
     token: process.env.WABLAS_TOKEN,
-    secretkey: process.env.WABLAS_SECRETKEY
+    secretkey: process.env.WABLAS_SECRETKEY,
+    deviceId: process.env.WABLAS_DEVICEID,
+    adminPhone: process.env.WABLAS_ADMINPHONE
   }
 };

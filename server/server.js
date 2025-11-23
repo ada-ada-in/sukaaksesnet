@@ -7,13 +7,14 @@ import {globalLimiter} from "./middleware/rateLimiter.middleware.js";
 
 const app = express();
 
+app.set('trust proxy', 1);
 app.use(express.json());
 app.use(globalLimiter);
 
 // Route
-app.use('/api', usersRouter);
-app.use('/api', authRouter);
-app.use('/api', paymentRouter)
+app.use('/api/v1', usersRouter);
+app.use('/api/v1', authRouter);
+app.use('/api/v1', paymentRouter)
 
 
 

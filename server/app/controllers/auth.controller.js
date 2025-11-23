@@ -21,7 +21,7 @@ export class AuthController {
     if (!isPasswordValid) {
         return new ResponseHandler(res).error400("Invalid credentials");
     }  
-    const token = jwtSign({ id: user.id, email: user.email });
+    const token = jwtSign({ id: user.id, email: user.email, handphone: user.nomor_pelanggan, nama: user.nama });
     const refreshToken = refreshTokenSign({ id: user.id, email: user.email });
     return new ResponseHandler(res).successLogin(user, token, refreshToken);
     })

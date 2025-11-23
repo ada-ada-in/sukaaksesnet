@@ -8,5 +8,6 @@ const paymentRouter = express.Router();
 const paymentController = new PaymentController();
 
 paymentRouter.post("/payment", validatePayment, paymentLimiter, paymentController.postPayment);
+paymentRouter.post("/payment/callback", paymentController.callbackPayment);
 
 export default paymentRouter;

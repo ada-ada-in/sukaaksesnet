@@ -2,6 +2,7 @@ import axios from "axios";
 import crypto from "crypto";
 import { ENV } from "../../configs/env.js";
 import { logger } from "../../configs/logger.js";
+import { createSendWaToUsers, successPaymentSendWa, sendWaToAdmin} from "../../utils/sendwa.js";
 
 export class PaymentServices {
     constructor() {
@@ -10,14 +11,15 @@ export class PaymentServices {
         }
     }
 
-    async postPaymentServices(amount, product, customerName, customerEmail, phoneNumber) {
+    /**
+     *  MAKE PAYMENT INVOICE
+     */
+    async postPaymentServices(amount, product, customerName, email, phoneNumber) {
         try {
-            if (!amount || amount <= 0) throw new Error("Invalid amount");
-            if (!customerEmail) throw new Error("Email required");
             const merchantCode = ENV.duitku.merchantCode;
             const apiKey = ENV.duitku.apiKey;
             const callbackUrl = ENV.duitku.callbackUrl;
-            const returnUrl = ENV.duitku.returnUrl;
+            const returnUrl = ENV.duitku.returnUrl || "";
             const postUrl = ENV.duitku.postPaymentUrl;
             const timestamp = Date.now().toString();
             const signature = crypto
@@ -32,8 +34,8 @@ export class PaymentServices {
                 productDetails: product,
                 customerDetail: {
                     firstName: customerName,
-                    email: customerEmail,
-                    phoneNumber: phoneNumber
+                    email,
+                    phoneNumber
                 },
                 callbackUrl,
                 returnUrl
@@ -46,11 +48,56 @@ export class PaymentServices {
                     "x-duitku-merchantcode": merchantCode
                 },
                 timeout: 10000
-            });
+            });           
+            const paymentUrl = response.data.paymentUrl
+            createSendWaToUsers(phoneNumber,merchantOrderId,customerName,product,amount,paymentUrl)
             return response.data;
+
         } catch (error) {
-            logger.error(`DUITKU ERROR: ${error.message}`);
+            logger.error(`DUITKU CREATE INVOICE ERROR: ${error.message}`);
             throw error;
+        }
+    }
+
+    async callbackPaymentServices(params = {}) {
+        try {
+            const {
+                amount,
+                merchantCode,
+                merchantOrderId,
+                signature,
+                resultCode,
+                productDetails,
+                reference,
+                phoneNumber,
+                customerName,
+                email
+            } = params;
+            const apiKey = ENV.duitku.apiKey;
+            const expectedSignature = crypto
+                .createHash("sha256")
+                .update(amount + merchantCode + merchantOrderId + apiKey)
+                .digest("hex");
+
+            if (expectedSignature !== signature) {
+                logger.error("❌ INVALID SIGNATURE CALLBACK");
+                return { success: false };
+            }
+            if (resultCode === "002") {
+
+            successPaymentSendWa(phoneNumber,merchantOrderId,customerName,email,productDetails,amount,reference)
+            sendWaToAdmin(customerName,email,phoneNumber,merchantOrderId,productDetails,amount,reference)
+
+            return {success: true}
+
+            }
+
+
+            return { success: false };
+
+        } catch (err) {
+            logger.error(`CALLBACK ERROR: ${err.message}`);
+            return { success: false };
         }
     }
 }
