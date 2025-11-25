@@ -10,6 +10,11 @@ const app = express();
 app.set('trust proxy', 1);
 app.use(express.json());
 app.use(globalLimiter);
+app.use(express.json({
+  verify: (req, res, buf) => {
+    req.rawBody = buf && buf.length ? buf.toString('utf8') : '';
+  }
+}));
 
 // Route
 app.use('/api/v1', usersRouter);

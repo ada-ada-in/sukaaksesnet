@@ -38,25 +38,29 @@
 # Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyYzA4YWUyLWRiMTgtNGU3Ny05ZDI2LWM1ZmE0NGYxMWNmZCIsImVtYWlsIjoiZW1haWwyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzYyOTY1NjcwLCJleHAiOjE3NjM1NzA0NzB9.28GUZEkIl4YbkLNCZ1zlEiogGmOQ56G4j44u-MbXq_0
 # Content-Type: application/json
 
-# POST https://0d9f78d7e467.ngrok-free.app/api/v1/payment
-# Content-Type: application/json
-
-# {
-#     "amount": 150000,
-#     "product": "Paket B",
-#     "customerEmail": "chan.halim98@gmail.com",
-#     "customerName": "chandra",
-#     "phoneNumber": "0895342754470"
-# }
-
-POST https://0d9f78d7e467.ngrok-free.app/api/v1/payment/callback
+POST https://999e478d70a4.ngrok-free.app/api/v1/payment
 Content-Type: application/json
 
 {
     "amount": 150000,
     "product": "Paket B",
-    "customerEmail": "chan.halim98@gmail.com",
+    "email": "chan.halim98@gmail.com",
     "customerName": "chandra",
-    "phoneNumber": "085366383088", 
-    "resultCode": "002"
+    "handphone": "0895342754470"
 }
+
+# POST https://999e478d70a4.ngrok-free.app/api/v1/payment/callback
+# Content-Type: application/json
+
+# {
+#   "amount": "150000",
+#   "merchantOrderId": "SAN-1763916126015-34290",
+#   "resultCode": "00",
+#   "merchantCode": "DS24758",
+#   "reference": "DS2475825AIIKYU52B7IPDFA",
+#   "phoneNumber": "085366383088",
+#   "customerName": "chandra",
+#   "email": "chan.halim98@gmail.com",
+#   "productDetails": "Paket A"
+
+# }

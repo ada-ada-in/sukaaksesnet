@@ -502,3 +502,420 @@
 [2025-11-23 23:09:38] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
 [2025-11-23 23:10:51] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
 [2025-11-23 23:11:18] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:25:11] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:25:22] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:27:32] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:27:39] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:37:30] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:37:42] [31merror[39m: [ERROR] POST /api/v1/payment/callback - Expected double-quoted property name in JSON at position 275 (line 10 column 1)
+[2025-11-23 23:37:42] [31merror[39m: Server error! - Expected double-quoted property name in JSON at position 275 (line 10 column 1), Stack: SyntaxError: Expected double-quoted property name in JSON at position 275 (line 10 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-23 23:37:48] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:37:55] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:41:08] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:41:10] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:41:11] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:41:11] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:42:52] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:43:02] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:44:50] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:44:54] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:46:23] [31merror[39m: CALLBACK ERROR: ENV.duitku.merchantCode.createHash is not a function
+[2025-11-23 23:46:59] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:47:01] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:47:01] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:47:01] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:47:01] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:47:01] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:47:02] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:48:58] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:49:45] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:51:21] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:52:31] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:52:33] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:52:33] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:52:33] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:52:33] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:52:33] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:52:33] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:52:34] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:54:28] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:54:55] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-23 23:58:11] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-24 00:00:16] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-24 00:01:50] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-24 00:02:41] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-24 00:03:05] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-25 19:34:16] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-25 19:53:48] [31merror[39m: ❌ INVALID SIGNATURE CALLBACK
+[2025-11-25 19:54:13] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 19:54:13] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 19:57:29] [31merror[39m: [ERROR] POST /api/v1/payment/callback - Expected double-quoted property name in JSON at position 307 (line 11 column 1)
+[2025-11-25 19:57:29] [31merror[39m: Server error! - Expected double-quoted property name in JSON at position 307 (line 11 column 1), Stack: SyntaxError: Expected double-quoted property name in JSON at position 307 (line 11 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-25 20:00:09] [31merror[39m: ❌ Missing signature or timestamp
+[2025-11-25 20:02:03] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:02:03] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:02:06] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:02:06] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:02:07] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:02:07] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:05:59] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:05:59] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:13:45] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:13:45] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 20:39:52] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 20:39:52] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 20:41:06] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 20:41:06] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 20:41:37] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 20:41:37] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 20:59:39] [31merror[39m: DUITKU CREATE INVOICE ERROR: handphone is not defined
+[2025-11-25 20:59:39] [31merror[39m: [ERROR] POST /api/v1/payment - handphone is not defined
+[2025-11-25 20:59:39] [31merror[39m: Server error! - handphone is not defined, Stack: ReferenceError: handphone is not defined
+    at PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:65:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 20:59:53] [31merror[39m: DUITKU CREATE INVOICE ERROR: handphone is not defined
+[2025-11-25 20:59:53] [31merror[39m: [ERROR] POST /api/v1/payment - handphone is not defined
+[2025-11-25 20:59:53] [31merror[39m: Server error! - handphone is not defined, Stack: ReferenceError: handphone is not defined
+    at PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:65:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 20:59:53] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-11-25 21:00:56] [31merror[39m: DUITKU CREATE INVOICE ERROR: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:00:56] [31merror[39m: [ERROR] POST /api/v1/payment - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:00:56] [31merror[39m: Server error! - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null, Stack: SequelizeValidationError: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2426:7)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:65:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:00:56] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:00:56] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:01:46] [31merror[39m: DUITKU CREATE INVOICE ERROR: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:01:46] [31merror[39m: [ERROR] POST /api/v1/payment - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:01:46] [31merror[39m: Server error! - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null, Stack: SequelizeValidationError: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2426:7)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:65:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:01:46] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:01:46] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:02:48] [31merror[39m: DUITKU CREATE INVOICE ERROR: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:02:48] [31merror[39m: [ERROR] POST /api/v1/payment - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:02:48] [31merror[39m: Server error! - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null, Stack: SequelizeValidationError: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2426:7)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:65:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:02:49] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:02:49] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:04:45] [31merror[39m: DUITKU CREATE INVOICE ERROR: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:04:45] [31merror[39m: [ERROR] POST /api/v1/payment - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:04:45] [31merror[39m: Server error! - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null, Stack: SequelizeValidationError: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2426:7)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:65:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:04:46] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:04:46] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:06:28] [31merror[39m: DUITKU CREATE INVOICE ERROR: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:06:28] [31merror[39m: [ERROR] POST /api/v1/payment - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+[2025-11-25 21:06:28] [31merror[39m: Server error! - notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null, Stack: SequelizeValidationError: notNull Violation: payment.handphone cannot be null,
+notNull Violation: payment.amount cannot be null,
+notNull Violation: payment.email cannot be null,
+notNull Violation: payment.merchantOrderId cannot be null,
+notNull Violation: payment.payment_url cannot be null,
+notNull Violation: payment.product cannot be null
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2426:7)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:06:28] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:06:28] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:11:17] [31merror[39m: DUITKU CREATE INVOICE ERROR: notNull Violation: payment.payment_url cannot be null
+[2025-11-25 21:11:17] [31merror[39m: [ERROR] POST /api/v1/payment - notNull Violation: payment.payment_url cannot be null
+[2025-11-25 21:11:17] [31merror[39m: Server error! - notNull Violation: payment.payment_url cannot be null, Stack: SequelizeValidationError: notNull Violation: payment.payment_url cannot be null
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2426:7)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:11:18] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:11:18] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:12:44] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:12:44] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:13:23] [31merror[39m: DUITKU CREATE INVOICE ERROR: Validation error
+[2025-11-25 21:13:23] [31merror[39m: [ERROR] POST /api/v1/payment - Validation error
+[2025-11-25 21:13:23] [31merror[39m: Server error! - Validation error, Stack: Error
+    at Query.run (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2490:35)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:13:23] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:13:23] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:14:01] [31merror[39m: DUITKU CREATE INVOICE ERROR: Validation error
+[2025-11-25 21:14:01] [31merror[39m: [ERROR] POST /api/v1/payment - Validation error
+[2025-11-25 21:14:01] [31merror[39m: Server error! - Validation error, Stack: Error
+    at Query.run (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2490:35)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:14:01] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:14:01] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:14:09] [31merror[39m: DUITKU CREATE INVOICE ERROR: Validation error
+[2025-11-25 21:14:09] [31merror[39m: [ERROR] POST /api/v1/payment - Validation error
+[2025-11-25 21:14:09] [31merror[39m: Server error! - Validation error, Stack: Error
+    at Query.run (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2490:35)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:14:09] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:14:09] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:15:03] [31merror[39m: DUITKU CREATE INVOICE ERROR: notNull Violation: payment.reference cannot be null
+[2025-11-25 21:15:03] [31merror[39m: [ERROR] POST /api/v1/payment - notNull Violation: payment.reference cannot be null
+[2025-11-25 21:15:03] [31merror[39m: Server error! - notNull Violation: payment.reference cannot be null, Stack: SequelizeValidationError: notNull Violation: payment.reference cannot be null
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2426:7)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:15:03] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:15:03] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:16:22] [31merror[39m: DUITKU CREATE INVOICE ERROR: notNull Violation: payment.reference cannot be null
+[2025-11-25 21:16:22] [31merror[39m: [ERROR] POST /api/v1/payment - notNull Violation: payment.reference cannot be null
+[2025-11-25 21:16:22] [31merror[39m: Server error! - notNull Violation: payment.reference cannot be null, Stack: SequelizeValidationError: notNull Violation: payment.reference cannot be null
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2426:7)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:16:23] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:16:23] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:17:05] [31merror[39m: DUITKU CREATE INVOICE ERROR: Validation error
+[2025-11-25 21:17:05] [31merror[39m: [ERROR] POST /api/v1/payment - Validation error
+[2025-11-25 21:17:05] [31merror[39m: Server error! - Validation error, Stack: Error
+    at Query.run (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2490:35)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:17:05] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:17:05] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:17:05] [31merror[39m: DUITKU CREATE INVOICE ERROR: Validation error
+[2025-11-25 21:17:05] [31merror[39m: [ERROR] POST /api/v1/payment - Validation error
+[2025-11-25 21:17:05] [31merror[39m: Server error! - Validation error, Stack: Error
+    at Query.run (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2490:35)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:14:24
+[2025-11-25 21:17:05] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:17:05] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:19:55] [31merror[39m: DUITKU CREATE INVOICE ERROR: Validation error
+[2025-11-25 21:19:55] [31merror[39m: [ERROR] POST /api/v1/payment - Validation error
+[2025-11-25 21:19:55] [31merror[39m: Server error! - Validation error, Stack: Error
+    at Query.run (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2490:35)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
+[2025-11-25 21:19:55] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:19:55] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:20:37] [31merror[39m: DUITKU CREATE INVOICE ERROR: Validation error
+[2025-11-25 21:20:37] [31merror[39m: [ERROR] POST /api/v1/payment - Validation error
+[2025-11-25 21:20:37] [31merror[39m: Server error! - Validation error, Stack: Error
+    at Query.run (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async PaymentModels.save (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:2490:35)
+    at async payment.create (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1362:12)
+    at async PaymentRepository.createPayment (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/payment.repository.js:8:16)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:60:20)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
+[2025-11-25 21:20:37] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:20:37] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:21:32] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:21:32] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:21:35] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:21:35] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:22:09] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:22:09] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403

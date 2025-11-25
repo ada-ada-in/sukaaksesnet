@@ -1,7 +1,6 @@
 import ResponseHandler from "../../utils/response.js";
 import { PaymentServices } from "../services/payment.service.js";
 import { asyncHandler } from "../../middleware/asyncHandler.middleware.js";
-import { ENV } from "../../configs/env.js";
 
 export class PaymentController {
 
@@ -10,16 +9,16 @@ export class PaymentController {
     } 
 
     postPayment = asyncHandler(async(req, res, next)=> {
-        const {amount, product, customerEmail, customerName, phoneNumber} = req.body
-        const result = await this.paymentservices.postPaymentServices(amount,product,customerName,customerEmail, phoneNumber)
+        const {amount, product, email, customerName, handphone} = req.body
+        const result = await this.paymentservices.postPaymentServices(amount, product, customerName, email, handphone)
         return new ResponseHandler(res).success201(result)
     })
 
     callbackPayment = asyncHandler(async(req, res, next) => {
-    const {amount, merchantOrderId, signature, resultCode, product} = req.body;    
+    const {amount, merchantOrderId, merchantCode, signature, resultCode, product} = req.body;   
+    console.log(req.body) 
     // const {email, handhone, nama} = req.user  
-    const merchantcode = ENV.duitku.merchantCode  
-    await this.paymentservices.callbackPaymentServices(amount, merchantcode, merchantOrderId, signature, resultCode, product,)
+    await this.paymentservices.callbackPaymentServices({amount, merchantOrderId, merchantCode, signature, resultCode, product})
     // await this.paymentservices.callbackPaymentServices(amount, merchantCode, merchantOrderId, signature, handhone, resultCode, product, nama, email)
     return res.send("OK")
     })

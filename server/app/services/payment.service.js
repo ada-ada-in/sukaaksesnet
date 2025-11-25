@@ -2,6 +2,8 @@ import axios from "axios";
 import crypto from "crypto";
 import { ENV } from "../../configs/env.js";
 import { logger } from "../../configs/logger.js";
+import {payMent} from    "../../utils/payment.js"
+import { PaymentRepository } from "../repositories/payment.repository.js";
 import { createSendWaToUsers, successPaymentSendWa, sendWaToAdmin} from "../../utils/sendwa.js";
 
 export class PaymentServices {
@@ -9,12 +11,10 @@ export class PaymentServices {
         if (!ENV.duitku.merchantCode || !ENV.duitku.apiKey) {
             throw new Error("Duitku environment variables missing");
         }
+        this.paymentrepository = new PaymentRepository()
     }
-
-    /**
-     *  MAKE PAYMENT INVOICE
-     */
-    async postPaymentServices(amount, product, customerName, email, phoneNumber) {
+    
+    async postPaymentServices(amount, product, customerName, email, handphone) {
         try {
             const merchantCode = ENV.duitku.merchantCode;
             const apiKey = ENV.duitku.apiKey;
@@ -35,9 +35,10 @@ export class PaymentServices {
                 customerDetail: {
                     firstName: customerName,
                     email,
-                    phoneNumber
+                    phoneNumber: handphone
                 },
                 callbackUrl,
+                signature,
                 returnUrl
             };
             const response = await axios.post(postUrl, payload, {
@@ -49,55 +50,39 @@ export class PaymentServices {
                 },
                 timeout: 10000
             });           
-            const paymentUrl = response.data.paymentUrl
-            createSendWaToUsers(phoneNumber,merchantOrderId,customerName,product,amount,paymentUrl)
-            return response.data;
+            const payment_url = response.data.paymentUrl
+            const paymentPayload = {
+                merchantCodeId: merchantOrderId,
+            }
+            payMent(paymentPayload)
+
+            createSendWaToUsers(handphone,merchantOrderId,customerName,product,amount,payment_url)
+            return await this.paymentrepository.createPayment({customerName, handphone, amount, email, merchantOrderId, payment_url, product})
 
         } catch (error) {
             logger.error(`DUITKU CREATE INVOICE ERROR: ${error.message}`);
             throw error;
         }
     }
+    
 
-    async callbackPaymentServices(params = {}) {
-        try {
-            const {
-                amount,
-                merchantCode,
-                merchantOrderId,
-                signature,
-                resultCode,
-                productDetails,
-                reference,
-                phoneNumber,
-                customerName,
-                email
-            } = params;
-            const apiKey = ENV.duitku.apiKey;
-            const expectedSignature = crypto
-                .createHash("sha256")
-                .update(amount + merchantCode + merchantOrderId + apiKey)
-                .digest("hex");
+    async callbackPaymentServices(merchantCodeId) {
+            try {
 
-            if (expectedSignature !== signature) {
-                logger.error("❌ INVALID SIGNATURE CALLBACK");
+                if (resultCode === "00") {
+                    successPaymentSendWa(handphone, merchantOrderId, customerName, email, productDetails, amount, reference);
+                    sendWaToAdmin(customerName, email, handphone, merchantOrderId, productDetails, amount, reference);
+
+                    console.log("cihuyyy")
+
+                    return { success: true };
+                }
+
+                return { success: false };
+
+            } catch (err) {
+                logger.error(`CALLBACK ERROR: ${err.message}`);
                 return { success: false };
             }
-            if (resultCode === "002") {
-
-            successPaymentSendWa(phoneNumber,merchantOrderId,customerName,email,productDetails,amount,reference)
-            sendWaToAdmin(customerName,email,phoneNumber,merchantOrderId,productDetails,amount,reference)
-
-            return {success: true}
-
-            }
-
-
-            return { success: false };
-
-        } catch (err) {
-            logger.error(`CALLBACK ERROR: ${err.message}`);
-            return { success: false };
         }
-    }
 }

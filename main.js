@@ -37,10 +37,10 @@ process.on("uncaughtException", (err) => {
 const start = async () => {
   try {
     // Sync Database
-    // await sequelize.sync(); // use this for first time
+    await sequelize.sync(); // use this for first time
     // await sequelize.sync({ force: false }); // use this to reset db
     // await sequelize.sync({force: true}); // use this to drop and recreate db
-       await sequelize.authenticate(); // use this to check connection
+      //  await sequelize.authenticate(); // use this to check connection
     // await sequelize.sync({ alter: true }); // use this to update db according to models
       console.log("=================================================================================");
       logger.info("Database Connected Successfully");
