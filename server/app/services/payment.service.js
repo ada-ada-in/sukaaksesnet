@@ -5,6 +5,8 @@ import { logger } from "../../configs/logger.js";
 import {payMent} from    "../../utils/payment.js"
 import { PaymentRepository } from "../repositories/payment.repository.js";
 import { createSendWaToUsers, successPaymentSendWa, sendWaToAdmin} from "../../utils/sendwa.js";
+import jwt from "jsonwebtoken";
+
 
 export class PaymentServices {
     constructor() {
@@ -14,7 +16,7 @@ export class PaymentServices {
         this.paymentrepository = new PaymentRepository()
     }
     
-    async postPaymentServices(amount, product, customerName, email, handphone) {
+    async postPaymentServices(amount, product, customerName, email, handphone, id_users) {
         try {
             const merchantCode = ENV.duitku.merchantCode;
             const apiKey = ENV.duitku.apiKey;
@@ -51,13 +53,15 @@ export class PaymentServices {
                 timeout: 10000
             });           
             const payment_url = response.data.paymentUrl
-            const paymentPayload = {
-                merchantCodeId: merchantOrderId,
+           const paymentPayload = {
+                merchantOrderId, 
+                amount,
+                product
             }
-            payMent(paymentPayload)
+            const jwtPayment = payMent(paymentPayload)
 
-            createSendWaToUsers(handphone,merchantOrderId,customerName,product,amount,payment_url)
-            return await this.paymentrepository.createPayment({customerName, handphone, amount, email, merchantOrderId, payment_url, product})
+            // createSendWaToUsers(handphone,merchantOrderId,customerName,product,amount,payment_url)
+            return await this.paymentrepository.createPayment({customerName, handphone, amount, email, merchantOrderId, payment_url, product, id_users, jwtPayment})
 
         } catch (error) {
             logger.error(`DUITKU CREATE INVOICE ERROR: ${error.message}`);
@@ -66,14 +70,30 @@ export class PaymentServices {
     }
     
 
-    async callbackPaymentServices(merchantCodeId) {
+    async callbackPaymentServices(merchantOrderId, resultCode) {
             try {
 
+                const trx = await this.paymentrepository.findByMerchantOrderId(merchantOrderId)
+                if (!trx) return { success: false };
+                const token = trx.jwtPayment
+                if (!token) {
+                logger.error("❌ No jwtPayment stored for this trx");
+                return { success: false };
+                }
+                let decoded;
+                try {
+                decoded = jwt.verify(token, ENV.jwt.payment);
+                } catch (err) {
+                logger.error("❌ INVALID INTERNAL JWT");
+                return { success: false };
+                }
+                if(decoded.merchantOrderId !== merchantOrderId) {
+                          logger.error("❌ merchantOrderId mismatch", decoded.merchantOrderId, merchantOrderId);
+                    return {success: false}
+                } 
                 if (resultCode === "00") {
-                    successPaymentSendWa(handphone, merchantOrderId, customerName, email, productDetails, amount, reference);
-                    sendWaToAdmin(customerName, email, handphone, merchantOrderId, productDetails, amount, reference);
-
-                    console.log("cihuyyy")
+                    successPaymentSendWa(trx.handphone, trx.merchantOrderId, trx.customerName, trx.email, trx.productDetails, trx.amount,trx.paymentUrl);
+                    sendWaToAdmin(trx.customerName, trx.email, trx.handphone, trx.merchantOrderId, trx.product, trx.amount, trx.paymentUrl);
 
                     return { success: true };
                 }

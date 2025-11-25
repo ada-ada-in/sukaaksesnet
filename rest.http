@@ -38,29 +38,22 @@
 # Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyYzA4YWUyLWRiMTgtNGU3Ny05ZDI2LWM1ZmE0NGYxMWNmZCIsImVtYWlsIjoiZW1haWwyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzYyOTY1NjcwLCJleHAiOjE3NjM1NzA0NzB9.28GUZEkIl4YbkLNCZ1zlEiogGmOQ56G4j44u-MbXq_0
 # Content-Type: application/json
 
-POST https://999e478d70a4.ngrok-free.app/api/v1/payment
-Content-Type: application/json
-
-{
-    "amount": 150000,
-    "product": "Paket B",
-    "email": "chan.halim98@gmail.com",
-    "customerName": "chandra",
-    "handphone": "0895342754470"
-}
-
-# POST https://999e478d70a4.ngrok-free.app/api/v1/payment/callback
+# POST https://9b4a848e5089.ngrok-free.app/api/v1/payment
 # Content-Type: application/json
 
 # {
-#   "amount": "150000",
-#   "merchantOrderId": "SAN-1763916126015-34290",
-#   "resultCode": "00",
-#   "merchantCode": "DS24758",
-#   "reference": "DS2475825AIIKYU52B7IPDFA",
-#   "phoneNumber": "085366383088",
-#   "customerName": "chandra",
-#   "email": "chan.halim98@gmail.com",
-#   "productDetails": "Paket A"
-
+#     "amount": 150000,
+#     "product": "Paket B",
+#     "email": "chan.halim98@gmail.com",
+#     "customerName": "chandra",
+#     "handphone": "0895342754470",
+#     "id_users": "a01c6a7e-db02-464f-be5a-966a8978e623"
 # }
+
+POST https://9b4a848e5089.ngrok-free.app/api/v1/payment/callback
+Content-Type: application/json
+
+{
+  "merchantOrderId": "SAN-1764090793652-59473",
+  "resultCode": "00"
+}

@@ -1,6 +1,7 @@
 import { PaymentController } from "../app/controllers/payment.controller.js";
 import { validatePayment } from "../middleware/validate.middleware.js";
 import { paymentLimiter } from "../middleware/rateLimiter.middleware.js";
+import { paymentMiddleware, authMiddleware } from "../middleware/auth.middleware.js";
 import express from "express";
 
 

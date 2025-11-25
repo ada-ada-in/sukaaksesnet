@@ -7,8 +7,10 @@ export class PaymentRepository {
     async createPayment(data) {
         return await this.model.create(data);
     }
-    async findByMerchantOrderId(merchantCodeId){
-        return await this.model.findOne({where: {merchantCodeId}})
+    async findByMerchantOrderId(merchantOrderId) {
+        return await this.model.findOne({
+            where: { merchantOrderId }
+        });
     }
   
 }

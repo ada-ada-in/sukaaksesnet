@@ -9,17 +9,18 @@ export class PaymentController {
     } 
 
     postPayment = asyncHandler(async(req, res, next)=> {
-        const {amount, product, email, customerName, handphone} = req.body
-        const result = await this.paymentservices.postPaymentServices(amount, product, customerName, email, handphone)
+        const {amount, product, email, customerName, handphone, id_users, resultCode} = req.body
+        const result = await this.paymentservices.postPaymentServices(amount, product, customerName, email, handphone, id_users, resultCode)
         return new ResponseHandler(res).success201(result)
     })
 
     callbackPayment = asyncHandler(async(req, res, next) => {
-    const {amount, merchantOrderId, merchantCode, signature, resultCode, product} = req.body;   
-    console.log(req.body) 
-    // const {email, handhone, nama} = req.user  
-    await this.paymentservices.callbackPaymentServices({amount, merchantOrderId, merchantCode, signature, resultCode, product})
-    // await this.paymentservices.callbackPaymentServices(amount, merchantCode, merchantOrderId, signature, handhone, resultCode, product, nama, email)
-    return res.send("OK")
+    const callbackData = req.body;
+    const { merchantOrderId, resultCode, amount, signature } = callbackData;   
+    const responseHash = await this.paymentservices.callbackPaymentServices(merchantOrderId, resultCode, amount, signature)
+      console.log("🔥 CALLBACK HIT!", new Date().toISOString());
+  console.log("Headers:", req.headers);
+  console.log("Body:", req.body);
+    return res.send(responseHash)
     })
 }

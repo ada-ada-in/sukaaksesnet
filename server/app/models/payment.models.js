@@ -1,5 +1,6 @@
 import { Model, DataTypes } from "sequelize";
 import { sequelize } from "../../configs/database.js";
+import UsersModels from "./users.model.js";
 import { v4 as uuidv4 } from "uuid";
 
 class PaymentModels extends Model {}
@@ -12,6 +13,10 @@ class PaymentModels extends Model {}
       primaryKey: true,
       allowNull: false,
       unique: true,
+    },
+    id_users: {
+      type: DataTypes.UUID,
+      allowNull: false
     },
     customerName: {
       type: DataTypes.STRING(60),
@@ -40,6 +45,10 @@ class PaymentModels extends Model {}
     product: {
       type: DataTypes.STRING(100),
       allowNull: false,
+    },
+    jwtPayment: {
+      type: DataTypes.TEXT,
+      allowNull: false 
     },
     createdAt: {
       type: DataTypes.DATE,
@@ -75,5 +84,7 @@ class PaymentModels extends Model {}
     paranoid: false,
   }
 );
+
+UsersModels.hasMany(PaymentModels, {foreignKey: "id_users"})
 
 export default PaymentModels;

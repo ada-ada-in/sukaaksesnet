@@ -1616,3 +1616,194 @@ notNull Violation: payment.product cannot be null
 [2025-11-25 21:22:06] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-11-25 21:22:09] [31merror[39m: send Wa Error: Request failed with status code 403
 [2025-11-25 21:22:09] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:30:49] [32minfo[39m: Database Connected Successfully
+[2025-11-25 21:30:49] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 21:33:11] [32minfo[39m: Database Connected Successfully
+[2025-11-25 21:33:11] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 21:33:34] [32minfo[39m: Database Connected Successfully
+[2025-11-25 21:33:34] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 21:34:47] [32minfo[39m: Database Connected Successfully
+[2025-11-25 21:34:47] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 21:34:53] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-25 21:34:53] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-25 21:40:18] [32minfo[39m: Database Connected Successfully
+[2025-11-25 21:40:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 21:40:34] [32minfo[39m: Database Connected Successfully
+[2025-11-25 21:40:34] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 21:41:54] [32minfo[39m: Database Connected Successfully
+[2025-11-25 21:41:54] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 21:43:56] [32minfo[39m: Database Connected Successfully
+[2025-11-25 21:43:56] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:41:53] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:41:53] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:42:10] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:42:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:43:18] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:43:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:44:04] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:44:04] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:44:17] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:44:17] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:45:13] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:45:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:51:46] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:51:46] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:53:14] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:53:14] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:53:25] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:53:25] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:53:55] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1763916126015-34290' }
+[2025-11-25 22:54:36] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:37] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:53] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:53] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:57] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:58] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:59] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:59] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:59] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:59] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:54:59] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:55:44] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:55:44] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:55:46] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:55:49] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:56:01] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:56:01] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:56:21] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:56:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:56:23] [31merror[39m: CALLBACK ERROR: Unknown column 'payment.merchantCodeId' in 'where clause'
+[2025-11-25 22:56:44] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:56:44] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:56:46] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:56:47] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:56:47] [31merror[39m: CALLBACK ERROR: Invalid value { merchant_order_id: 'SAN-1764085521303-55667' }
+[2025-11-25 22:56:54] [32minfo[39m: Database Connected Successfully
+[2025-11-25 22:56:54] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 22:56:55] [31merror[39m: CALLBACK ERROR: Unknown column 'payment.merchantCodeId' in 'where clause'
+[2025-11-25 23:00:29] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:00:29] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:00:31] [31merror[39m: CALLBACK ERROR: this.paymentrepository.findByMerchantOrderId is not a function
+[2025-11-25 23:02:16] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:02:16] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:02:17] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:02:29] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:02:53] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:02:53] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:02:55] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:03:37] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:03:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:03:54] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:03:54] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:03:57] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:03:59] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:04:00] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:04:20] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:04:20] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:04:23] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:05:03] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:05:03] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:05:22] [31merror[39m: DUITKU CREATE INVOICE ERROR: "expiresIn" should be a number of seconds or string representing a timespan eg: "1d", "20h", 60
+[2025-11-25 23:05:22] [31merror[39m: [ERROR] POST /api/v1/payment - "expiresIn" should be a number of seconds or string representing a timespan eg: "1d", "20h", 60
+[2025-11-25 23:05:22] [31merror[39m: Server error! - "expiresIn" should be a number of seconds or string representing a timespan eg: "1d", "20h", 60, Stack: Error: "expiresIn" should be a number of seconds or string representing a timespan eg: "1d", "20h", 60
+    at module.exports [as sign] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\jsonwebtoken\sign.js:213:22)
+    at payMent (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/payment.js:5:14)
+    at PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:57:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
+[2025-11-25 23:05:34] [31merror[39m: DUITKU CREATE INVOICE ERROR: "expiresIn" should be a number of seconds or string representing a timespan eg: "1d", "20h", 60
+[2025-11-25 23:05:34] [31merror[39m: [ERROR] POST /api/v1/payment - "expiresIn" should be a number of seconds or string representing a timespan eg: "1d", "20h", 60
+[2025-11-25 23:05:34] [31merror[39m: Server error! - "expiresIn" should be a number of seconds or string representing a timespan eg: "1d", "20h", 60, Stack: Error: "expiresIn" should be a number of seconds or string representing a timespan eg: "1d", "20h", 60
+    at module.exports [as sign] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\jsonwebtoken\sign.js:213:22)
+    at payMent (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/utils/payment.js:5:14)
+    at PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:57:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:13:24
+[2025-11-25 23:05:43] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:05:43] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:06:29] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:08:59] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:08:59] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:09:42] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:09:45] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:12:10] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:12:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:12:13] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:12:13] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:14:18] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:14:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:14:29] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:14:30] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:16:14] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:19:11] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:19:11] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:19:41] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:19:41] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:19:47] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:19:49] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:20:07] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:20:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:20:09] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:22:37] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:22:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:22:39] [31merror[39m: CALLBACK ERROR: resultCode is not defined
+[2025-11-25 23:23:06] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:23:06] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:23:21] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:23:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:23:42] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:23:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:30:14] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:30:14] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:30:22] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:30:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:30:43] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:30:43] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:30:47] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:33:05] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:33:05] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:33:07] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:38:08] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:38:08] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:38:21] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:38:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:39:10] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:39:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:39:13] [32minfo[39m: token length:
+[2025-11-25 23:39:13] [32minfo[39m: token:
+[2025-11-25 23:39:13] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:41:01] [32minfo[39m: token length:
+[2025-11-25 23:41:01] [32minfo[39m: token:
+[2025-11-25 23:41:01] [31merror[39m: ❌ INVALID INTERNAL JWT
+[2025-11-25 23:42:30] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:42:30] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:42:31] [32minfo[39m: token length:
+[2025-11-25 23:42:31] [32minfo[39m: token:
+[2025-11-25 23:43:00] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:43:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:43:17] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:43:17] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:43:21] [32minfo[39m: token length:
+[2025-11-25 23:43:21] [32minfo[39m: token:
+[2025-11-25 23:43:35] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:43:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:43:58] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:43:58] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:44:39] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:44:39] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:44:42] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:44:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:50:31] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:50:31] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-25 23:50:40] [32minfo[39m: Database Connected Successfully
+[2025-11-25 23:50:40] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-26 00:02:33] [32minfo[39m: Database Connected Successfully
+[2025-11-26 00:02:33] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-26 00:02:54] [32minfo[39m: Database Connected Successfully
+[2025-11-26 00:02:54] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-26 00:08:39] [32minfo[39m: Database Connected Successfully
+[2025-11-26 00:08:39] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-26 00:08:48] [32minfo[39m: Database Connected Successfully
+[2025-11-26 00:08:48] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-26 00:20:32] [32minfo[39m: Database Connected Successfully
+[2025-11-26 00:20:32] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000

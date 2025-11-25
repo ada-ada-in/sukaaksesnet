@@ -52,7 +52,7 @@ SUKA AKSES NET
             `);
 }
 
-export const successPaymentSendWa = async (phoneNumber,merchantOrderId,customerName,email,productDetails,amount,reference) => {
+export const successPaymentSendWa = async (phoneNumber,merchantOrderId,customerName,email,productDetails,amount,payment_url) => {
     let waNumber = phoneNumber.replace(/[^0-9]/g, '');
     if (waNumber.startsWith("0")) waNumber = "62" + waNumber.slice(1);
     if (!waNumber.startsWith("62")) waNumber = "62" + waNumber;
@@ -65,15 +65,15 @@ Email : ${email}
 Paket : ${productDetails}
 Jumlah : Rp ${Number(amount).toLocaleString("id-ID")}
 
-Bukti pembayaran dapat dilihat dengan reference:
-👉 ${reference}
+Bukti pembayaran dapat dilihat dengan Link:
+👉 ${payment_url}
 
 Terima kasih.
 SUKA AKSES NET
                 `);
 }
 
-export const sendWaToAdmin = async (customerName,email,phoneNumber,merchantOrderId,productDetails,amount,reference) => {
+export const sendWaToAdmin = async (customerName,email,phoneNumber,merchantOrderId,productDetails,amount,payment_url) => {
     let waNumber = phoneNumber.replace(/[^0-9]/g, '');
     if (waNumber.startsWith("0")) waNumber = "62" + waNumber.slice(1);
     if (!waNumber.startsWith("62")) waNumber = "62" + waNumber;
@@ -87,7 +87,7 @@ Invoice : ${merchantOrderId}
 Paket : ${productDetails}
 Jumlah : Rp ${Number(amount).toLocaleString("id-ID")}
 
-Reference: ${reference}
+Link: ${payment_url}
                 `);
 
                 return { success: true };

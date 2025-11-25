@@ -8,7 +8,8 @@ export const validatePayment = (req, res, next) => {
     product: Joi.string().required(),
     customerName: Joi.string().required(),
     email: Joi.string().email().required(),
-    handphone: Joi.string().required()
+    handphone: Joi.string().required(),
+    id_users: Joi.string().required()
   })
   const { error } = schema.validate(req.body);
   if (error) return new ResponseHandler(res).error400(error.details[0].message);
