@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - SUKA AKSES NET</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .input-group {
+            position: relative;
+        }
+        
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            transform: translateY(-25px) scale(0.8);
+            color: #667eea;
+        }
+        
+        .input-group label {
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            transition: all 0.2s ease;
+            pointer-events: none;
+            color: #9ca3af;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+        }
+        
+        .logo-subtext {
+            font-size: 10px;
+            color: #666;
+            margin-top: -2px;
+        }
+        
+        .show-password {
+            cursor: pointer;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+        }
+        
+        .show-password:hover {
+            color: #667eea;
+        }
+        
+        .social-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128C7E;
+        }
+        
+        .right-panel {
+            background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .right-panel::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
+        }
+        
+        .right-panel-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .strength-bar {
+            height: 4px;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .strength-weak { background-color: #ef4444; width: 33.33%; }
+        .strength-medium { background-color: #f59e0b; width: 66.66%; }
+        .strength-strong { background-color: #10b981; width: 100%; }
+        
+        @media (max-width: 768px) {
+            .right-panel {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed top-0 w-full z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div>
+                        <div class="logo-text">SUKA AKSES</div>
+                        <div class="logo-subtext">INTERNET PROVIDER</div>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium">Beranda</a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Layanan</a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Bantuan</a>
+                </nav>
+                <a href="login.html" class="text-indigo-600 hover:text-indigo-700 font-medium">Masuk</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex min-h-screen pt-16">
+        <!-- Left Panel - Register Form -->
+        <div class="w-full lg:w-1/2 flex items-center justify-center p-8 bg-gray-50">
+            <div class="w-full max-w-md">
+                <!-- Mobile Logo -->
+                <div class="logo-container justify-center mb-8 lg:hidden">
+                    <div class="logo-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div>
+                        <div class="logo-text">SUKA AKSES</div>
+                        <div class="logo-subtext">INTERNET PROVIDER</div>
+                    </div>
+                </div>
+                
+                <!-- Register Card -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <!-- Card Header -->
+                    <div class="gradient-bg text-white p-8 text-center">
+                        <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-user-plus text-4xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-2">Daftar Akun Baru</h2>
+                        <p class="opacity-90">Buat akun SUKA AKSES NET Anda</p>
+                    </div>
+                    
+                    <!-- Card Body -->
+                    <div class="p-8">
+                        <form id="registerForm">
+                            <!-- Full Name Input -->
+                            <div class="input-group mb-6">
+                                <input type="text" id="fullName" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <label for="fullName">Nama Lengkap</label>
+                            </div>
+                            
+                            <!-- Email Input -->
+                            <div class="input-group mb-6">
+                                <input type="email" id="email" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <label for="email">Email</label>
+                            </div>
+                            
+                            <!-- Phone Input -->
+                            <div class="input-group mb-6">
+                                <input type="tel" id="phone" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <label for="phone">Nomor Telepon</label>
+                            </div>
+                            
+                            <!-- Password Input -->
+                            <div class="input-group mb-6">
+                                <input type="password" id="password" placeholder=" " class="w-full px-3 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition" onkeyup="checkPasswordStrength(this.value)">
+                                <label for="password">Password</label>
+                                <i class="fas fa-eye show-password" onclick="togglePassword('password')"></i>
+                            </div>
+                            
+                            <!-- Password Strength Indicator -->
+                            <div class="mb-6">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-xs text-gray-600">Kekuatan Password</span>
+                                    <span id="strengthText" class="text-xs text-gray-600"></span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-1">
+                                    <div id="strengthBar" class="strength-bar h-1 rounded-full"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Confirm Password Input -->
+                            <div class="input-group mb-6">
+                                <input type="password" id="confirmPassword" placeholder=" " class="w-full px-3 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <label for="confirmPassword">Konfirmasi Password</label>
+                                <i class="fas fa-eye show-password" onclick="togglePassword('confirmPassword')"></i>
+                            </div>
+                            
+                            <!-- Terms & Conditions -->
+                            <div class="mb-6">
+                                <label class="flex items-start">
+                                    <input type="checkbox" id="terms" class="mt-1 mr-2 rounded text-indigo-600 focus:ring-indigo-500">
+                                    <span class="text-sm text-gray-600">
+                                        Saya setuju dengan 
+                                        <a href="#" class="text-indigo-600 hover:text-indigo-700">Syarat & Ketentuan</a> 
+                                        dan 
+                                        <a href="#" class="text-indigo-600 hover:text-indigo-700">Kebijakan Privasi</a>
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <!-- Register Button -->
+                            <button type="submit" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold mb-6">
+                                Daftar Sekarang
+                            </button>
+                            
+                            <!-- Divider -->
+                            <div class="relative mb-6">
+                                <div class="absolute inset-0 flex items-center">
+                                    <div class="w-full border-t border-gray-300"></div>
+                                </div>
+                                <div class="relative flex justify-center text-sm">
+                                    <span class="px-2 bg-white text-gray-500">Atau daftar dengan</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Social Register -->
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <button type="button" class="social-btn flex items-center justify-center px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+                                    <i class="fab fa-google text-red-500 mr-2"></i>
+                                    <span class="text-sm font-medium">Google</span>
+                                </button>
+                                <button type="button" class="social-btn flex items-center justify-center px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+                                    <i class="fab fa-facebook-f text-blue-600 mr-2"></i>
+                                    <span class="text-sm font-medium">Facebook</span>
+                                </button>
+                            </div>
+                            
+                            <!-- Login Link -->
+                            <p class="text-center text-sm text-gray-600">
+                                Sudah punya akun? 
+                                <a href="login.html" class="text-indigo-600 hover:text-indigo-700 font-medium">Masuk di sini</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Benefits Card -->
+                <div class="mt-8 bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Keuntungan Bergabung</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-0.5 mr-3"></i>
+                            <span class="text-sm text-gray-600">Internet super cepat hingga 100 Mbps</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-0.5 mr-3"></i>
+                            <span class="text-sm text-gray-600">Support teknis 24/7</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-0.5 mr-3"></i>
+                            <span class="text-sm text-gray-600">Gratis biaya instalasi</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-0.5 mr-3"></i>
+                            <span class="text-sm text-gray-600">Tanpa batasan kuota</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Panel - Background Image -->
+        <div class="right-panel w-1/2 hidden lg:flex items-center justify-center">
+            <div class="right-panel-content text-white text-center p-12">
+                <div class="mb-8">
+                    <div class="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-5xl"></i>
+                    </div>
+                    <h1 class="text-4xl font-bold mb-4">Bergabung dengan Kami</h1>
+                    <p class="text-xl opacity-90">Daftar sekarang dan nikmati internet super cepat dari SUKA AKSES NET</p>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-6 mt-12">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold">10K+</div>
+                        <div class="text-sm opacity-75">Pelanggan Aktif</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold">99.9%</div>
+                        <div class="text-sm opacity-75">Uptime</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold">24/7</div>
+                        <div class="text-sm opacity-75">Support</div>
+                    </div>
+                </div>
+                
+                <!-- Additional Features -->
+                <div class="mt-12 space-y-4">
+                    <div class="flex items-center justify-center space-x-3">
+                        <i class="fas fa-wifi text-2xl"></i>
+                        <span class="text-lg">Koneksi Stabil</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                        <span class="text-lg">Keamanan Terjamin</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3">
+                        <i class="fas fa-headset text-2xl"></i>
+                        <span class="text-lg">Support 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20butuh%20bantuan%20pendaftaran" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Success/Error Message Container -->
+    <div id="messageContainer" class="fixed top-20 right-4 z-50"></div>
+
+    <script>
+        // Toggle Password Visibility
+        function togglePassword(fieldId) {
+            const passwordInput = document.getElementById(fieldId);
+            const passwordIcon = passwordInput.nextElementSibling;
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                passwordIcon.classList.remove('fa-eye');
+                passwordIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                passwordIcon.classList.remove('fa-eye-slash');
+                passwordIcon.classList.add('fa-eye');
+            }
+        }
+        
+        // Check Password Strength
+        function checkPasswordStrength(password) {
+            const strengthBar = document.getElementById('strengthBar');
+            const strengthText = document.getElementById('strengthText');
+            
+            let strength = 0;
+            
+            if (password.length >= 8) strength++;
+            if (password.match(/[a-z]+/)) strength++;
+            if (password.match(/[A-Z]+/)) strength++;
+            if (password.match(/[0-9]+/)) strength++;
+            if (password.match(/[$@#&!]+/)) strength++;
+            
+            // Remove all strength classes
+            strengthBar.classList.remove('strength-weak', 'strength-medium', 'strength-strong');
+            
+            if (password.length === 0) {
+                strengthBar.style.width = '0';
+                strengthText.textContent = '';
+            } else if (strength <= 2) {
+                strengthBar.classList.add('strength-weak');
+                strengthText.textContent = 'Lemah';
+                strengthText.style.color = '#ef4444';
+            } else if (strength <= 3) {
+                strengthBar.classList.add('strength-medium');
+                strengthText.textContent = 'Sedang';
+                strengthText.style.color = '#f59e0b';
+            } else {
+                strengthBar.classList.add('strength-strong');
+                strengthText.textContent = 'Kuat';
+                strengthText.style.color = '#10b981';
+            }
+        }
+        
+        // Show Message Function
+        function showMessage(message, type = 'success') {
+            const messageContainer = document.getElementById('messageContainer');
+            const messageDiv = document.createElement('div');
+            
+            const bgColor = type === 'success' ? 'bg-green-500' : 'bg-red-500';
+            const icon = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
+            
+            messageDiv.className = `${bgColor} text-white px-6 py-4 rounded-lg shadow-lg mb-4 flex items-center`;
+            messageDiv.innerHTML = `
+                <i class="fas ${icon} mr-3"></i>
+                <span>${message}</span>
+            `;
+            
+            messageContainer.appendChild(messageDiv);
+            
+            // Remove message after 3 seconds
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 3000);
+        }
+        
+        // Form Validation and Submission
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const terms = document.getElementById('terms').checked;
+            
+            // Validation
+            if (!fullName || !email || !phone || !password || !confirmPassword) {
+                showMessage('Silakan isi semua field!', 'error');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showMessage('Format email tidak valid!', 'error');
+                return;
+            }
+            
+            // Phone validation
+            const phoneRegex = /^[\d\s\-\+\(\)]+$/;
+            if (!phoneRegex.test(phone) || phone.length < 10) {
+                showMessage('Nomor telepon tidak valid!', 'error');
+                return;
+            }
+            
+            // Password strength validation
+            if (password.length < 8) {
+                showMessage('Password minimal 8 karakter!', 'error');
+                return;
+            }
+            
+            // Password match validation
+            if (password !== confirmPassword) {
+                showMessage('Password tidak cocok!', 'error');
+                return;
+            }
+            
+            // Terms validation
+            if (!terms) {
+                showMessage('Harap setujui syarat & ketentuan!', 'error');
+                return;
+            }
+            
+            // Simulate registration process
+            const submitButton = e.target.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Mendaftar...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                // Simulate successful registration
+                showMessage('Pendaftaran berhasil! Silakan cek email Anda.', 'success');
+                
+                // Redirect to login after 2 seconds
+                setTimeout(() => {
+                    window.location.href = 'login.html';
+                }, 2000);
+                
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 1500);
+        });
+        
+        // Social Register Handlers
+        document.querySelectorAll('.social-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const platform = this.textContent.trim();
+                showMessage(`Daftar dengan ${platform} (Demo)`, 'success');
+            });
+        });
+        
+        // Terms & Privacy Links
+        document.querySelectorAll('a[href="#"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (this.textContent.includes('Syarat') || this.textContent.includes('Kebijakan')) {
+                    showMessage('Halaman akan segera tersedia (Demo)', 'success');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -17,6 +17,8 @@
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
+    "edge": "^7.10.1",
+    "edge.js": "^6.3.0",
     "express": "^4.19.2",
     "express-edge": "^3.0.0",
     "express-rate-limit": "^8.2.1",

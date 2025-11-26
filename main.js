@@ -31,7 +31,7 @@ process.on("unhandledRejection", (err) => {
 process.on("uncaughtException", (err) => {
   logger.error(`💀 Uncaught Exception: ${err.message}`, { stack: err.stack });
   setTimeout(() => process.exit(1), 100);
-});
+})
 
 
 const start = async () => {

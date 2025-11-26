@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akses Ditolak - SUKA AKSES NET</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+        }
+        
+        .logo-subtext {
+            font-size: 10px;
+            color: #666;
+            margin-top: -2px;
+        }
+        
+        .error-animation {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .lock-animation {
+            animation: lockPulse 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes lockPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128C7E;
+        }
+        
+        .btn-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(102, 126, 234, 0.4);
+        }
+        
+        .permission-card {
+            transition: all 0.3s ease;
+        }
+        
+        .permission-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div>
+                        <div class="logo-text">SUKA AKSES</div>
+                        <div class="logo-subtext">INTERNET PROVIDER</div>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-indigo-600 hover:text-indigo-700 font-medium">
+                        <i class="fas fa-home mr-1"></i>
+                        Beranda
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex items-center justify-center min-h-screen px-4 py-16">
+        <div class="max-w-2xl w-full">
+            <!-- Error Card -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden error-animation">
+                <!-- Error Header -->
+                <div class="gradient-bg text-white p-8 text-center">
+                    <div class="w-24 h-24 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-6 lock-animation">
+                        <i class="fas fa-lock text-4xl"></i>
+                    </div>
+                    <h1 class="text-3xl font-bold mb-4">Akses Ditolak</h1>
+                    <p class="text-lg opacity-90">Maaf, Anda tidak memiliki akses ke halaman ini</p>
+                </div>
+                
+                <!-- Error Details -->
+                <div class="p-8">
+                    <!-- Current Role Info -->
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-red-500 mt-0.5 mr-3"></i>
+                            <div>
+                                <h3 class="text-lg font-semibold text-red-800 mb-1">Informasi Akses</h3>
+                                <div class="space-y-2 text-sm text-red-700">
+                                    <p><strong>Halaman yang diminta:</strong> <span id="requestedPage">/admin/dashboard</span></p>
+                                    <p><strong>Role Anda saat ini:</strong> <span id="currentRole">Viewer</span></p>
+                                    <p><strong>Level Role:</strong> <span id="roleLevel">4</span></p>
+                                    <p><strong>Waktu akses:</strong> <span id="accessTime"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Required Role -->
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-0.5 mr-3"></i>
+                            <div>
+                                <h3 class="text-lg font-semibold text-blue-800 mb-1">Role yang Diperlukan</h3>
+                                <div class="space-y-2 text-sm text-blue-700">
+                                    <p><strong>Minimal Role:</strong> Admin</p>
+                                    <p><strong>Minimal Level:</strong> 2</p>
+                                    <p><strong>Permissions yang dibutuhkan:</strong></p>
+                                    <ul class="list-disc list-inside ml-4 mt-1">
+                                        <li>Dashboard Access</li>
+                                        <li>User Management View</li>
+                                        <li>System Configuration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Available Actions -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Aksi Tersedia untuk Role Anda</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="permission-card bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-tachometer-alt text-green-500 mr-2"></i>
+                                    <span class="font-medium text-gray-800">Dashboard</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Akses ke dashboard viewer</p>
+                                <a href="/viewer/dashboard" class="text-green-600 hover:text-green-700 text-sm font-medium mt-2 inline-block">
+                                    Akses Dashboard →
+                                </a>
+                            </div>
+                            
+                            <div class="permission-card bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-chart-bar text-green-500 mr-2"></i>
+                                    <span class="font-medium text-gray-800">Laporan</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Lihat laporan dan statistik</p>
+                                <a href="/viewer/reports" class="text-green-600 hover:text-green-700 text-sm font-medium mt-2 inline-block">
+                                    Lihat Laporan →
+                                </a>
+                            </div>
+                            
+                            <div class="permission-card bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-user text-green-500 mr-2"></i>
+                                    <span class="font-medium text-gray-800">Profil</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Kelola profil pengguna</p>
+                                <a href="/viewer/profile" class="text-green-600 hover:text-green-700 text-sm font-medium mt-2 inline-block">
+                                    Ke Profil →
+                                </a>
+                            </div>
+                            
+                            <div class="permission-card bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-history text-green-500 mr-2"></i>
+                                    <span class="font-medium text-gray-800">Riwayat</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Lihat riwayat transaksi</p>
+                                <a href="/viewer/history" class="text-green-600 hover:text-green-700 text-sm font-medium mt-2 inline-block">
+                                    Lihat Riwayat →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="requestAccess()" class="btn-gradient text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center">
+                            <i class="fas fa-key mr-2"></i>
+                            Request Akses
+                        </button>
+                        <a href="index.html" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover:bg-gray-300 transition">
+                            <i class="fas fa-home mr-2"></i>
+                            Kembali ke Beranda
+                        </a>
+                    </div>
+                    
+                    <!-- Contact Support -->
+                    <div class="mt-6 text-center">
+                        <p class="text-sm text-gray-600">
+                            Butuh bantuan? 
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20butuh%20bantuan%20akses%20role" target="_blank" class="text-indigo-600 hover:text-indigo-700 font-medium">
+                                Hubungi Support
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Info -->
+            <div class="mt-8 bg-white rounded-xl shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Tentang Role & Permission</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-crown text-indigo-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-gray-800">Super Admin</h4>
+                        <p class="text-sm text-gray-600">Level 1 - Akses penuh</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-user-tie text-blue-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-gray-800">Admin</h4>
+                        <p class="text-sm text-gray-600">Level 2 - Akses administratif</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-eye text-green-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-gray-800">Viewer</h4>
+                        <p class="text-sm text-gray-600">Level 4 - Akses terbatas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20butuh%20bantuan%20akses%20role" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Success/Error Message Container -->
+    <div id="messageContainer" class="fixed top-20 right-4 z-50"></div>
+
+    <!-- Request Access Modal -->
+    <div id="requestModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg shadow-xl max-w-md w-full">
+                <div class="gradient-bg text-white p-6 rounded-t-lg">
+                    <h3 class="text-xl font-semibold">Request Akses</h3>
+                    <p class="text-sm opacity-90">Kirim permintaan akses ke admin</p>
+                </div>
+                <form class="p-6">
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Halaman yang Diminta</label>
+                        <input type="text" id="requestedPageInput" value="/admin/dashboard" class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-gray-50" readonly>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Alasan Request</label>
+                        <textarea id="reasonInput" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" placeholder="Jelaskan alasan Anda membutuhkan akses ke halaman ini"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Prioritas</label>
+                        <select id="priorityInput" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500">
+                            <option value="low">Rendah</option>
+                            <option value="medium" selected>Sedang</option>
+                            <option value="high">Tinggi</option>
+                            <option value="urgent">Darurat</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-end space-x-3">
+                        <button type="button" onclick="closeRequestModal()" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300">
+                            Batal
+                        </button>
+                        <button type="button" onclick="submitRequest()" class="btn-gradient text-white px-4 py-2 rounded-lg">
+                            Kirim Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const requestedPage = urlParams.get('page') || '/admin/dashboard';
+        const currentRole = urlParams.get('role') || 'Viewer';
+        const roleLevel = urlParams.get('level') || '4';
+        
+        // Set values on page load
+        document.getElementById('requestedPage').textContent = requestedPage;
+        document.getElementById('currentRole').textContent = currentRole;
+        document.getElementById('roleLevel').textContent = roleLevel;
+        document.getElementById('requestedPageInput').value = requestedPage;
+        
+        // Set current time
+        document.getElementById('accessTime').textContent = new Date().toLocaleString('id-ID');
+        
+        // Show message function
+        function showMessage(message, type = 'success') {
+            const messageContainer = document.getElementById('messageContainer');
+            const messageDiv = document.createElement('div');
+            
+            const bgColor = type === 'success' ? 'bg-green-500' : 'bg-red-500';
+            const icon = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
+            
+            messageDiv.className = `${bgColor} text-white px-6 py-4 rounded-lg shadow-lg mb-4 flex items-center`;
+            messageDiv.innerHTML = `
+                <i class="fas ${icon} mr-3"></i>
+                <span>${message}</span>
+            `;
+            
+            messageContainer.appendChild(messageDiv);
+            
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 4000);
+        }
+        
+        // Request access functions
+        function requestAccess() {
+            document.getElementById('requestModal').classList.remove('hidden');
+        }
+        
+        function closeRequestModal() {
+            document.getElementById('requestModal').classList.add('hidden');
+        }
+        
+        function submitRequest() {
+            const reason = document.getElementById('reasonInput').value;
+            const priority = document.getElementById('priorityInput').value;
+            
+            if (!reason.trim()) {
+                showMessage('Silakan isi alasan request!', 'error');
+                return;
+            }
+            
+            // Simulate sending request
+            showMessage('Request akses telah dikirim ke admin', 'success');
+            closeRequestModal();
+            
+            // Clear form
+            document.getElementById('reasonInput').value = '';
+            document.getElementById('priorityInput').value = 'medium';
+        }
+        
+        // Add shake animation to error card
+        setTimeout(() => {
+            document.querySelector('.error-animation').classList.remove('error-animation');
+        }, 500);
+        
+        // Auto redirect after 30 seconds
+        setTimeout(() => {
+            if (confirm('Anda tidak memiliki akses. Apakah ingin kembali ke beranda?')) {
+                window.location.href = 'index.html';
+            }
+        }, 30000);
+        
+        // Add keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeRequestModal();
+            }
+        });
+        
+        // Close modal when clicking outside
+        document.getElementById('requestModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeRequestModal();
+            }
+        });
+    </script>
+</body>
+</html>

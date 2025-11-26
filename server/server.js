@@ -2,6 +2,7 @@ import express from "express";
 import usersRouter from "./routes/users.routes.js";
 import authRouter from "./routes/auth.route.js";
 import paymentRouter from "./routes/payment.route.js";
+import viewRouter from "./routes/views.route.js";
 import {errorHandler} from "./middleware/errorHandler.middleware.js";
 import {globalLimiter} from "./middleware/rateLimiter.middleware.js";
 
@@ -15,12 +16,17 @@ app.use(express.json({
     req.rawBody = buf && buf.length ? buf.toString('utf8') : '';
   }
 }));
+app.use(express.static("public"));
+
 
 // Route
 app.use('/api/v1', usersRouter);
 app.use('/api/v1', authRouter);
 app.use('/api/v1', paymentRouter)
 
+
+// View route
+app.use('/', viewRouter)
 
 
 // Error Handling Middleware
