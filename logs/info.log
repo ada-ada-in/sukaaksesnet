@@ -1895,3 +1895,20 @@ notNull Violation: payment.product cannot be null
 [2025-11-26 22:34:09] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-11-26 22:34:26] [32minfo[39m: Database Connected Successfully
 [2025-11-26 22:34:26] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-26 22:35:21] [32minfo[39m: Database Connected Successfully
+[2025-11-26 22:35:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-26 22:40:51] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'navbar')
+[2025-11-26 22:40:55] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'navbar')
+[2025-11-26 22:42:45] [31merror[39m: ❌ Unhandled Rejection: @slot tag must appear as top level tag inside the @component tag
+[2025-11-26 22:43:31] [31merror[39m: ❌ Unhandled Rejection: Cannot resolve "C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\views\components\navbar-main.edge". Make sure the file exists
+[2025-11-26 22:43:34] [31merror[39m: ❌ Unhandled Rejection: Cannot resolve "C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\views\components\navbar-main.edge". Make sure the file exists
+[2025-11-26 22:44:16] [31merror[39m: ❌ Unhandled Rejection: Cannot resolve "C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\views\components\navbar-main.edge". Make sure the file exists
+[2025-11-26 22:44:58] [32minfo[39m: Database Connected Successfully
+[2025-11-26 22:44:58] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 18:47:35] [32minfo[39m: Database Connected Successfully
+[2025-11-27 18:47:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 18:47:43] [31merror[39m: ❌ Unhandled Rejection: Cannot resolve "C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\views\components\navbar-main.edge". Make sure the file exists
+[2025-11-27 18:52:08] [31merror[39m: ❌ Unhandled Rejection: Cannot resolve "C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\views\components\navbar-main.edge". Make sure the file exists
+[2025-11-27 19:08:01] [31merror[39m: ❌ Unhandled Rejection: Cannot resolve "C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\components\head.edge". Make sure the file exists
+[2025-11-27 19:23:08] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:23:08] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000

@@ -1,0 +1,43 @@
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+            <div class="logo-container flex items-center gap-2">
+                <i class="fas fa-wifi text-indigo-600 text-2xl"></i>
+                <div>
+                    <div class="font-semibold text-indigo-600">SUKA AKSES</div>
+                    <div class="logo-subtext text-sm">INTERNET PROVIDER</div>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link font-medium hover:text-indigo-600">Beranda</a>
+                <a href="#features" class="nav-link font-medium hover:text-indigo-600">Fitur</a>
+                <a href="#pricing" class="nav-link font-medium hover:text-indigo-600">Harga</a>
+                <a href="#testimonials" class="nav-link font-medium hover:text-indigo-600">Testimoni</a>
+                <a href="#faq" class="nav-link font-medium hover:text-indigo-600">FAQ</a>
+            </nav>
+
+            <!-- Action & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="/auth/login" class="hidden md:block font-medium hover:text-indigo-600">Masuk</a>
+                <a href="/auth/register" class="hidden md:block btn-gradient text-white px-6 py-2 rounded-lg font-medium">Daftar</a>
+
+                <button id="menuToggle" class="md:hidden w-8 h-8 flex flex-col justify-center items-center gap-1.5 focus:outline-none">
+                    <span class="w-6 h-0.5 bg-gray-800 rounded transition-all"></span>
+                    <span class="w-6 h-0.5 bg-gray-800 rounded transition-all"></span>
+                    <span class="w-6 h-0.5 bg-gray-800 rounded transition-all"></span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+<nav id="mobile-menu"
+     class="hidden flex-col px-6 py-6 space-y-5 bg-white shadow-lg border-t border-gray-200 md:hidden transition-all duration-300 ease-in-out">
+      <div class="border-t pt-4">
+        <a href="/auth/login" class="block text-black text-center py-2 rounded-lg font-medium mb-4">Masuk</a>
+        <a href="/auth/register" class="block btn-gradient text-white text-center py-2 rounded-lg font-medium">Daftar</a>
+      </div>
+  </nav>
+</header>

@@ -1,4 +1,13 @@
- body {
+    #mobile-menu {
+  transition: max-height .3s ease, opacity .3s ease;
+}
+
+#mobile-menu.hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+body {
             font-family: 'Poppins', sans-serif;
         }
         

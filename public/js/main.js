@@ -24,3 +24,32 @@
                 }
             });
         });
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const bars = toggleBtn.querySelectorAll("span");
+
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+
+    bars[0].classList.toggle("rotate-45");
+    bars[0].classList.toggle("translate-y-2");
+
+    bars[1].classList.toggle("opacity-0");
+
+    bars[2].classList.toggle("-rotate-45");
+    bars[2].classList.toggle("-translate-y-2");
+  });
+
+  // Auto-close menu when clicking link
+  document.querySelectorAll("#mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      bars.forEach(bar => {
+        bar.classList.remove("rotate-45", "-rotate-45", "translate-y-2", "-translate-y-2", "opacity-0");
+      });
+    });
+  });
+});
