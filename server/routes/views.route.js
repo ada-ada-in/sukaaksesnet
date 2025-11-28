@@ -23,6 +23,16 @@ viewRouter.get("/auth/forget-password", async (req, res) => {
   res.send(html);
 });
 
+viewRouter.get("/choose-packet", async (req, res) => {
+  const html = await edge.render("pages/main/choose", { title: "Choose Packet" });
+  res.send(html);
+});
+
+viewRouter.get("/profile/me", async (req, res) => {
+  const html = await edge.render("pages/main/profile", { title: "Profile" });
+  res.send(html);
+});
+
 viewRouter.get("/missing-role", async (req, res) => {
   const html = await edge.render("pages/error/missing-role");
   res.status(404).send(html);

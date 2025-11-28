@@ -1,0 +1,76 @@
+@include('components/head')
+
+<body class="bg-gray-50 min-h-screen">
+
+    @include('components/navbar')
+    
+    <!-- HEADER -->
+    <header class="gradient-bg text-white text-center py-8 mt-12">
+        <h1 class="text-3xl font-bold">Konfirmasi Pembayaran</h1>
+        <p class="opacity-90">Detail pembayaran paket Anda</p>
+    </header>
+
+    <!-- CARD -->
+    <main class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8 mt-10">
+        
+        <!-- User -->
+        <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl">
+                <i class="fas fa-user"></i>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg" id="namaPelanggan">Chandra Halim</h3>
+                <p class="text-gray-600 text-sm" id="nomorPelanggan">+62895342754470</p>
+            </div>
+        </div>
+
+        <hr class="my-6">
+
+        <!-- DETAIL -->
+        <div class="space-y-3 text-sm">
+            <div class="flex justify-between">
+                <span class="text-gray-600">Paket Internet</span>
+                <span class="font-semibold" id="paketinternet"></span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-600">Harga</span>
+                <span class="font-semibold" id="hargaPaket"></span>
+            </div>
+        </div>
+
+        <hr class="my-6">
+
+        <div class="flex justify-between font-bold text-lg mb-6">
+            <span>Total</span>
+            <span id="totalTagihan">Rp 180.000</span>
+        </div>
+
+        <!-- WA Payment Message -->
+        <div class="bg-blue-50 text-blue-700 text-sm p-4 rounded-lg mb-6 border border-blue-200">
+            <i class="fas fa-info-circle mr-2"></i>
+            Link pembayaran akan dikirim melalui WhatsApp setelah Anda klik tombol "Bayar Sekarang".
+        </div>
+
+        <!-- PAY BUTTON -->
+        <button id="btnBayar" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold mt-4">
+            Bayar Sekarang
+        </button>
+
+    </main>
+
+    <script>
+        const storedData = localStorage.getItem("paketDipilih");
+
+        if (storedData) {
+            const paket = JSON.parse(storedData);
+            document.getElementById("paketinternet").innerText = paket.plan;
+            document.getElementById("hargaPaket").innerText =
+                "Rp " + Number(paket.price).toLocaleString("id-ID");
+            document.getElementById("totalTagihan").innerText =
+                "Rp " + Number(paket.price).toLocaleString("id-ID");
+        }
+
+    </script>
+
+</body>
+</html>

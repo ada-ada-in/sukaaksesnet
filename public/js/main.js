@@ -11,7 +11,6 @@ faqQuestions.forEach(question => {
     });
 });
         
-        // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -22,7 +21,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     block: 'start'});}
     });
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("menuToggle");
@@ -41,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     bars[2].classList.toggle("-translate-y-2");
   });
 
-  // Auto-close menu when clicking link
   document.querySelectorAll("#mobile-menu a").forEach(link => {
     link.addEventListener("click", () => {
       mobileMenu.classList.add("hidden");
@@ -51,3 +48,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function pilihpaket(plan, price) {
+    const data = {
+        plan,
+        price,
+    };
+
+    const token = localStorage.getItem('token')
+    if(!token) {
+      window.location.href = "/auth/login"
+      return
+    }
+
+    localStorage.setItem("paketDipilih", JSON.stringify(data));
+
+    window.location.href = "/choose-packet";
+
+}
