@@ -2420,3 +2420,34 @@ notNull Violation: payment.product cannot be null
 [2025-11-28 21:19:40] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-11-28 21:20:14] [32minfo[39m: Database Connected Successfully
 [2025-11-28 21:20:14] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 21:20:23] [32minfo[39m: Database Connected Successfully
+[2025-11-28 21:20:23] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 21:47:13] [32minfo[39m: Database Connected Successfully
+[2025-11-28 21:47:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 21:47:49] [32minfo[39m: Database Connected Successfully
+[2025-11-28 21:47:49] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:05:36] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:05:36] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:07:01] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:07:01] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:07:10] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:07:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:10:00] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:10:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:11:44] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:11:44] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:15:32] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:15:32] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:15:50] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:15:50] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:18:38] [32minfo[39m: ✅ Database connected.
+[2025-11-28 22:18:38] [31merror[39m: ❌ Seeding failed: password is not defined
+[2025-11-28 22:19:26] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:19:26] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:19:28] [32minfo[39m: ✅ Database connected.
+[2025-11-28 22:19:29] [31merror[39m: ❌ Seeding failed: Unknown column 'confirm_password' in 'field list'
+[2025-11-28 22:20:16] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:20:16] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 22:20:17] [32minfo[39m: ✅ Database connected.
+[2025-11-28 22:20:19] [32minfo[39m: ✅ Successfully seeded 30 users!
+[2025-11-28 22:20:19] [32minfo[39m: ✅ Users seeded successfully!

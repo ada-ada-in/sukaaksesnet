@@ -18,9 +18,16 @@ export class PaymentController {
     const callbackData = req.body;
     const { merchantOrderId, resultCode, amount, signature } = callbackData;   
     const responseHash = await this.paymentservices.callbackPaymentServices(merchantOrderId, resultCode, amount, signature)
-      console.log("🔥 CALLBACK HIT!", new Date().toISOString());
-  console.log("Headers:", req.headers);
-  console.log("Body:", req.body);
     return res.send(responseHash)
     })
+
+    // getAllPayment
+
+    // getPaymentById
+
+    // getPaymentByUser
+
+    // deletePayment
+
+    // update Payment
 }

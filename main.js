@@ -8,6 +8,7 @@ import { sequelize } from "./server/configs/database.js";
 import { fileURLToPath } from "url";
 import { logger } from "./server/configs/logger.js";
 import cors  from "cors";
+import { ENV } from "./server/configs/env.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -22,7 +23,7 @@ app.use(cors());
 
 
 const server = http.createServer(app);
-const PORT = process.env.PORT || 8000;
+const PORT = ENV.app.port || 8000;
 
 process.on("unhandledRejection", (err) => {
   logger.error(`❌ Unhandled Rejection: ${err.message}`, { stack: err.stack });

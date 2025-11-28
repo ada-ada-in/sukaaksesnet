@@ -24,7 +24,6 @@ app.use('/api/v1', usersRouter);
 app.use('/api/v1', authRouter);
 app.use('/api/v1', paymentRouter)
 
-
 // View route
 app.use('/', viewRouter)
 
