@@ -2451,3 +2451,5 @@ notNull Violation: payment.product cannot be null
 [2025-11-28 22:20:17] [32minfo[39m: ✅ Database connected.
 [2025-11-28 22:20:19] [32minfo[39m: ✅ Successfully seeded 30 users!
 [2025-11-28 22:20:19] [32minfo[39m: ✅ Users seeded successfully!
+[2025-11-28 22:21:37] [32minfo[39m: Database Connected Successfully
+[2025-11-28 22:21:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
