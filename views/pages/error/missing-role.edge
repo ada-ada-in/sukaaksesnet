@@ -258,7 +258,7 @@
                             <i class="fas fa-key mr-2"></i>
                             Request Akses
                         </button>
-                        <a href="index.html" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover:bg-gray-300 transition">
+                        <a href="/" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover:bg-gray-300 transition">
                             <i class="fas fa-home mr-2"></i>
                             Kembali ke Beranda
                         </a>
@@ -277,32 +277,6 @@
             </div>
             
             <!-- Additional Info -->
-            <div class="mt-8 bg-white rounded-xl shadow-md p-6">
-                <h3 class="text-lg font-semibold text-gray-800 mb-4">Tentang Role & Permission</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-crown text-indigo-600 text-xl"></i>
-                        </div>
-                        <h4 class="font-medium text-gray-800">Super Admin</h4>
-                        <p class="text-sm text-gray-600">Level 1 - Akses penuh</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-user-tie text-blue-600 text-xl"></i>
-                        </div>
-                        <h4 class="font-medium text-gray-800">Admin</h4>
-                        <p class="text-sm text-gray-600">Level 2 - Akses administratif</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-eye text-green-600 text-xl"></i>
-                        </div>
-                        <h4 class="font-medium text-gray-800">Viewer</h4>
-                        <p class="text-sm text-gray-600">Level 4 - Akses terbatas</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 
@@ -425,7 +399,7 @@
         // Auto redirect after 30 seconds
         setTimeout(() => {
             if (confirm('Anda tidak memiliki akses. Apakah ingin kembali ke beranda?')) {
-                window.location.href = 'index.html';
+                window.location.href = '/';
             }
         }, 30000);
         

@@ -71,12 +71,7 @@
                             </div>
 
                             <!-- Error / Success Message -->
-                            <template x-if="message">
-                                <div class="mb-4 px-4 py-3 rounded-lg text-sm"
-                                     :class="success ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'">
-                                    <span x-text="message"></span>
-                                </div>
-                            </template>
+                            @include('components/message')
 
                             <!-- Register Button -->
                             <button type="submit"
@@ -127,10 +122,6 @@
         </div>
     </div>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20butuh%20bantuan%20pendaftaran"
-       target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+@include('components/whatsapp')
 </body>
 </html>

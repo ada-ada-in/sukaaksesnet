@@ -49,16 +49,16 @@
                     
                     <!-- Card Body -->
                     <div class="p-8">
-                        <form id="loginForm">
+                        <form x-data="login()" @submit.prevent="submit()">
                             <!-- Email Input -->
                             <div class="input-group mb-6">
-                                <input type="email" id="email" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <input x-model="email" type="email" id="email" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
                                 <label for="email">Email</label>
                             </div>
                             
                             <!-- Password Input -->
                             <div class="input-group mb-6">
-                                <input type="password" id="password" placeholder=" " class="w-full px-3 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <input x-model="password" type="password" id="password" placeholder=" " class="w-full px-3 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
                                 <label for="password">Password</label>
                             </div>
                             
@@ -72,9 +72,12 @@
                             </div>
                             
                             <!-- Login Button -->
-                            <button type="submit" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold mb-6">
-                                Masuk
+                            <button type="submit" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold mb-6" :disabled="loading">
+                                <span x-show="!loading">Masuk</span>
+                                <span x-show="loading">Memproses...</span>
                             </button>
+
+                            @include('components/message')  
                             
                             <!-- Divider -->
                             <div class="relative mb-6">
@@ -111,19 +114,9 @@
         </div>
     </div>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20butuh%20bantuan%20login" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <template x-if="message">
-        <div class="mb-4 px-4 py-3 rounded-lg text-sm":class="success ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'">
-        <span x-text="message"></span>
-        </div>
-    </template>
+@include('components/whatsapp')  
 
     <!-- Success/Error Message Container -->
     <div id="messageContainer" class="fixed top-20 right-4 z-50"></div>
-
 </body>
 </html>

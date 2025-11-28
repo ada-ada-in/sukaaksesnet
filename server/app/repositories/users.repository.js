@@ -16,6 +16,7 @@ export class UserRepository {
     return await this.model.findByPk(id);
     }
 
+
     async updateById(id, data) {
     const user = await this.model.findByPk(id);
     if (user) {

@@ -23,6 +23,11 @@ viewRouter.get("/auth/forget-password", async (req, res) => {
   res.send(html);
 });
 
+viewRouter.get("/missing-role", async (req, res) => {
+  const html = await edge.render("pages/error/missing-role");
+  res.status(404).send(html);
+});
+
 viewRouter.get("*", async (req, res) => {
   const html = await edge.render("pages/error/404");
   res.status(404).send(html);

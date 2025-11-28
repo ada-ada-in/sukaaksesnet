@@ -43,6 +43,8 @@ export class AuthController {
 
     forgetPassword = asyncHandler(async (req, res, next) => {
         const resetToken = generateResetToken({ email: req.body.email });
+        const confirmEmail = await this.authService.getUserByEmail(req.body.email)
+        if(!confirmEmail) return new ResponseHandler(res).error400("Cannot find email!")
         const resetLink = `${ENV.app.front_end_url}/reset-password?token=${resetToken}`;
         await sendEmail(req.body.email, resetLink);
         return new ResponseHandler(res).successReset("password reset email sent",resetLink);

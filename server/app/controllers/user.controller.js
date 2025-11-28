@@ -30,6 +30,13 @@ export class UserController {
         return new ResponseHandler(res).success200(user);
     });
 
+    getUserByMe = asyncHandler(async(req, res, next) => {
+        const {id} = req.user.id
+        const user  = await this.usersService.getUserById(id)
+        if(!user) return new ResponseHandler(res).error400('Cannot find Id!')
+        return new ResponseHandler(res).success200(user)
+    })
+
     getProfile = asyncHandler(async (req, res, next) => {
         const userId = req.user.id;
         const user = await this.usersService.getUserById(userId);

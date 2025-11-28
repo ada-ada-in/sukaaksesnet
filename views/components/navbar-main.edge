@@ -1,11 +1,16 @@
-<header class="bg-white shadow-sm sticky top-0 z-50">
+<header class="bg-white shadow-sm sticky top-0 z-50"
+        x-data="authNavbar()"
+        x-init="checkLogin()">
+
     <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
-            <div class="logo-container flex items-center gap-2">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
                 <i class="fas fa-wifi text-indigo-600 text-2xl"></i>
                 <div>
                     <div class="font-semibold text-indigo-600">SUKA AKSES</div>
-                    <div class="logo-subtext text-sm">INTERNET PROVIDER</div>
+                    <div class="text-sm">INTERNET PROVIDER</div>
                 </div>
             </div>
 
@@ -18,26 +23,70 @@
                 <a href="#faq" class="nav-link font-medium hover:text-indigo-600">FAQ</a>
             </nav>
 
-            <!-- Action & Mobile Toggle -->
-            <div class="flex items-center gap-4">
-                <a href="/auth/login" class="hidden md:block font-medium hover:text-indigo-600">Masuk</a>
-                <a href="/auth/register" class="hidden md:block btn-gradient text-white px-6 py-2 rounded-lg font-medium">Daftar</a>
+            <!-- ▶️ Desktop if NOT logged in -->
+            <template x-if="!user">
+                <div class="flex items-center gap-4">
+                    <a href="/auth/login" class="hidden md:block font-medium hover:text-indigo-600">Masuk</a>
+                    <a href="/auth/register" class="hidden md:block btn-gradient text-white px-6 py-2 rounded-lg font-medium">Daftar</a>
 
-                <button id="menuToggle" class="md:hidden w-8 h-8 flex flex-col justify-center items-center gap-1.5 focus:outline-none">
-                    <span class="w-6 h-0.5 bg-gray-800 rounded transition-all"></span>
-                    <span class="w-6 h-0.5 bg-gray-800 rounded transition-all"></span>
-                    <span class="w-6 h-0.5 bg-gray-800 rounded transition-all"></span>
-                </button>
+                    <!-- Hamburger -->
+                    <button id="menuToggle"
+                        class="md:hidden w-8 h-8 flex flex-col justify-center items-center gap-1">
+                        <span class="w-6 h-0.5 bg-gray-700"></span>
+                        <span class="w-6 h-0.5 bg-gray-700"></span>
+                        <span class="w-6 h-0.5 bg-gray-700"></span>
+                    </button>
+                </div>
+            </template>
 
-            </div>
+            <!-- ▶️ Desktop if Logged in -->
+            <template x-if="user">
+                <div class="relative" x-data="{ open:false }">
+
+                    <button @click="open=!open"
+                        class="flex items-center gap-2 hover:text-indigo-700">
+                        
+                        <!-- Avatar -->
+                        <div class="w-8 h-8 bg-indigo-600 text-white rounded-full 
+                                    flex items-center justify-center text-sm font-bold">
+                                    <i class="fas fa-user font-size-xl"></i>
+                        </div>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div x-show="open"
+                        @click.outside="open=false"
+                        class="absolute right-0 w-44 bg-white shadow-lg rounded-lg mt-2 z-50">
+                        
+                        <a href="/profile/me" class="block px-4 py-2 hover:bg-gray-50">Profile</a>
+
+                        <button @click="logout()"
+                                class="block w-full text-left px-4 py-2 text-red-600 hover:bg-red-50">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </template>
+
         </div>
     </div>
 
-<nav id="mobile-menu"
-     class="hidden flex-col px-6 py-6 space-y-5 bg-white shadow-lg border-t border-gray-200 md:hidden transition-all duration-300 ease-in-out">
-      <div class="border-t pt-4">
-        <a href="/auth/login" class="block text-black text-center py-2 rounded-lg font-medium mb-4">Masuk</a>
-        <a href="/auth/register" class="block btn-gradient text-white text-center py-2 rounded-lg font-medium">Daftar</a>
-      </div>
-  </nav>
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu"
+        class="hidden flex-col px-6 py-6 space-y-5 bg-white shadow-lg border-t border-gray-200 md:hidden">
+        
+        <template x-if="!user">
+            <div>
+                <a href="/auth/login" class="block text-center py-2 font-medium">Masuk</a>
+                <a href="/auth/register" class="block btn-gradient text-white text-center py-2 rounded-lg font-medium">Daftar</a>
+            </div>
+        </template>
+
+        <template x-if="user">
+            <div>
+                <a href="/profile/me" class="block text-center py-2 font-medium">Profile</a>
+                <button @click="logout" class="block w-full text-center py-2 text-red-600">Logout</button>
+            </div>
+        </template>
+    </nav>
 </header>

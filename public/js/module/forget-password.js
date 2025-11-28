@@ -1,9 +1,8 @@
 import ENV from '../env.js'
 
-export default function login(){
+export default function forgetPassword(){
     return {
         email: '',
-        password: '',
         loading: false,
         message: '',
         success: false,
@@ -13,12 +12,11 @@ export default function login(){
             this.success = false;
             this.loading = true;
             try {
-                const res = await fetch(`${ENV.backend_url}/api/v1/login`, {
+                const res = await fetch(`${ENV.backend_url}/api/v1/forget-password`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         email: this.email,
-                        password: this.password
                     })
                 });
 
@@ -26,19 +24,15 @@ export default function login(){
                 if(data.status.code == 400){
                     this.message = data.status.message;
                     this.success = false;
+                    this.email= '';
                 } else {
                     this.message = data.status.message;
                     this.success = true;
-                    this.password = '';
                     this.email = '';
-                    localStorage.setItem('token', data.token)
-                    setTimeout(() => {
-                        window.location.href = '/'
-                    }, 1500);
                 }
 
             } catch (err) {
-                console.error("login gagal:", err);
+                console.error("fail forget password :", err);
                 this.message = 'server error.';
                 this.success = false;
             } finally {

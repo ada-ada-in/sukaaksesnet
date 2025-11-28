@@ -4,7 +4,7 @@ import ResponseHandler from "../utils/response.js";
 
 export const globalLimiter = expressRateLimiter({
   windowMs: 15 * 60 * 1000,  // 15 minutes
-  max: 300,
+  max: 500,
   message: "Too many requests from this IP, please try again later.",
   handler: (req, res, next, options) => {
     logger.info(`[RATE LIMIT] ${req.method} ${req.url} - ${options.message}`);
@@ -51,7 +51,7 @@ export const logoutLimiter = expressRateLimiter({
 
 export const forgetPasswordLimiter = expressRateLimiter({
   windowMs: 1 * 60 * 1000,  // 1 minute
-  max: 5,
+  max: 10,
   message: "Too many login attempts from this IP, please try again later.",
   handler: (req, res, next, options) => {
     logger.info(`[LOGIN RATE LIMIT] ${req.method} ${req.url} - ${options.message}`);

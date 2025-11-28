@@ -1025,3 +1025,48 @@ notNull Violation: payment.product cannot be null
     at IncomingMessage.emit (node:events:518:28)
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-28 15:43:46] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:43:46] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
+[2025-11-28 15:43:58] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:43:58] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
+[2025-11-28 15:44:10] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:44:10] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
+[2025-11-28 15:44:42] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:44:42] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
+[2025-11-28 15:45:11] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:45:11] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5

@@ -2156,3 +2156,233 @@ notNull Violation: payment.product cannot be null
 [2025-11-28 14:30:09] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-11-28 14:30:43] [32minfo[39m: Database Connected Successfully
 [2025-11-28 14:30:43] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:30:47] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:30:47] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:49:24] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:49:24] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:49:40] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:49:40] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:50:53] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:50:53] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:51:10] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:51:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:55:04] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:55:04] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:57:27] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:57:27] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:58:25] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:58:25] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:59:09] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:59:09] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:59:29] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:59:29] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:59:45] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:59:45] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:00:58] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:00:58] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:02:29] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:02:29] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:02:43] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:02:43] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:17:37] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:17:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:32:21] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:32:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:32:28] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:32:28] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:32:56] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:32:56] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:33:27] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:33:27] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:33:47] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:33:47] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:33:48] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:33:48] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:34:10] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:34:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:34:20] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:34:20] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:35:01] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:35:01] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:39:46] [32minfo[39m: [LOGIN RATE LIMIT] POST /forget-password - Too many login attempts from this IP, please try again later.
+[2025-11-28 15:40:52] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:40:52] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:43:37] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:43:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:43:46] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:43:46] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
+[2025-11-28 15:43:58] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:43:58] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
+[2025-11-28 15:44:10] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:44:10] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
+[2025-11-28 15:44:18] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:44:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:44:36] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:44:36] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:44:42] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:44:42] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
+[2025-11-28 15:45:00] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:45:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:45:11] [31merror[39m: [ERROR] POST /api/v1/forget-password - email is not defined
+[2025-11-28 15:45:11] [31merror[39m: Server error! - email is not defined, Stack: ReferenceError: email is not defined
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:46:68
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/middleware/asyncHandler.middleware.js:2:19
+    at Layer.handle [as handle_request] (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\express\lib\router\route.js:149:13)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
+[2025-11-28 15:46:12] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:46:12] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:46:29] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:46:29] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:47:09] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:47:09] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:47:19] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:47:19] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:50:29] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:50:29] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:54:06] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:54:06] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:55:00] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:55:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:55:16] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:55:16] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:55:21] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:55:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:57:10] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:57:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:57:59] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:57:59] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:58:09] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:58:09] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:58:47] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:58:47] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:59:01] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:59:01] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:59:07] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:59:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:59:38] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:59:38] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:59:45] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:59:45] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:59:52] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:59:52] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 15:59:58] [32minfo[39m: Database Connected Successfully
+[2025-11-28 15:59:58] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:00:51] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:00:51] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:00:53] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:00:53] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:01:21] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:01:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:02:22] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:02:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:03:05] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:03:05] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:05:46] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:05:46] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:08:12] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:08:12] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:08:42] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:08:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:09:54] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:09:54] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:10:17] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:10:17] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:10:23] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:10:23] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:12:14] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:12:14] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:12:24] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:12:24] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:18:22] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:18:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:19:06] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:19:06] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:19:13] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:19:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:25:26] [32minfo[39m: [RATE LIMIT] GET /css/forget-password.css - Too many requests from this IP, please try again later.
+[2025-11-28 16:25:26] [32minfo[39m: [RATE LIMIT] GET /js/app.js - Too many requests from this IP, please try again later.
+[2025-11-28 16:25:26] [32minfo[39m: [RATE LIMIT] GET /js/main.js - Too many requests from this IP, please try again later.
+[2025-11-28 16:25:26] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-11-28 16:25:30] [32minfo[39m: [RATE LIMIT] GET / - Too many requests from this IP, please try again later.
+[2025-11-28 16:25:30] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-11-28 16:25:35] [32minfo[39m: [RATE LIMIT] GET / - Too many requests from this IP, please try again later.
+[2025-11-28 16:25:35] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:05] [32minfo[39m: [RATE LIMIT] GET / - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:05] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:08] [32minfo[39m: [RATE LIMIT] GET / - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:08] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:28] [32minfo[39m: [RATE LIMIT] GET / - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:28] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:30] [32minfo[39m: [RATE LIMIT] GET / - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:30] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:30] [32minfo[39m: [RATE LIMIT] GET / - Too many requests from this IP, please try again later.
+[2025-11-28 16:26:30] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-11-28 16:27:04] [32minfo[39m: [RATE LIMIT] GET /login - Too many requests from this IP, please try again later.
+[2025-11-28 16:27:04] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-11-28 16:27:26] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:27:26] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:29:27] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:29:27] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:29:48] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:29:48] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:35:28] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:35:28] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:36:00] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:36:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:37:39] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:37:39] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:38:07] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:38:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:47:33] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:47:33] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:51:49] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:51:49] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:51:52] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:51:52] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:52:00] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:52:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:52:19] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:52:19] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:52:32] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:52:32] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:52:36] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:52:36] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:53:22] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:53:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:53:55] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:53:55] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:54:26] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:54:26] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 16:58:01] [32minfo[39m: Database Connected Successfully
+[2025-11-28 16:58:01] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000

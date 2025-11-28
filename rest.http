@@ -1,20 +1,20 @@
-POST http://localhost:3000/api/v1/register
-Content-Type: application/json
+# POST http://localhost:3000/api/v1/register
+# Content-Type: application/json
 
-{
-    "nomor_pelanggan": "0812311231",
-    "nama": "John Doe",
-    "alamat": "123 Main St, Anytown, USA",
-    "email": "email5@example.com",
-    "password": "securepassword",
-    "confirm_password": "securepassword"
-}
+# {
+#     "nomor_pelanggan": "0812311231",
+#     "nama": "John Doe",
+#     "alamat": "123 Main St, Anytown, USA",
+#     "email": "email5@example.com",
+#     "password": "securepassword",
+#     "confirm_password": "securepassword"
+# }
 
 # POST http://localhost:3000/api/v1/login
 # Content-Type: application/json
 
 # {
-#     "email": "email1@example.com",
+#     "email": "email2@example.com",
 #     "password": "securepassword"
 # }
 

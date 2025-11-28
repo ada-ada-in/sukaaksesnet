@@ -17,12 +17,6 @@ import ENV from '../env.js'
                     this.message = '';
                     this.success = false;
 
-                    if (!this.nama || !this.email || !this.nomor_pelanggan || !this.password) {
-                        this.message = 'Semua field wajib diisi.';
-                        this.success = false;
-                        return;
-                    }
-
                     if (!this.agree) {
                         this.message = 'Harap setujui syarat & ketentuan.';
                         this.success = false;
