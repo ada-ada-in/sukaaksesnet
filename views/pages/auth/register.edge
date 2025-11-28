@@ -1,16 +1,15 @@
 @include('components/head')
-</head>
 <body class="bg-gray-50 min-h-screen">
-@include('components/navbar')
+
+    @include('components/navbar')
 
     <!-- Main Content -->
     <div class="flex min-h-screen pt-16">
         <!-- Left Panel - Register Form -->
         <div class="w-full lg:w-1/2 flex items-center justify-center p-8 bg-gray-50">
             <div class="w-full max-w-md">
-                
-                <!-- Register Card -->
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+
                     <!-- Card Header -->
                     <div class="gradient-bg text-white p-8 text-center">
                         <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -19,46 +18,49 @@
                         <h2 class="text-2xl font-bold mb-2">Daftar Akun Baru</h2>
                         <p class="opacity-90">Buat akun SUKA AKSES NET Anda</p>
                     </div>
-                    
+
                     <!-- Card Body -->
                     <div class="p-8">
-                        <form id="registerForm">
+                        <!-- ✅ Semua logika di Alpine: register() -->
+                        <form x-data="register()" @submit.prevent="submit()">
                             <!-- Full Name Input -->
                             <div class="input-group mb-6">
-                                <input type="text" id="fullName" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <input x-model="nama" type="text" id="fullName" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
                                 <label for="fullName">Nama Lengkap</label>
                             </div>
-                            
+
                             <!-- Email Input -->
                             <div class="input-group mb-6">
-                                <input type="email" id="email" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <input x-model="email" type="email" id="email" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
                                 <label for="email">Email</label>
                             </div>
-                            
+
                             <!-- Phone Input -->
                             <div class="input-group mb-6">
-                                <input type="tel" id="phone" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <input x-model="alamat" type="text" id="alamat" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <label for="alamat">Alamat</label>
+                            </div>
+
+                            <div class="input-group mb-6">
+                                <input x-model="nomor_pelanggan" type="tel" id="phone" placeholder=" " class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
                                 <label for="phone">Nomor Telepon</label>
                             </div>
-                            
+
                             <!-- Password Input -->
-                            <div class="input-group mb-6">
-                                <input type="password" id="password" placeholder=" " class="w-full px-3 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition" onkeyup="checkPasswordStrength(this.value)">
+                            <div class="input-group mb-6 relative">
+                                <input x-model="password" :type="showPassword ? 'text' : 'password'" id="password" placeholder=" " class="w-full px-3 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
                                 <label for="password">Password</label>
-                                <i class="fas fa-eye show-password" onclick="togglePassword('password')"></i>
                             </div>
-                            
-                            <!-- Confirm Password Input -->
-                            <div class="input-group mb-6">
-                                <input type="password" id="confirmPassword" placeholder=" " class="w-full px-3 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
-                                <label for="confirmPassword">Konfirmasi Password</label>
-                                <i class="fas fa-eye show-password" onclick="togglePassword('confirmPassword')"></i>
+
+                            <div class="input-group mb-6 relative">
+                                <input x-model="confirm_password" :type="showPassword ? 'text' : 'password'" id="confirm_password" placeholder=" " class="w-full px-3 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition">
+                                <label for="confirm_password">Confirm Password</label>
                             </div>
-                            
+
                             <!-- Terms & Conditions -->
                             <div class="mb-6">
                                 <label class="flex items-start">
-                                    <input type="checkbox" id="terms" class="mt-1 mr-2 rounded text-indigo-600 focus:ring-indigo-500">
+                                    <input type="checkbox" x-model="agree" class="mt-1 mr-2 rounded text-indigo-600 focus:ring-indigo-500">
                                     <span class="text-sm text-gray-600">
                                         Saya setuju dengan 
                                         <a href="#" class="text-indigo-600 hover:text-indigo-700">Syarat & Ketentuan</a> 
@@ -67,12 +69,23 @@
                                     </span>
                                 </label>
                             </div>
-                            
+
+                            <!-- Error / Success Message -->
+                            <template x-if="message">
+                                <div class="mb-4 px-4 py-3 rounded-lg text-sm"
+                                     :class="success ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'">
+                                    <span x-text="message"></span>
+                                </div>
+                            </template>
+
                             <!-- Register Button -->
-                            <button type="submit" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold mb-6">
-                                Daftar Sekarang
+                            <button type="submit"
+                                    class="w-full btn-gradient text-white py-3 rounded-lg font-semibold mb-6 flex items-center justify-center"
+                                    :disabled="loading">
+                                <span x-show="!loading">Daftar Sekarang</span>
+                                <span x-show="loading">Memproses...</span>
                             </button>
-                            
+
                             <!-- Login Link -->
                             <p class="text-center text-sm text-gray-600">
                                 Sudah punya akun? 
@@ -80,10 +93,11 @@
                             </p>
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
-        
+
         <!-- Right Panel - Background Image -->
         <div class="right-panel w-1/2 hidden lg:flex items-center justify-center">
             <div class="right-panel-content text-white text-center p-12">
@@ -94,7 +108,7 @@
                     <h1 class="text-4xl font-bold mb-4">Bergabung dengan Kami</h1>
                     <p class="text-xl opacity-90">Daftar sekarang dan nikmati internet super cepat dari SUKA AKSES NET</p>
                 </div>
-                
+
                 <div class="grid grid-cols-3 gap-6 mt-12">
                     <div class="text-center">
                         <div class="text-3xl font-bold">10K+</div>
@@ -109,159 +123,14 @@
                         <div class="text-sm opacity-75">Support</div>
                     </div>
                 </div>
-                
-                <!-- Additional Features -->
-                <div class="mt-12 space-y-4">
-                    <div class="flex items-center justify-center space-x-3">
-                        <i class="fas fa-wifi text-2xl"></i>
-                        <span class="text-lg">Koneksi Stabil</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-3">
-                        <i class="fas fa-shield-alt text-2xl"></i>
-                        <span class="text-lg">Keamanan Terjamin</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-3">
-                        <i class="fas fa-headset text-2xl"></i>
-                        <span class="text-lg">Support 24/7</span>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20butuh%20bantuan%20pendaftaran" target="_blank" class="whatsapp-float">
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20butuh%20bantuan%20pendaftaran"
+       target="_blank" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <!-- Success/Error Message Container -->
-    <div id="messageContainer" class="fixed top-20 right-4 z-50"></div>
-
-    <script>
-        // Toggle Password Visibility
-        function togglePassword(fieldId) {
-            const passwordInput = document.getElementById(fieldId);
-            const passwordIcon = passwordInput.nextElementSibling;
-            
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                passwordIcon.classList.remove('fa-eye');
-                passwordIcon.classList.add('fa-eye-slash');
-            } else {
-                passwordInput.type = 'password';
-                passwordIcon.classList.remove('fa-eye-slash');
-                passwordIcon.classList.add('fa-eye');
-            }
-        }
-        
-        // Show Message Function
-        function showMessage(message, type = 'success') {
-            const messageContainer = document.getElementById('messageContainer');
-            const messageDiv = document.createElement('div');
-            
-            const bgColor = type === 'success' ? 'bg-green-500' : 'bg-red-500';
-            const icon = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
-            
-            messageDiv.className = `${bgColor} text-white px-6 py-4 rounded-lg shadow-lg mb-4 flex items-center`;
-            messageDiv.innerHTML = `
-                <i class="fas ${icon} mr-3"></i>
-                <span>${message}</span>
-            `;
-            
-            messageContainer.appendChild(messageDiv);
-            
-            // Remove message after 3 seconds
-            setTimeout(() => {
-                messageDiv.remove();
-            }, 3000);
-        }
-        
-        // Form Validation and Submission
-        document.getElementById('registerForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const fullName = document.getElementById('fullName').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirmPassword').value;
-            const terms = document.getElementById('terms').checked;
-            
-            // Validation
-            if (!fullName || !email || !phone || !password || !confirmPassword) {
-                showMessage('Silakan isi semua field!', 'error');
-                return;
-            }
-            
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                showMessage('Format email tidak valid!', 'error');
-                return;
-            }
-            
-            // Phone validation
-            const phoneRegex = /^[\d\s\-\+\(\)]+$/;
-            if (!phoneRegex.test(phone) || phone.length < 10) {
-                showMessage('Nomor telepon tidak valid!', 'error');
-                return;
-            }
-            
-            // Password strength validation
-            if (password.length < 8) {
-                showMessage('Password minimal 8 karakter!', 'error');
-                return;
-            }
-            
-            // Password match validation
-            if (password !== confirmPassword) {
-                showMessage('Password tidak cocok!', 'error');
-                return;
-            }
-            
-            // Terms validation
-            if (!terms) {
-                showMessage('Harap setujui syarat & ketentuan!', 'error');
-                return;
-            }
-            
-            // Simulate registration process
-            const submitButton = e.target.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            submitButton.textContent = 'Mendaftar...';
-            submitButton.disabled = true;
-            
-            setTimeout(() => {
-                // Simulate successful registration
-                showMessage('Pendaftaran berhasil! Silakan cek email Anda.', 'success');
-                
-                // Redirect to login after 2 seconds
-                setTimeout(() => {
-                    window.location.href = 'login.html';
-                }, 2000);
-                
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
-            }, 1500);
-        });
-        
-        // Social Register Handlers
-        document.querySelectorAll('.social-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const platform = this.textContent.trim();
-                showMessage(`Daftar dengan ${platform} (Demo)`, 'success');
-            });
-        });
-        
-        // Terms & Privacy Links
-        document.querySelectorAll('a[href="#"]').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                if (this.textContent.includes('Syarat') || this.textContent.includes('Kebijakan')) {
-                    showMessage('Halaman akan segera tersedia (Demo)', 'success');
-                }
-            });
-        });
-    </script>
 </body>
 </html>

@@ -1912,3 +1912,247 @@ notNull Violation: payment.product cannot be null
 [2025-11-27 19:08:01] [31merror[39m: ❌ Unhandled Rejection: Cannot resolve "C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\components\head.edge". Make sure the file exists
 [2025-11-27 19:23:08] [32minfo[39m: Database Connected Successfully
 [2025-11-27 19:23:08] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 19:40:22] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:40:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 19:45:35] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:45:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 19:46:23] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:46:23] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 19:47:15] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:47:15] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 19:51:24] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:51:24] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 19:51:49] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:51:49] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 19:55:53] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:55:53] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 19:56:36] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:56:36] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 19:58:56] [32minfo[39m: Database Connected Successfully
+[2025-11-27 19:58:56] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:00:07] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:00:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:01:30] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:01:30] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:02:35] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:02:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:04:40] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:04:40] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:05:26] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:05:26] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:06:04] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:06:04] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:06:47] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:06:47] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:07:05] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:07:05] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:07:18] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:07:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:07:44] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:07:44] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:08:45] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:08:45] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:08:51] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:08:51] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:09:24] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:09:24] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:10:16] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:10:16] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:14:48] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:14:48] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:14:55] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:14:55] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:15:13] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:15:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:15:20] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:15:20] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:15:42] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:15:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:17:30] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:17:30] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:18:18] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:18:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:18:23] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:18:23] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:18:24] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:18:24] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:18:37] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:18:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:20:04] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:20:04] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:20:13] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:20:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:20:15] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:20:15] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:20:35] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:20:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:20:51] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:20:51] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:21:15] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:21:15] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:21:38] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:21:38] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:23:38] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:23:38] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:23:45] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:23:45] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:23:50] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:23:50] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:24:51] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:24:51] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:40:58] [31merror[39m: [ERROR] POST /api/v1/register - Unexpected non-whitespace character after JSON at position 205 (line 19 column 1)
+[2025-11-27 20:40:58] [31merror[39m: Server error! - Unexpected non-whitespace character after JSON at position 205 (line 19 column 1), Stack: SyntaxError: Unexpected non-whitespace character after JSON at position 205 (line 19 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-27 20:41:09] [31merror[39m: [ERROR] POST /api/v1/register - Unexpected non-whitespace character after JSON at position 205 (line 19 column 1)
+[2025-11-27 20:41:09] [31merror[39m: Server error! - Unexpected non-whitespace character after JSON at position 205 (line 19 column 1), Stack: SyntaxError: Unexpected non-whitespace character after JSON at position 205 (line 19 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-27 20:41:17] [31merror[39m: [ERROR] POST /api/v1/register - Unexpected non-whitespace character after JSON at position 205 (line 19 column 1)
+[2025-11-27 20:41:17] [31merror[39m: Server error! - Unexpected non-whitespace character after JSON at position 205 (line 19 column 1), Stack: SyntaxError: Unexpected non-whitespace character after JSON at position 205 (line 19 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-27 20:46:41] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:46:41] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:50:07] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:50:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:51:24] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:51:24] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:54:11] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:54:11] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:54:31] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:54:31] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:55:09] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:55:09] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 20:56:42] [32minfo[39m: Database Connected Successfully
+[2025-11-27 20:56:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:02:59] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:02:59] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:03:04] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:03:04] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:04:03] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:04:03] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:04:34] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:04:34] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:05:03] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:05:03] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:05:19] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:05:19] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:19:52] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:19:52] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:20:17] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:20:17] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:20:19] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:20:19] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:20:22] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:20:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:20:33] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:20:33] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:21:22] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:21:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:21:29] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:21:29] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:23:48] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:23:48] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-27 21:23:56] [32minfo[39m: Database Connected Successfully
+[2025-11-27 21:23:56] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:38:52] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:38:52] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:39:07] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:39:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:39:18] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:39:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:42:52] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:42:52] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:48:44] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:48:44] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:48:50] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:48:50] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:50:28] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:50:28] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:50:31] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:50:31] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:50:42] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:50:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:50:45] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:50:45] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:56:57] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:56:57] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 13:57:43] [32minfo[39m: Database Connected Successfully
+[2025-11-28 13:57:43] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:00:21] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:00:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:03:56] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:03:56] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:04:07] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:04:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:05:28] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:05:28] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:06:55] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:06:55] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:09:53] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:09:53] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:10:27] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:10:27] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:10:31] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:10:31] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:11:14] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:11:14] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:11:29] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:11:29] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:13:39] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:13:39] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:14:03] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:14:03] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:18:08] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:18:08] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:22:25] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:22:25] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:23:42] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:23:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:24:01] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:24:01] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:24:39] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:24:39] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:25:16] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:25:16] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:25:19] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:25:19] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:25:37] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:25:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:26:17] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:26:17] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:26:42] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:26:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:27:55] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:27:55] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:28:00] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:28:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:30:09] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:30:09] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-28 14:30:43] [32minfo[39m: Database Connected Successfully
+[2025-11-28 14:30:43] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000

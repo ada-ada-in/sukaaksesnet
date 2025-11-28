@@ -1,13 +1,14 @@
-# POST http://localhost:3000/api/v1/register
-# Content-Type: application/json
+POST http://localhost:3000/api/v1/register
+Content-Type: application/json
 
-# {
-#     "nomor_pelanggan": "1234567890",
-#     "nama": "John Doe",
-#     "alamat": "123 Main St, Anytown, USA",
-#     "email": "email2@example.com",
-#     "password": "securepassword"
-# }
+{
+    "nomor_pelanggan": "0812311231",
+    "nama": "John Doe",
+    "alamat": "123 Main St, Anytown, USA",
+    "email": "email5@example.com",
+    "password": "securepassword",
+    "confirm_password": "securepassword"
+}
 
 # POST http://localhost:3000/api/v1/login
 # Content-Type: application/json
@@ -50,10 +51,10 @@
 #     "id_users": "a01c6a7e-db02-464f-be5a-966a8978e623"
 # }
 
-POST https://9b4a848e5089.ngrok-free.app/api/v1/payment/callback
-Content-Type: application/json
+# POST https://9b4a848e5089.ngrok-free.app/api/v1/payment/callback
+# Content-Type: application/json
 
-{
-  "merchantOrderId": "SAN-1764090793652-59473",
-  "resultCode": "00"
-}
+# {
+#   "merchantOrderId": "SAN-1764090793652-59473",
+#   "resultCode": "00"
+# }

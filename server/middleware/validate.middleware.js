@@ -23,6 +23,7 @@ export const validateUser = (req, res, next) => {
     password: Joi.string().min(6).required(),
     nomor_pelanggan: Joi.string().required(),
     alamat: Joi.string().required(),
+    confirm_password: Joi.string().required()
   });
 
   const { error } = schema.validate(req.body);

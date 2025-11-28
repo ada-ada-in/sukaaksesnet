@@ -27,11 +27,12 @@ export class AuthController {
     })
     
     register = asyncHandler(async (req, res, next) => {
-        const { nomor_pelanggan, nama, alamat, email, password } = req.body;
+        const { nomor_pelanggan, nama, alamat, email, password, confirm_password } = req.body;
         const existingUser = await this.authService.getUserByEmail(email);
         if (existingUser) {
             return new ResponseHandler(res).error400("Email already in use");
         }
+        if(password !== confirm_password) return new ResponseHandler(res).error400("Password doesn't same")
         const newUser = await this.authService.registerUser({ email, password, nomor_pelanggan, nama, alamat });
         return new ResponseHandler(res).success201(newUser);
     });
