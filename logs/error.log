@@ -1072,3 +1072,97 @@ notNull Violation: payment.product cannot be null
     at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/express-rate-limit/dist/index.mjs:796:5
 [2025-11-28 22:18:38] [31merror[39m: ❌ Seeding failed: password is not defined
 [2025-11-28 22:19:29] [31merror[39m: ❌ Seeding failed: Unknown column 'confirm_password' in 'field list'
+[2025-11-29 12:07:51] [31merror[39m: send Wa Error: Request failed with status code 500
+[2025-11-29 12:07:51] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 500
+[2025-11-30 12:51:20] [31merror[39m: send Wa Error: Request failed with status code 500
+[2025-11-30 12:51:20] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 500
+[2025-11-30 12:52:50] [31merror[39m: send Wa Error: Request failed with status code 500
+[2025-11-30 12:52:50] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 500
+[2025-11-30 13:02:55] [31merror[39m: send Wa Error: Request failed with status code 500
+[2025-11-30 13:02:55] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 500
+[2025-11-30 13:04:03] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-11-30 13:04:03] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-11-30 13:09:26] [31merror[39m: [ERROR] POST /api/v1/login - Unexpected non-whitespace character after JSON at position 77 (line 6 column 1)
+[2025-11-30 13:09:26] [31merror[39m: Server error! - Unexpected non-whitespace character after JSON at position 77 (line 6 column 1), Stack: SyntaxError: Unexpected non-whitespace character after JSON at position 77 (line 6 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-30 13:09:34] [31merror[39m: [ERROR] POST /api/v1/login - Unexpected non-whitespace character after JSON at position 77 (line 6 column 1)
+[2025-11-30 13:09:34] [31merror[39m: Server error! - Unexpected non-whitespace character after JSON at position 77 (line 6 column 1), Stack: SyntaxError: Unexpected non-whitespace character after JSON at position 77 (line 6 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[2025-11-30 13:12:46] [31merror[39m: DUITKU CREATE INVOICE ERROR: Request failed with status code 400
+[2025-11-30 13:12:46] [31merror[39m: [ERROR] POST /api/v1/payment - Request failed with status code 400
+[2025-11-30 13:12:46] [31merror[39m: Server error! - Request failed with status code 400, Stack: AxiosError: Request failed with status code 400
+    at settle (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:793:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:46:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:15:24
+[2025-11-30 13:13:25] [31merror[39m: DUITKU CREATE INVOICE ERROR: Request failed with status code 400
+[2025-11-30 13:13:25] [31merror[39m: [ERROR] POST /api/v1/payment - Request failed with status code 400
+[2025-11-30 13:13:25] [31merror[39m: Server error! - Request failed with status code 400, Stack: AxiosError: Request failed with status code 400
+    at settle (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:793:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:46:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:15:24
+[2025-11-30 13:14:24] [31merror[39m: DUITKU CREATE INVOICE ERROR: Request failed with status code 400
+[2025-11-30 13:14:24] [31merror[39m: [ERROR] POST /api/v1/payment - Request failed with status code 400
+[2025-11-30 13:14:25] [31merror[39m: Server error! - Request failed with status code 400, Stack: AxiosError: Request failed with status code 400
+    at settle (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:793:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:46:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:15:24
+[2025-11-30 13:14:35] [31merror[39m: DUITKU CREATE INVOICE ERROR: Request failed with status code 400
+[2025-11-30 13:14:35] [31merror[39m: [ERROR] POST /api/v1/payment - Request failed with status code 400
+[2025-11-30 13:14:35] [31merror[39m: Server error! - Request failed with status code 400, Stack: AxiosError: Request failed with status code 400
+    at settle (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:793:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:46:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:15:24
+[2025-11-30 13:16:54] [31merror[39m: DUITKU CREATE INVOICE ERROR: Request failed with status code 400
+[2025-11-30 13:16:54] [31merror[39m: [ERROR] POST /api/v1/payment - Request failed with status code 400
+[2025-11-30 13:16:54] [31merror[39m: Server error! - Request failed with status code 400, Stack: AxiosError: Request failed with status code 400
+    at settle (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/adapters/http.js:793:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:46:30)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:15:24

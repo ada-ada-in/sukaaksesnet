@@ -1,21 +1,23 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc1ZjEwY2M1LTc5MzEtNDhjZS05YTM2LTFiODZhY2NmYjA4NCIsImVtYWlsIjoiaGVydXN1Z2FuZGEwM0BnbWFpbC5jb20iLCJoYW5kcGhvbmUiOiIwODU3ODgyODM3NjkiLCJuYW1hIjoiSGVydSBTdWdhbmRhIiwiaWF0IjoxNzY0NDgyOTk4LCJleHAiOjE3NjUwODc3OTh9.WY8105v7geLkvctJ9tEwKyXmjeZ9kNOWE5Q8Zl8AaP0
+
 # POST http://localhost:3000/api/v1/register
 # Content-Type: application/json
 
 # {
-#     "nomor_pelanggan": "0812311231",
+#     "nomor_pelanggan": "0895342754470",
 #     "nama": "John Doe",
 #     "alamat": "123 Main St, Anytown, USA",
-#     "email": "email5@example.com",
-#     "password": "securepassword",
-#     "confirm_password": "securepassword"
+#     "email": "chan.halim98@gmail.com",
+#     "password": "password",
+#     "confirm_password": "password"
 # }
 
 # POST http://localhost:3000/api/v1/login
 # Content-Type: application/json
 
 # {
-#     "email": "email2@example.com",
-#     "password": "securepassword"
+#     "email": "herusuganda03@gmail.com",
+#     "password": "password"
 # }
 
 # POST http://localhost:3000/api/v1/logout
@@ -39,17 +41,17 @@
 # Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyYzA4YWUyLWRiMTgtNGU3Ny05ZDI2LWM1ZmE0NGYxMWNmZCIsImVtYWlsIjoiZW1haWwyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzYyOTY1NjcwLCJleHAiOjE3NjM1NzA0NzB9.28GUZEkIl4YbkLNCZ1zlEiogGmOQ56G4j44u-MbXq_0
 # Content-Type: application/json
 
-# POST https://9b4a848e5089.ngrok-free.app/api/v1/payment
+# POST http://localhost:3000/api/v1/payment
+# Authorization: Bearer {{token}}
 # Content-Type: application/json
 
 # {
 #     "amount": 150000,
-#     "product": "Paket B",
-#     "email": "chan.halim98@gmail.com",
-#     "customerName": "chandra",
-#     "handphone": "0895342754470",
-#     "id_users": "a01c6a7e-db02-464f-be5a-966a8978e623"
+#     "product": "Paket B"
 # }
+
+GET http://localhost:3000/api/v1/users/me
+Authorization: Bearer {{token}}
 
 # POST https://9b4a848e5089.ngrok-free.app/api/v1/payment/callback
 # Content-Type: application/json

@@ -31,7 +31,7 @@ export class UserController {
     });
 
     getUserByMe = asyncHandler(async(req, res, next) => {
-        const {id} = req.user.id
+        const {id} = req.user
         const user  = await this.usersService.getUserById(id)
         if(!user) return new ResponseHandler(res).error400('Cannot find Id!')
         return new ResponseHandler(res).success200(user)

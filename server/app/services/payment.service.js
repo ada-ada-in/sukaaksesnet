@@ -16,7 +16,7 @@ export class PaymentServices {
         this.paymentrepository = new PaymentRepository()
     }
     
-    async postPaymentServices(amount, product, customerName, email, handphone, id_users) {
+    async postPaymentServices({amount, product, nama, email, handphone, id_users}) {
         try {
             const merchantCode = ENV.duitku.merchantCode;
             const apiKey = ENV.duitku.apiKey;
@@ -35,7 +35,7 @@ export class PaymentServices {
                 paymentAmount: amount,
                 productDetails: product,
                 customerDetail: {
-                    firstName: customerName,
+                    firstName: nama,
                     email,
                     phoneNumber: handphone
                 },
@@ -60,8 +60,8 @@ export class PaymentServices {
             }
             const jwtPayment = payMent(paymentPayload)
 
-            // createSendWaToUsers(handphone,merchantOrderId,customerName,product,amount,payment_url)
-            return await this.paymentrepository.createPayment({customerName, handphone, amount, email, merchantOrderId, payment_url, product, id_users, jwtPayment})
+            createSendWaToUsers(handphone,merchantOrderId,nama,product,amount,payment_url)
+            return await this.paymentrepository.createPayment({customerName : nama, handphone, amount, email, merchantOrderId, payment_url, product, id_users, jwtPayment})
 
         } catch (error) {
             logger.error(`DUITKU CREATE INVOICE ERROR: ${error.message}`);
@@ -92,8 +92,8 @@ export class PaymentServices {
                     return {success: false}
                 } 
                 if (resultCode === "00") {
-                    successPaymentSendWa(trx.handphone, trx.merchantOrderId, trx.customerName, trx.email, trx.productDetails, trx.amount,trx.paymentUrl);
-                    sendWaToAdmin(trx.customerName, trx.email, trx.handphone, trx.merchantOrderId, trx.product, trx.amount, trx.paymentUrl);
+                    successPaymentSendWa(trx.handphone, trx.merchantOrderId, trx.nama, trx.email, trx.productDetails, trx.amount,trx.paymentUrl);
+                    sendWaToAdmin(trx.nama, trx.email, trx.handphone, trx.merchantOrderId, trx.product, trx.amount, trx.paymentUrl);
 
                     return { success: true };
                 }
