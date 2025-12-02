@@ -145,3 +145,12 @@ body {
             color: #666;
             margin-top: -2px;
         }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* HIDE scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
+}

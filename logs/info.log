@@ -2976,3 +2976,5 @@ notNull Violation: payment.product cannot be null
 [2025-12-02 15:01:27] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-12-02 15:03:55] [32minfo[39m: Database Connected Successfully
 [2025-12-02 15:03:55] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 15:06:22] [32minfo[39m: Database Connected Successfully
+[2025-12-02 15:06:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
