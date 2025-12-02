@@ -18,7 +18,7 @@ export const authMiddleware = (req, res, next) => {
 };
 
 export const verifyResetTokenMiddleware = (req, res, next) => {
-  const { token } = req.query;
+  const { token } = req.params;
   if (!token) {
     return new ResponseHandler(res).error403("No token provided");
   }

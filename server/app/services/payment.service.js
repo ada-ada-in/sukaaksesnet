@@ -28,7 +28,7 @@ export class PaymentServices {
                 .createHash("sha256")
                 .update(merchantCode + timestamp + apiKey)
                 .digest("hex");
-            const merchantOrderId = `SAN-${Date.now()}-${Math.floor(Math.random() * 100000)}`;
+            const merchantOrderId = `INV-${Date.now()}-${Math.floor(Math.random() * 100000)}`;
             const payload = {
                 merchantCode,
                 merchantOrderId,

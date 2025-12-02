@@ -30,12 +30,13 @@
 #     "email": "email1@example.com"  
 # }
 
-# POST http://localhost:3000/api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsMUBleGFtcGxlLmNvbSIsImlhdCI6MTc2MzAyNDA0MiwiZXhwIjoxNzYzNjI4ODQyfQ.bv73uScPhWAb7ijH-jDZId_AR2nnm-oNuLQHrlBYuso
-# Content-Type: application/json
+POST http://localhost:3000/api/v1/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI
+Content-Type: application/json
 
-# {
-#     "newPassword": "newsecurepassword4"
-# }
+{
+    "newPassword": "newsecurepassword4",
+    "confirm_password": "newsecurepassword4"
+}
 
 # GET http://localhost:3000/api/v1/users?page=3&limit=10
 # Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyYzA4YWUyLWRiMTgtNGU3Ny05ZDI2LWM1ZmE0NGYxMWNmZCIsImVtYWlsIjoiZW1haWwyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzYyOTY1NjcwLCJleHAiOjE3NjM1NzA0NzB9.28GUZEkIl4YbkLNCZ1zlEiogGmOQ56G4j44u-MbXq_0
@@ -50,13 +51,13 @@
 #     "product": "Paket B"
 # }
 
-GET http://localhost:3000/api/v1/users/me
-Authorization: Bearer {{token}}
+# GET http://localhost:3000/api/v1/users/me
+# Authorization: Bearer {{token}}
 
-# POST https://9b4a848e5089.ngrok-free.app/api/v1/payment/callback
+# POST http://localhost:3000/api/v1/payment/callback
 # Content-Type: application/json
 
 # {
-#   "merchantOrderId": "SAN-1764090793652-59473",
+#   "merchantOrderId": "SAN-1764486539033-89921",
 #   "resultCode": "00"
 # }

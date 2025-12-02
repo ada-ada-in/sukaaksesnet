@@ -2687,3 +2687,292 @@ notNull Violation: payment.product cannot be null
 [2025-11-30 13:58:01] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-11-30 14:08:43] [32minfo[39m: Database Connected Successfully
 [2025-11-30 14:08:43] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-30 14:11:41] [32minfo[39m: Database Connected Successfully
+[2025-11-30 14:11:41] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-11-30 18:32:56] [32minfo[39m: Database Connected Successfully
+[2025-11-30 18:32:56] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 11:56:46] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 11:56:46] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 11:56:46] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 11:56:46] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:06:23] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:06:23] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:33:13] [32minfo[39m: Database Connected Successfully
+[2025-12-01 12:33:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 12:34:46] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:34:46] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:35:10] [32minfo[39m: Database Connected Successfully
+[2025-12-01 12:35:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 12:35:20] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:35:20] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:36:15] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:36:15] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:39:35] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:39:35] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:40:27] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:40:27] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 14:13:57] [32minfo[39m: Database Connected Successfully
+[2025-12-01 14:13:57] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 17:26:09] [32minfo[39m: Database Connected Successfully
+[2025-12-01 17:26:09] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 17:34:12] [32minfo[39m: Database Connected Successfully
+[2025-12-01 17:34:12] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 17:44:53] [32minfo[39m: Database Connected Successfully
+[2025-12-01 17:44:53] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 17:47:25] [32minfo[39m: Database Connected Successfully
+[2025-12-01 17:47:25] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 17:49:00] [32minfo[39m: Database Connected Successfully
+[2025-12-01 17:49:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 17:49:03] [32minfo[39m: Database Connected Successfully
+[2025-12-01 17:49:03] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 17:49:21] [32minfo[39m: Database Connected Successfully
+[2025-12-01 17:49:21] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 17:49:35] [32minfo[39m: Database Connected Successfully
+[2025-12-01 17:49:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-01 17:58:52] [32minfo[39m: Database Connected Successfully
+[2025-12-01 17:58:52] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:43:41] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:43:41] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:46:30] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:46:30] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:46:46] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:46:46] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:47:59] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:47:59] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:48:15] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:48:15] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:48:40] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:48:40] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:50:28] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:50:28] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:52:15] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:52:15] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:53:34] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:53:34] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:58:46] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:58:46] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 11:59:11] [32minfo[39m: Database Connected Successfully
+[2025-12-02 11:59:11] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:00:33] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:00:33] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:06:22] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:06:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:07:36] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:07:36] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:07:42] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:07:42] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:16:30] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:16:30] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:17:31] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:17:31] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:19:12] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:19:12] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:23:25] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:23:25] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:23:35] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:23:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:24:18] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:24:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:24:51] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:24:51] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:24:57] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:24:57] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:27:06] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:27:06] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:33:54] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:33:54] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:33:56] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:33:56] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:34:04] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:34:04] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:34:33] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:34:33] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:34:49] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:34:49] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:36:23] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:36:23] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 12:36:45] [31merror[39m: [ERROR] PUT /api/v1/users/me/password - data and salt arguments required
+[2025-12-02 12:36:45] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:101:45
+[2025-12-02 12:37:20] [31merror[39m: [ERROR] PUT /api/v1/users/me/password - data and salt arguments required
+[2025-12-02 12:37:20] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:101:45
+[2025-12-02 12:38:24] [32minfo[39m: Database Connected Successfully
+[2025-12-02 12:38:24] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 13:54:23] [31merror[39m: [ERROR] PUT /api/v1/users/me/password - data and salt arguments required
+[2025-12-02 13:54:23] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:101:45
+[2025-12-02 13:56:19] [32minfo[39m: Database Connected Successfully
+[2025-12-02 13:56:19] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:04:18] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:04:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:11:50] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:11:50] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:12:26] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:12:26] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:13:04] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:13:04] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:14:36] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:14:36] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:18:07] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:18:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:19:04] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:19:04] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:21:48] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:21:48] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:25:35] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:25:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:30:06] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:30:06] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:30:50] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:30:50] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:38:13] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:38:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:38:24] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:38:24] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:39:40] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:39:40] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:42:40] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:42:40] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:45:28] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:45:28] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:46:35] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:46:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:47:03] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:47:03] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:48:01] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:48:01] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:50:29] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:50:29] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:51:18] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:51:18] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:51:48] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:51:48] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:51:50] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:51:50] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at AuthService.updateUserPassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/auth.service.js:16:36)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:59:22
+[2025-12-02 14:52:40] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:52:40] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:52:44] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:52:44] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:53:00] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:53:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:53:07] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:53:07] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:53:13] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:53:13] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:57:36
+[2025-12-02 14:53:14] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:53:14] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:57:36
+[2025-12-02 14:54:15] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:54:15] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:54:16] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:54:16] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:60:36
+[2025-12-02 14:54:17] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:54:17] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:60:36
+[2025-12-02 14:54:18] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:54:18] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:60:36
+[2025-12-02 14:54:18] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:54:18] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:60:36
+[2025-12-02 14:55:01] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:55:01] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:55:08] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:55:08] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:62:45
+[2025-12-02 14:55:46] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:55:46] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:55:52] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:55:52] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:63:45
+[2025-12-02 14:55:59] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:55:59] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:63:45
+[2025-12-02 14:56:37] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:56:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:57:19] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:57:19] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:59:10] [32minfo[39m: Database Connected Successfully
+[2025-12-02 14:59:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 14:59:10] [31merror[39m: [ERROR] POST /api/v1/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:59:10] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:63:45
+[2025-12-02 15:01:27] [32minfo[39m: Database Connected Successfully
+[2025-12-02 15:01:27] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-02 15:03:55] [32minfo[39m: Database Connected Successfully
+[2025-12-02 15:03:55] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000

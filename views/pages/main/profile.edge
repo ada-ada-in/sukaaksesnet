@@ -1,678 +1,223 @@
 @include('components/head')
 <body class="bg-gray-50">
     <!-- Header -->
-@include('components/navbar-main')    
+@include('components/navbar')    
 
     <!-- Profile Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-10">
-                    <h1 class="text-3xl font-bold text-gray-800 mb-2">Profil Saya</h1>
-                    <p class="text-gray-600">Kelola informasi akun dan langganan Anda</p>
-                </div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Sidebar -->
-                    <div class="lg:col-span-1">
-                        <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
-                            <div class="text-center mb-6">
-                                <div class="relative inline-block mb-4">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile" class="w-24 h-24 rounded-full mx-auto">
-                                    <button class="absolute bottom-0 right-0 bg-indigo-600 text-white rounded-full p-2 hover:bg-indigo-700 transition">
-                                        <i class="fas fa-camera text-xs"></i>
-                                    </button>
+    <div x-data="fetchdata()" x-init="getProfile()">
+        <section class="py-16 mt-12">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-10">
+                        <h1 class="text-3xl font-bold text-gray-800 mb-2">Profil Saya</h1>
+                        <p class="text-gray-600">Kelola informasi akun dan langganan Anda</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- Sidebar -->
+                        <div class="lg:col-span-1">
+                            <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+                                <div class="text-center mb-6">
+                                    <div class="relative inline-block mb-4">
+                                        <div class="w-24 h-24 bg-indigo-600 text-white rounded-full 
+                                    flex items-center justify-center text-sm font-bold">
+                                    <i class="fas fa-user fa-3x"></i>
+                                    </div>
+                                    </div>
+                                    <h2 class="text-xl font-bold text-gray-800 profile-nama"></h2>
                                 </div>
-                                <h2 class="text-xl font-bold text-gray-800">Budi Santoso</h2>
-                                <p class="text-gray-600">Pelanggan sejak Jan 2023</p>
+                                
+                                <div class="space-y-4">
+                                    <div class="flex items-center text-gray-600">
+                                        <i class="fas fa-envelope w-5 mr-3"></i>
+                                        <span class="profile-email"></span>
+                                    </div>
+                                    <div class="flex items-center text-gray-600">
+                                        <i class="fas fa-phone w-5 mr-3"></i>
+                                        <span class="profile-handphone"></span>
+                                    </div>
+                                </div>
                             </div>
                             
-                            <div class="space-y-4">
-                                <div class="flex items-center text-gray-600">
-                                    <i class="fas fa-envelope w-5 mr-3"></i>
-                                    <span>budi.santoso@email.com</span>
+                        </div>
+                        
+                        <!-- Main Content -->
+                        <div class="lg:col-span-2">
+                            <!-- Profile Information -->
+                            <div id="profile-info" class="bg-white rounded-xl shadow-lg p-6 mb-6">
+                                <div class="flex justify-between items-center mb-6">
+                                    <h2 class="text-xl font-bold text-gray-800">Informasi Profil</h2>
+                                    <button class="openModal text-indigo-600 hover:text-indigo-800 font-medium">
+                                        <i class="fas fa-edit mr-1"></i> Edit
+                                    </button>
                                 </div>
-                                <div class="flex items-center text-gray-600">
-                                    <i class="fas fa-phone w-5 mr-3"></i>
-                                    <span>0812-3456-7890</span>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-gray-600 text-sm mb-1">Nama Lengkap</label>
+                                        <p class="font-medium profile-nama-card"></p>
+                                    </div>
+                                    <div>
+                                        <label class="block text-gray-600 text-sm mb-1">Email</label>
+                                        <p class="font-medium profile-email-card"></p>
+                                    </div>
+                                    <div>
+                                        <label class="block text-gray-600 text-sm mb-1">Nomor Telepon</label>
+                                        <p class="font-medium profile-handphone-card"></p>
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <label class="block text-gray-600 text-sm mb-1">Alamat Lengkap</label>
+                                        <p class="font-medium profile-alamat"></p>
+                                    </div>
                                 </div>
-                                <div class="flex items-center text-gray-600">
-                                    <i class="fas fa-id-card w-5 mr-3"></i>
-                                    <span>3201011234567890</span>
+                            </div>
+                            
+                            <!-- Security -->
+                            <div id="security" class="bg-white rounded-xl shadow-lg p-6">
+                                <h2 class="text-xl font-bold text-gray-800 mb-6">Keamanan</h2>
+                                
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-center p-4 border rounded-lg">
+                                        <div>
+                                            <h3 class="font-medium text-gray-800">Kata Sandi</h3>
+                                        </div>
+                                        <button class="text-indigo-600 hover:text-indigo-800 font-medium">Ubah</button>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="bg-white rounded-xl shadow-lg p-6">
-                            <h3 class="font-bold text-gray-800 mb-4">Menu Akun</h3>
-                            <nav class="space-y-2">
-                                <a href="#profile-info" class="block px-4 py-2 rounded-lg bg-indigo-50 text-indigo-600 font-medium">
-                                    <i class="fas fa-user mr-2"></i> Informasi Profil
-                                </a>
-                                <a href="#subscription" class="block px-4 py-2 rounded-lg hover:bg-gray-100 text-gray-700">
-                                    <i class="fas fa-wifi mr-2"></i> Langganan Saya
-                                </a>
-                                <a href="#billing" class="block px-4 py-2 rounded-lg hover:bg-gray-100 text-gray-700">
-                                    <i class="fas fa-file-invoice-dollar mr-2"></i> Tagihan & Pembayaran
-                                </a>
-                                <a href="#settings" class="block px-4 py-2 rounded-lg hover:bg-gray-100 text-gray-700">
-                                    <i class="fas fa-cog mr-2"></i> Pengaturan
-                                </a>
-                                <a href="#security" class="block px-4 py-2 rounded-lg hover:bg-gray-100 text-gray-700">
-                                    <i class="fas fa-shield-alt mr-2"></i> Keamanan
-                                </a>
-                            </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        @include('components/footer')
+    
+        @include('components/whatsapp')
+    
+        <!-- Edit Profile Modal -->
+        <div id="editProfileModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+                <div class="p-6 border-b">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-gray-800">Edit Profil</h3>
+                        <button onclick="closeModal('editProfileModal')" class="text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <form id="editProfileForm" class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="editFullname" class="block text-gray-700 mb-2">Nama Lengkap</label>
+                            <input type="text" id="editFullname" name="fullname" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                        <div>
+                            <label for="editEmail" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="editEmail" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                        <div>
+                            <label for="editPhone" class="block text-gray-700 mb-2">Nomor Telepon</label>
+                            <input type="tel" id="editPhone" name="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
                         </div>
                     </div>
                     
-                    <!-- Main Content -->
-                    <div class="lg:col-span-2">
-                        <!-- Profile Information -->
-                        <div id="profile-info" class="bg-white rounded-xl shadow-lg p-6 mb-6">
-                            <div class="flex justify-between items-center mb-6">
-                                <h2 class="text-xl font-bold text-gray-800">Informasi Profil</h2>
-                                <button class="text-indigo-600 hover:text-indigo-800 font-medium">
-                                    <i class="fas fa-edit mr-1"></i> Edit
-                                </button>
-                            </div>
-                            
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label class="block text-gray-600 text-sm mb-1">Nama Lengkap</label>
-                                    <p class="font-medium">Budi Santoso</p>
-                                </div>
-                                <div>
-                                    <label class="block text-gray-600 text-sm mb-1">Email</label>
-                                    <p class="font-medium">budi.santoso@email.com</p>
-                                </div>
-                                <div>
-                                    <label class="block text-gray-600 text-sm mb-1">Nomor Telepon</label>
-                                    <p class="font-medium">0812-3456-7890</p>
-                                </div>
-                                <div>
-                                    <label class="block text-gray-600 text-sm mb-1">Nomor KTP</label>
-                                    <p class="font-medium">3201011234567890</p>
-                                </div>
-                                <div class="md:col-span-2">
-                                    <label class="block text-gray-600 text-sm mb-1">Alamat Lengkap</label>
-                                    <p class="font-medium">Jl. Merdeka No. 123, Kelurahan Menteng, Kecamatan Menteng, Jakarta Pusat, DKI Jakarta 10310</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Current Subscription -->
-                        <div id="subscription" class="bg-white rounded-xl shadow-lg p-6 mb-6">
-                            <div class="flex justify-between items-center mb-6">
-                                <h2 class="text-xl font-bold text-gray-800">Langganan Aktif</h2>
-                                <button class="text-indigo-600 hover:text-indigo-800 font-medium">
-                                    <i class="fas fa-sync-alt mr-1"></i> Upgrade Paket
-                                </button>
-                            </div>
-                            
-                            <div class="border rounded-lg p-6 bg-indigo-50">
-                                <div class="flex justify-between items-start mb-4">
-                                    <div>
-                                        <h3 class="text-lg font-bold text-gray-800">Paket 30 Mbps</h3>
-                                        <p class="text-gray-600">Untuk UKM & Kantor</p>
-                                    </div>
-                                    <div class="text-right">
-                                        <p class="text-2xl font-bold text-indigo-600">Rp 305.000</p>
-                                        <p class="text-sm text-gray-500">/bulan</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="grid grid-cols-2 gap-4 mb-4">
-                                    <div>
-                                        <p class="text-sm text-gray-600">Status</p>
-                                        <p class="font-medium text-green-600">Aktif</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-600">Berlangganan Sejak</p>
-                                        <p class="font-medium">15 Jan 2023</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-600">Perpanjangan Otomatis</p>
-                                        <p class="font-medium">Aktif</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-600">Tagihan Berikutnya</p>
-                                        <p class="font-medium">15 Feb 2023</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="border-t pt-4">
-                                    <p class="text-sm text-gray-600 mb-2">Detail Layanan</p>
-                                    <ul class="space-y-1">
-                                        <li class="flex items-center text-sm">
-                                            <i class="fas fa-check text-green-500 mr-2"></i>
-                                            <span>Download 30 Mbps</span>
-                                        </li>
-                                        <li class="flex items-center text-sm">
-                                            <i class="fas fa-check text-green-500 mr-2"></i>
-                                            <span>Unlimited Kuota</span>
-                                        </li>
-                                        <li class="flex items-center text-sm">
-                                            <i class="fas fa-check text-green-500 mr-2"></i>
-                                            <span>Free Modem</span>
-                                        </li>
-                                        <li class="flex items-center text-sm">
-                                            <i class="fas fa-check text-green-500 mr-2"></i>
-                                            <span>Support 24/7</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Billing History -->
-                        <div id="billing" class="bg-white rounded-xl shadow-lg p-6 mb-6">
-                            <div class="flex justify-between items-center mb-6">
-                                <h2 class="text-xl font-bold text-gray-800">Riwayat Tagihan</h2>
-                                <button class="text-indigo-600 hover:text-indigo-800 font-medium">
-                                    <i class="fas fa-download mr-1"></i> Unduh
-                                </button>
-                            </div>
-                            
-                            <div class="overflow-x-auto">
-                                <table class="w-full">
-                                    <thead>
-                                        <tr class="border-b">
-                                            <th class="text-left py-3 px-4 text-gray-600 font-medium">Tanggal</th>
-                                            <th class="text-left py-3 px-4 text-gray-600 font-medium">Deskripsi</th>
-                                            <th class="text-left py-3 px-4 text-gray-600 font-medium">Jumlah</th>
-                                            <th class="text-left py-3 px-4 text-gray-600 font-medium">Status</th>
-                                            <th class="text-left py-3 px-4 text-gray-600 font-medium">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="border-b hover:bg-gray-50">
-                                            <td class="py-3 px-4">15 Jan 2023</td>
-                                            <td class="py-3 px-4">Paket 30 Mbps - Bulan Januari</td>
-                                            <td class="py-3 px-4 font-medium">Rp 305.000</td>
-                                            <td class="py-3 px-4">
-                                                <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Lunas</span>
-                                            </td>
-                                            <td class="py-3 px-4">
-                                                <button class="text-indigo-600 hover:text-indigo-800 text-sm">Detail</button>
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b hover:bg-gray-50">
-                                            <td class="py-3 px-4">15 Des 2022</td>
-                                            <td class="py-3 px-4">Paket 30 Mbps - Bulan Desember</td>
-                                            <td class="py-3 px-4 font-medium">Rp 305.000</td>
-                                            <td class="py-3 px-4">
-                                                <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Lunas</span>
-                                            </td>
-                                            <td class="py-3 px-4">
-                                                <button class="text-indigo-600 hover:text-indigo-800 text-sm">Detail</button>
-                                            </td>
-                                        </tr>
-                                        <tr class="border-b hover:bg-gray-50">
-                                            <td class="py-3 px-4">15 Nov 2022</td>
-                                            <td class="py-3 px-4">Paket 30 Mbps - Bulan November</td>
-                                            <td class="py-3 px-4 font-medium">Rp 305.000</td>
-                                            <td class="py-3 px-4">
-                                                <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Lunas</span>
-                                            </td>
-                                            <td class="py-3 px-4">
-                                                <button class="text-indigo-600 hover:text-indigo-800 text-sm">Detail</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        
-                        <!-- Settings -->
-                        <div id="settings" class="bg-white rounded-xl shadow-lg p-6 mb-6">
-                            <h2 class="text-xl font-bold text-gray-800 mb-6">Pengaturan</h2>
-                            
-                            <div class="space-y-6">
-                                <div class="flex justify-between items-center">
-                                    <div>
-                                        <h3 class="font-medium text-gray-800">Notifikasi Email</h3>
-                                        <p class="text-sm text-gray-600">Terima notifikasi tagihan dan pembaruan layanan</p>
-                                    </div>
-                                    <label class="relative inline-flex items-center cursor-pointer">
-                                        <input type="checkbox" class="sr-only peer" checked>
-                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
-                                    </label>
-                                </div>
-                                
-                                <div class="flex justify-between items-center">
-                                    <div>
-                                        <h3 class="font-medium text-gray-800">Notifikasi SMS</h3>
-                                        <p class="text-sm text-gray-600">Terima notifikasi penting via SMS</p>
-                                    </div>
-                                    <label class="relative inline-flex items-center cursor-pointer">
-                                        <input type="checkbox" class="sr-only peer">
-                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
-                                    </label>
-                                </div>
-                                
-                                <div class="flex justify-between items-center">
-                                    <div>
-                                        <h3 class="font-medium text-gray-800">Perpanjangan Otomatis</h3>
-                                        <p class="text-sm text-gray-600">Perpanjang langganan secara otomatis</p>
-                                    </div>
-                                    <label class="relative inline-flex items-center cursor-pointer">
-                                        <input type="checkbox" class="sr-only peer" checked>
-                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
-                                    </label>
-                                </div>
-                                
-                                <div class="flex justify-between items-center">
-                                    <div>
-                                        <h3 class="font-medium text-gray-800">Bahasa</h3>
-                                        <p class="text-sm text-gray-600">Pilih bahasa tampilan</p>
-                                    </div>
-                                    <select class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                                        <option>Bahasa Indonesia</option>
-                                        <option>English</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Security -->
-                        <div id="security" class="bg-white rounded-xl shadow-lg p-6">
-                            <h2 class="text-xl font-bold text-gray-800 mb-6">Keamanan</h2>
-                            
-                            <div class="space-y-4">
-                                <div class="flex justify-between items-center p-4 border rounded-lg">
-                                    <div>
-                                        <h3 class="font-medium text-gray-800">Kata Sandi</h3>
-                                        <p class="text-sm text-gray-600">Terakhir diubah: 15 Jan 2023</p>
-                                    </div>
-                                    <button class="text-indigo-600 hover:text-indigo-800 font-medium">Ubah</button>
-                                </div>
-                                
-                                <div class="flex justify-between items-center p-4 border rounded-lg">
-                                    <div>
-                                        <h3 class="font-medium text-gray-800">Verifikasi Dua Faktor</h3>
-                                        <p class="text-sm text-gray-600">Tambahkan lapisan keamanan ekstra</p>
-                                    </div>
-                                    <button class="text-indigo-600 hover:text-indigo-800 font-medium">Aktifkan</button>
-                                </div>
-                                
-                                <div class="flex justify-between items-center p-4 border rounded-lg">
-                                    <div>
-                                        <h3 class="font-medium text-gray-800">Perangkat Terhubung</h3>
-                                        <p class="text-sm text-gray-600">3 perangkat aktif</p>
-                                    </div>
-                                    <button class="text-indigo-600 hover:text-indigo-800 font-medium">Kelola</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mb-6">
+                        <label for="editAddress" class="block text-gray-700 mb-2">Alamat Lengkap</label>
+                        <textarea id="editAddress" name="address" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
                     </div>
-                </div>
+
+                    @include('components/message')
+                      
+                    <div class="flex justify-end space-x-3">
+                        <button type="button" onclick="closeModal('editProfileModal')" class=" openEditModal px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
+                            Batal
+                        </button>
+                        <button type="submit" @click.prevent="submit()" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+                            Simpan Perubahan
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    @include('components/footer')
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20layanan%20SUKA%20AKSES%20NET" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Edit Profile Modal -->
-    <div id="editProfileModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
-            <div class="p-6 border-b">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-xl font-bold text-gray-800">Edit Profil</h3>
-                    <button onclick="closeModal('editProfileModal')" class="text-gray-500 hover:text-gray-700">
-                        <i class="fas fa-times text-xl"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <form id="editProfileForm" class="p-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <label for="editFullname" class="block text-gray-700 mb-2">Nama Lengkap</label>
-                        <input type="text" id="editFullname" name="fullname" value="Budi Santoso" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                    </div>
-                    <div>
-                        <label for="editEmail" class="block text-gray-700 mb-2">Email</label>
-                        <input type="email" id="editEmail" name="email" value="budi.santoso@email.com" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                    </div>
-                    <div>
-                        <label for="editPhone" class="block text-gray-700 mb-2">Nomor Telepon</label>
-                        <input type="tel" id="editPhone" name="phone" value="0812-3456-7890" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                    </div>
-                    <div>
-                        <label for="editKtp" class="block text-gray-700 mb-2">Nomor KTP</label>
-                        <input type="text" id="editKtp" name="ktp" value="3201011234567890" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                    </div>
-                </div>
-                
-                <div class="mb-6">
-                    <label for="editAddress" class="block text-gray-700 mb-2">Alamat Lengkap</label>
-                    <textarea id="editAddress" name="address" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>Jl. Merdeka No. 123, Kelurahan Menteng, Kecamatan Menteng, Jakarta Pusat, DKI Jakarta 10310</textarea>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                    <div>
-                        <label for="editProvince" class="block text-gray-700 mb-2">Provinsi</label>
-                        <select id="editProvince" name="province" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                            <option value="DKI Jakarta" selected>DKI Jakarta</option>
-                            <option value="Jawa Barat">Jawa Barat</option>
-                            <option value="Jawa Tengah">Jawa Tengah</option>
-                            <option value="Jawa Timur">Jawa Timur</option>
-                            <option value="Banten">Banten</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="editCity" class="block text-gray-700 mb-2">Kota/Kabupaten</label>
-                        <select id="editCity" name="city" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                            <option value="Jakarta Pusat" selected>Jakarta Pusat</option>
-                            <option value="Jakarta Selatan">Jakarta Selatan</option>
-                            <option value="Jakarta Timur">Jakarta Timur</option>
-                            <option value="Jakarta Barat">Jakarta Barat</option>
-                            <option value="Jakarta Utara">Jakarta Utara</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="editPostcode" class="block text-gray-700 mb-2">Kode Pos</label>
-                        <input type="text" id="editPostcode" name="postcode" value="10310" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                    </div>
-                </div>
-                
-                <div class="flex justify-end space-x-3">
-                    <button type="button" onclick="closeModal('editProfileModal')" class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
-                        Batal
-                    </button>
-                    <button type="submit" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
-                        Simpan Perubahan
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Change Password Modal -->
-    <div id="changePasswordModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-xl shadow-2xl w-full max-w-md">
-            <div class="p-6 border-b">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-xl font-bold text-gray-800">Ubah Kata Sandi</h3>
-                    <button onclick="closeModal('changePasswordModal')" class="text-gray-500 hover:text-gray-700">
-                        <i class="fas fa-times text-xl"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <form id="changePasswordForm" class="p-6">
-                <div class="mb-4">
-                    <label for="currentPassword" class="block text-gray-700 mb-2">Kata Sandi Saat Ini</label>
-                    <div class="relative">
-                        <input type="password" id="currentPassword" name="currentPassword" class="w-full px-4 py-2 pr-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                        <button type="button" onclick="togglePassword('currentPassword')" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
-                            <i class="fas fa-eye"></i>
+    
+        <!-- Change Password Modal -->
+        <div id="changePasswordModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-xl shadow-2xl w-full max-w-md">
+                <div class="p-6 border-b">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-gray-800">Ubah Kata Sandi</h3>
+                        <button onclick="closeModal('changePasswordModal')" class="text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times text-xl"></i>
                         </button>
                     </div>
                 </div>
                 
-                <div class="mb-4">
-                    <label for="newPassword" class="block text-gray-700 mb-2">Kata Sandi Baru</label>
-                    <div class="relative">
-                        <input type="password" id="newPassword" name="newPassword" class="w-full px-4 py-2 pr-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                        <button type="button" onclick="togglePassword('newPassword')" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                    </div>
-                    <p class="text-xs text-gray-500 mt-1">Minimal 8 karakter, kombinasi huruf dan angka</p>
-                </div>
-                
-                <div class="mb-6">
-                    <label for="confirmPassword" class="block text-gray-700 mb-2">Konfirmasi Kata Sandi Baru</label>
-                    <div class="relative">
-                        <input type="password" id="confirmPassword" name="confirmPassword" class="w-full px-4 py-2 pr-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                        <button type="button" onclick="togglePassword('confirmPassword')" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="flex justify-end space-x-3">
-                    <button type="button" onclick="closeModal('changePasswordModal')" class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
-                        Batal
-                    </button>
-                    <button type="submit" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
-                        Ubah Kata Sandi
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
+                <form id="changePasswordForm" class="p-6">
 
-    <!-- Success Notification -->
-    <div id="successNotification" class="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 z-50">
-        <div class="flex items-center">
-            <i class="fas fa-check-circle mr-2"></i>
-            <span id="successMessage">Perubahan berhasil disimpan!</span>
+                    
+                    <div class="mb-4">
+                        <label for="newPassword" class="block text-gray-700 mb-2">Kata Sandi Baru</label>
+                        <div class="relative">
+                            <input type="password" id="newPassword" name="newPassword" class="w-full px-4 py-2 pr-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Minimal 8 karakter, kombinasi huruf dan angka</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="confirmPassword" class="block text-gray-700 mb-2">Konfirmasi Kata Sandi Baru</label>
+                        <div class="relative">
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="w-full px-4 py-2 pr-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                    </div>
+                    
+                    @include('components/message')
+
+                    <div class="flex justify-end space-x-3">
+                        <button type="button" onclick="closeModal('changePasswordModal')" class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
+                            Batal
+                        </button>
+                        <button type="submit" @click.prevent="submitchangePassword()" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+                            Ubah Kata Sandi
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Success Notification -->
+        <div id="successNotification" class="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+            <div class="flex items-center">
+                <i class="fas fa-check-circle mr-2"></i>
+                <span id="successMessage">Perubahan berhasil disimpan!</span>
+            </div>
         </div>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Menu navigation
-            const menuLinks = document.querySelectorAll('nav a[href^="#"]');
-            menuLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // Remove active class from all links
-                    menuLinks.forEach(l => {
-                        l.classList.remove('bg-indigo-50', 'text-indigo-600', 'font-medium');
-                        l.classList.add('text-gray-700');
-                    });
-                    
-                    // Add active class to clicked link
-                    this.classList.add('bg-indigo-50', 'text-indigo-600', 'font-medium');
-                    this.classList.remove('text-gray-700');
-                    
-                    // Scroll to section
-                    const targetId = this.getAttribute('href');
-                    const targetSection = document.querySelector(targetId);
-                    if (targetSection) {
-                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            });
-            
-            // Toggle switches
-            const toggles = document.querySelectorAll('input[type="checkbox"]');
-            toggles.forEach(toggle => {
-                toggle.addEventListener('change', function() {
-                    // In a real app, this would save the setting to the server
-                    console.log('Setting changed:', this.checked);
-                });
-            });
-            
-            // Edit profile button
-            const editProfileBtn = document.querySelector('#profile-info button');
-            editProfileBtn.addEventListener('click', function() {
-                openModal('editProfileModal');
-            });
-            
-            // Upgrade package button
-            const upgradeBtn = document.querySelector('#subscription button');
-            upgradeBtn.addEventListener('click', function() {
-                // Redirect to pricing page
-                window.location.href = '/#pricing';
-            });
-            
-            // Download billing button
-            const downloadBtn = document.querySelector('#billing button');
-            downloadBtn.addEventListener('click', function() {
-                // In a real app, this would generate and download a PDF
-                alert('Mengunduh riwayat tagihan...');
-            });
-            
-            // Security buttons
-            const securityButtons = document.querySelectorAll('#security button');
-            securityButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const action = this.textContent.trim();
-                    if (action === 'Ubah') {
-                        openModal('changePasswordModal');
-                    } else if (action === 'Aktifkan') {
-                        alert('Proses aktivasi verifikasi dua faktor...');
-                    } else if (action === 'Kelola') {
-                        alert('Halaman kelola perangkat akan segera tersedia');
-                    }
-                });
-            });
-            
-            // Edit profile form submission
-            document.getElementById('editProfileForm').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Get form data
-                const formData = new FormData(this);
-                
-                // Show loading state
-                const submitButton = this.querySelector('button[type="submit"]');
-                const originalText = submitButton.textContent;
-                submitButton.disabled = true;
-                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Menyimpan...';
-                
-                // Simulate API call
-                setTimeout(() => {
-                    // Update profile information on the page
-                    document.querySelector('#profile-info p:nth-of-type(1)').textContent = formData.get('fullname');
-                    document.querySelector('#profile-info p:nth-of-type(2)').textContent = formData.get('email');
-                    document.querySelector('#profile-info p:nth-of-type(3)').textContent = formData.get('phone');
-                    document.querySelector('#profile-info p:nth-of-type(4)').textContent = formData.get('ktp');
-                    document.querySelector('#profile-info p:nth-of-type(5)').textContent = formData.get('address');
-                    
-                    // Update sidebar info
-                    document.querySelector('.text-center h2').textContent = formData.get('fullname');
-                    document.querySelectorAll('.flex.items-center.text-gray-600 span')[0].textContent = formData.get('email');
-                    document.querySelectorAll('.flex.items-center.text-gray-600 span')[1].textContent = formData.get('phone');
-                    document.querySelectorAll('.flex.items-center.text-gray-600 span')[2].textContent = formData.get('ktp');
-                    
-                    // Reset button state
-                    submitButton.disabled = false;
-                    submitButton.textContent = originalText;
-                    
-                    // Close modal
-                    closeModal('editProfileModal');
-                    
-                    // Show success notification
-                    showSuccess('Profil berhasil diperbarui!');
-                }, 1500);
-            });
-            
-            // Change password form submission
-            document.getElementById('changePasswordForm').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const currentPassword = document.getElementById('currentPassword').value;
-                const newPassword = document.getElementById('newPassword').value;
-                const confirmPassword = document.getElementById('confirmPassword').value;
-                
-                // Validate passwords
-                if (newPassword.length < 8) {
-                    alert('Kata sandi baru minimal 8 karakter!');
-                    return;
-                }
-                
-                if (newPassword !== confirmPassword) {
-                    alert('Kata sandi baru dan konfirmasi tidak cocok!');
-                    return;
-                }
-                
-                // Show loading state
-                const submitButton = this.querySelector('button[type="submit"]');
-                const originalText = submitButton.textContent;
-                submitButton.disabled = true;
-                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Memproses...';
-                
-                // Simulate API call
-                setTimeout(() => {
-                    // Reset form
-                    this.reset();
-                    
-                    // Reset button state
-                    submitButton.disabled = false;
-                    submitButton.textContent = originalText;
-                    
-                    // Close modal
-                    closeModal('changePasswordModal');
-                    
-                    // Show success notification
-                    showSuccess('Kata sandi berhasil diubah!');
-                }, 1500);
-            });
-            
-            // Close modal when clicking outside
-            document.addEventListener('click', function(e) {
-                if (e.target.classList.contains('bg-opacity-50')) {
-                    const modals = ['editProfileModal', 'changePasswordModal'];
-                    modals.forEach(modalId => {
-                        if (!document.getElementById(modalId).classList.contains('hidden')) {
-                            closeModal(modalId);
-                        }
-                    });
-                }
-            });
-            
-            // Close modal with ESC key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    const modals = ['editProfileModal', 'changePasswordModal'];
-                    modals.forEach(modalId => {
-                        if (!document.getElementById(modalId).classList.contains('hidden')) {
-                            closeModal(modalId);
-                        }
-                    });
-                }
-            });
-        });
-        
-        // Modal functions
-        function openModal(modalId) {
-            document.getElementById(modalId).classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-        
-        function closeModal(modalId) {
-            document.getElementById(modalId).classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-        
-        // Toggle password visibility
-        function togglePassword(inputId) {
-            const input = document.getElementById(inputId);
-            const icon = input.nextElementSibling.querySelector('i');
-            
-            if (input.type === 'password') {
-                input.type = 'text';
-                icon.classList.remove('fa-eye');
-                icon.classList.add('fa-eye-slash');
-            } else {
-                input.type = 'password';
-                icon.classList.remove('fa-eye-slash');
-                icon.classList.add('fa-eye');
-            }
-        }
-        
-        // Show success notification
-        function showSuccess(message) {
-            const notification = document.getElementById('successNotification');
-            document.getElementById('successMessage').textContent = message;
-            notification.classList.remove('translate-x-full');
-            
-            setTimeout(() => {
-                notification.classList.add('translate-x-full');
-            }, 3000);
-        }
+        // Open Edit Profile Modal
+const openEditBtn = document.querySelector('.openModal');
+if (openEditBtn) {
+    openEditBtn.addEventListener('click', () => {
+        document.getElementById('editProfileModal').classList.remove('hidden');
+    });
+}
+
+// Open Change Password Modal
+const openPasswordBtn = document.querySelector('#security button');
+if (openPasswordBtn) {
+    openPasswordBtn.addEventListener('click', () => {
+        document.getElementById('changePasswordModal').classList.remove('hidden');
+    });
+}
+
+// Close Modal Function
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.add('hidden');
+}
     </script>
 </body>
 </html>

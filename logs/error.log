@@ -1166,3 +1166,132 @@ notNull Violation: payment.product cannot be null
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async PaymentServices.postPaymentServices (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/payment.service.js:46:30)
     at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/payment.controller.js:15:24
+[2025-12-01 11:56:46] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 11:56:46] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 11:56:46] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 11:56:46] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:06:23] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:06:23] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:34:46] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:34:46] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:35:20] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:35:20] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:36:15] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:36:15] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:39:35] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:39:35] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-01 12:40:27] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-01 12:40:27] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-02 12:36:45] [31merror[39m: [ERROR] PUT /api/v1/users/me/password - data and salt arguments required
+[2025-12-02 12:36:45] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:101:45
+[2025-12-02 12:37:20] [31merror[39m: [ERROR] PUT /api/v1/users/me/password - data and salt arguments required
+[2025-12-02 12:37:20] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:101:45
+[2025-12-02 13:54:23] [31merror[39m: [ERROR] PUT /api/v1/users/me/password - data and salt arguments required
+[2025-12-02 13:54:23] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:101:45
+[2025-12-02 14:51:50] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:51:50] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at AuthService.updateUserPassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/auth.service.js:16:36)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:59:22
+[2025-12-02 14:53:13] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:53:13] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:57:36
+[2025-12-02 14:53:14] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:53:14] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:57:36
+[2025-12-02 14:54:16] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:54:16] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:60:36
+[2025-12-02 14:54:17] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:54:17] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:60:36
+[2025-12-02 14:54:18] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:54:18] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:60:36
+[2025-12-02 14:54:18] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:54:18] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:60:36
+[2025-12-02 14:55:08] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:55:08] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:62:45
+[2025-12-02 14:55:52] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:55:52] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:63:45
+[2025-12-02 14:55:59] [31merror[39m: [ERROR] POST /api/v1/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:55:59] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:63:45
+[2025-12-02 14:59:10] [31merror[39m: [ERROR] POST /api/v1/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYW4uaGFsaW05OEBnbWFpbC5jb20iLCJpYXQiOjE3NjQ2NjE0MTYsImV4cCI6MTc2NTI2NjIxNn0.QkvU2YIgUoZLr1mH_pE26X7kE5Sr1t9zilUPk6m0mqI - data and salt arguments required
+[2025-12-02 14:59:10] [31merror[39m: Server error! - data and salt arguments required, Stack: Error: data and salt arguments required
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:133:17)
+    at C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
+    at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
+    at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:63:45
