@@ -28,4 +28,8 @@ export class UsersService {
     async deleteUser(id) {
     return await this.userRepository.deleteById(id);
     }
+
+    async updateUserPassword(id, newPassword) {
+        return await this.userRepository.updatePassword(id, newPassword);
+    }
 }

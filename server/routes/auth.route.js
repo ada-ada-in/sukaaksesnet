@@ -12,6 +12,6 @@ authRouter.post("/login", validateLogin, loginLimiter, authController.login);
 authRouter.post("/register", validateUser, registerLimiter, authController.register);
 authRouter.post("/logout", logoutLimiter, authMiddleware, authController.logout);
 authRouter.post("/forget-password", validateForgetPassword, forgetPasswordLimiter, authController.forgetPassword);
-authRouter.post("/reset-password", validateResetPassword, resetPasswordLimiter, verifyResetTokenMiddleware, authController.resetPassword);
+authRouter.post("/reset-password/:token",validateResetPassword, resetPasswordLimiter, verifyResetTokenMiddleware, authController.resetPassword);
 
 export default authRouter;

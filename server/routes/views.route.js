@@ -23,6 +23,11 @@ viewRouter.get("/auth/forget-password", async (req, res) => {
   res.send(html);
 });
 
+viewRouter.get("/auth/reset-password", async (req, res) => {
+  const html = await edge.render("pages/auth/reset-password", { title: "Forgot Password" });
+  res.send(html);
+});
+
 viewRouter.get("/choose-packet", async (req, res) => {
   const html = await edge.render("pages/main/choose", { title: "Choose Packet" });
   res.send(html);

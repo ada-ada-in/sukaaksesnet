@@ -1,6 +1,5 @@
 import nodemailer from 'nodemailer';
 import { ENV } from '../configs/env.js';
-import ResponseHandler from './response.js';
 
 
 const createTransporter = () => {

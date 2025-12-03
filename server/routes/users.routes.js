@@ -8,6 +8,8 @@ const userController = new UserController();
 
 router.get("/users", authMiddleware, globalLimiter, userController.getAllUsers);
 router.get("/users/me", authMiddleware, globalLimiter, userController.getUserByMe);
+router.put("/users/me", authMiddleware, globalLimiter, userController.updateUserByToken);
+router.put("/users/me/password", authMiddleware, globalLimiter, userController.updatePasswordUserByToken);
 router.get("/users/:id", authMiddleware, globalLimiter, userController.getUserById);
 router.delete("/users/:id", authMiddleware, globalLimiter, userController.deleteUser);
 

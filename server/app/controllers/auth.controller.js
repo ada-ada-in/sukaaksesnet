@@ -5,6 +5,7 @@ import { jwtSign, refreshTokenSign, generateResetToken } from "../../utils/auth.
 import { validatePassword } from "../../middleware/validate.middleware.js";
 import { sendEmail } from "../../utils/nodemailer.js";
 import { ENV } from "../../configs/env.js";
+import bcrypt from "bcrypt";
 
 export class AuthController {
     constructor() {
@@ -45,16 +46,25 @@ export class AuthController {
         const resetToken = generateResetToken({ email: req.body.email });
         const confirmEmail = await this.authService.getUserByEmail(req.body.email)
         if(!confirmEmail) return new ResponseHandler(res).error400("Cannot find email!")
-        const resetLink = `${ENV.app.front_end_url}/reset-password?token=${resetToken}`;
+        const resetLink = `${ENV.app.front_end_url}/auth/reset-password?token=${resetToken}`;
         await sendEmail(req.body.email, resetLink);
         return new ResponseHandler(res).successReset("password reset email sent",resetLink);
     });
 
-    resetPassword = asyncHandler(async (req, res, next) => {
-        const { newPassword } = req.body;
-        console.log(req.user.email)
-        const data = await this.authService.updateUserPassword(req.user.email, newPassword);
-        return new ResponseHandler(res).success200Custom("Password has been reset successfully", data);
+    resetPassword = asyncHandler(async (req, res) => {
+        const { newPassword, confirm_password } = req.body;
+        const { email } = req.user;
+        console.log("REQ BODY:", req.body);
+        if (newPassword !== confirm_password) {
+            return new ResponseHandler(res)
+                .error400("New Password and Confirm Password do not match");
+        }
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(newPassword, salt);
+        const data = await this.authService.updateUserPassword(email, hashedPassword);
+        return new ResponseHandler(res)
+            .success200Custom("Password has been reset successfully", data);
     });
+
 
 } 

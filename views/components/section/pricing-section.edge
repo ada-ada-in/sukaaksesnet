@@ -1,13 +1,19 @@
-    <section id="pricing" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pilih Paket Terbaik Anda</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Harga transparan tanpa biaya tersembunyi</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
-                <!-- 10 MBPS Plan -->
-                <div class="pricing-card bg-white rounded-xl overflow-hidden">
+<section id="pricing" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <!-- Title -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Pilih Paket Terbaik Anda</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Harga transparan tanpa biaya tersembunyi</p>
+        </div>
+
+        <!-- Wrapper Relative for Navigation Buttons -->
+        <div class="relative">
+
+            <!-- Scroll Container -->
+            <div id="pricingScroll" class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 scrollbar-hide scroll-smooth">
+                
+                <!-- 10 MBPS -->
+                <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center">
                     <div class="card-gradient text-white p-6 text-center">
                         <h3 class="text-xl font-bold mb-2">10 Mbps</h3>
                         <p class="text-3xl font-bold mb-1">Rp 180.000<span class="text-lg font-normal">/bulan</span></p>
@@ -15,29 +21,17 @@
                     </div>
                     <div class="p-6">
                         <ul class="space-y-3 mb-6">
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Download 10 Mbps</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Unlimited Kuota</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Free Modem</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Support 24/7</span>
-                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Download 10 Mbps</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited Kuota</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
                         </ul>
-                        <button onclick="pilihpaket('10 Mbps', '180000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold block text-center">Pilih Paket</button>
+                        <button onclick="pilihpaket('10 Mbps', '180000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
                     </div>
                 </div>
-                
-                <!-- 20 MBPS Plan -->
-                <div class="pricing-card bg-white rounded-xl overflow-hidden">
+
+                <!-- 20 MBPS -->
+                <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center">
                     <div class="card-gradient text-white p-6 text-center">
                         <h3 class="text-xl font-bold mb-2">20 Mbps</h3>
                         <p class="text-3xl font-bold mb-1">Rp 250.000<span class="text-lg font-normal">/bulan</span></p>
@@ -45,91 +39,53 @@
                     </div>
                     <div class="p-6">
                         <ul class="space-y-3 mb-6">
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Download 20 Mbps</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Unlimited Kuota</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Free Modem</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Support 24/7</span>
-                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Download 20 Mbps</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited Kuota</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
                         </ul>
-                        <button onclick="pilihpaket('20 Mbps', '250000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold block text-center">Pilih Paket</button>
+                        <button onclick="pilihpaket('20 Mbps', '250000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
                     </div>
                 </div>
-                
-                <!-- 30 MBPS Plan -->
-                <div class="pricing-card bg-white rounded-xl overflow-hidden transform scale-105">
-                    <div class="relative">
-                        <div class="card-gradient text-white p-6 text-center">
-                            <h3 class="text-xl font-bold mb-2">30 Mbps</h3>
-                            <p class="text-3xl font-bold mb-1">Rp 305.000<span class="text-lg font-normal">/bulan</span></p>
-                            <p class="text-sm opacity-75">Untuk UKM & Kantor</p>
-                        </div>
+
+                <!-- 30 MBPS -->
+                <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center md:scale-105">
+                    <div class="card-gradient text-white p-6 text-center">
+                        <h3 class="text-xl font-bold mb-2">30 Mbps</h3>
+                        <p class="text-3xl font-bold mb-1">Rp 305.000<span class="text-lg font-normal">/bulan</span></p>
+                        <p class="text-sm opacity-75">Untuk UKM & Kantor</p>
                     </div>
                     <div class="p-6">
                         <ul class="space-y-3 mb-6">
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Download 30 Mbps</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Unlimited Kuota</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Free Modem</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Support 24/7</span>
-                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Download 30 Mbps</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited Kuota</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
                         </ul>
-                        <button onclick="pilihpaket('30 Mbps', '305000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold block text-center">Pilih Paket</button>
+                        <button onclick="pilihpaket('30 Mbps', '305000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
                     </div>
                 </div>
-                
-                <!-- 50 MBPS Plan -->
-                <div class="pricing-card bg-white rounded-xl overflow-hidden">
+
+                <!-- 50 MBPS -->
+                <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center">
                     <div class="card-gradient text-white p-6 text-center">
                         <h3 class="text-xl font-bold mb-2">50 Mbps</h3>
-                        <p class="text-3xl font-bold mb-1">Rp 450.000<span class="text-lg font-normal">/bulan</span></button>
+                        <p class="text-3xl font-bold mb-1">Rp 450.000<span class="text-lg font-normal">/bulan</span></p>
                         <p class="text-sm opacity-75">Untuk bisnis menengah</p>
                     </div>
                     <div class="p-6">
                         <ul class="space-y-3 mb-6">
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Download 50 Mbps</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Unlimited Kuota</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Free Modem</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Support 24/7</span>
-                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Download 50 Mbps</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited Kuota</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
                         </ul>
-                        <button onclick="pilihpaket('50 Mbps', '450000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold block text-center">Pilih Paket</button>
+                        <button onclick="pilihpaket('50 Mbps', '450000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
                     </div>
                 </div>
-                
-                <!-- 100 MBPS Plan -->
-                <div class="pricing-card bg-white rounded-xl overflow-hidden">
+
+                <!-- 100 MBPS -->
+                <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center">
                     <div class="card-gradient text-white p-6 text-center">
                         <h3 class="text-xl font-bold mb-2">100 Mbps</h3>
                         <p class="text-3xl font-bold mb-1">Rp 560.000<span class="text-lg font-normal">/bulan</span></p>
@@ -137,26 +93,54 @@
                     </div>
                     <div class="p-6">
                         <ul class="space-y-3 mb-6">
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Download 100 Mbps</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Unlimited Kuota</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Free Modem</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check text-green-500 mr-3"></i>
-                                <span>Support 24/7</span>
-                            </li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Download 100 Mbps</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited Kuota</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
                         </ul>
-                        <button onclick="pilihpaket('100 Mbps', '560000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold block text-center">Pilih Paket</button>
+                        <button onclick="pilihpaket('100 Mbps', '560000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
                     </div>
                 </div>
+
             </div>
+
+            <!-- Left Arrow -->
+            <button onclick="scrollLeft()" class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg p-3 rounded-full hover:bg-gray-200 transition">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Right Arrow -->
+            <button onclick="scrollRight()" class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg p-3 rounded-full hover:bg-gray-200 transition">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    const container = document.getElementById("pricingScroll");
+
+    function scrollLeft() {
+        container.scrollBy({
+            left: -350,
+            behavior: "smooth"
+        });
+    }
+
+    function scrollRight() {
+        container.scrollBy({
+            left: 350,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+<style>
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        scrollbar-width: none;
+    }
+</style>

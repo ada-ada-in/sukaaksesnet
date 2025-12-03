@@ -11,16 +11,16 @@
     </header>
 
     <!-- CARD -->
-    <main class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8 mt-10">
+    <main class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8 mt-10" x-data="payment()">
         
         <!-- User -->
-        <div class="flex items-center gap-3 mb-6">
+        <div class="flex items-center gap-3 mb-6" x-init="fetchNameAndHandphone()">
             <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl">
                 <i class="fas fa-user"></i>
             </div>
             <div>
-                <h3 class="font-semibold text-lg" id="namaPelanggan">Chandra Halim</h3>
-                <p class="text-gray-600 text-sm" id="nomorPelanggan">+62895342754470</p>
+                <h3 class="font-semibold text-lg" id="namaPelanggan"></h3>
+                <p class="text-gray-600 text-sm" id="nomorPelanggan"></p>
             </div>
         </div>
 
@@ -51,8 +51,10 @@
             Link pembayaran akan dikirim melalui WhatsApp setelah Anda klik tombol "Bayar Sekarang".
         </div>
 
+        @include('components/message')
+
         <!-- PAY BUTTON -->
-        <button id="btnBayar" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold mt-4">
+        <button id="btnBayar" @Click="submit()" type="submit" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold mt-4">
             Bayar Sekarang
         </button>
 

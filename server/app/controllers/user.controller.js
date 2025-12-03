@@ -1,6 +1,7 @@
 import ResponseHandler from "../../utils/response.js";
 import { UsersService } from "../services/users.service.js";
 import { asyncHandler } from "../../middleware/asyncHandler.middleware.js";
+import bcrypt from "bcrypt";
 
 export class UserController {
   constructor() {
@@ -31,7 +32,7 @@ export class UserController {
     });
 
     getUserByMe = asyncHandler(async(req, res, next) => {
-        const {id} = req.user.id
+        const {id} = req.user
         const user  = await this.usersService.getUserById(id)
         if(!user) return new ResponseHandler(res).error400('Cannot find Id!')
         return new ResponseHandler(res).success200(user)
@@ -71,6 +72,41 @@ export class UserController {
             return new ResponseHandler(res).error404(message);
         }   
         return new ResponseHandler(res).success200(updatedUser);
+    } );
+
+    updateUserByToken = asyncHandler(async (req, res, next) => {
+        const { id } = req.user;
+        const { nomor_pelanggan, nama, alamat, email, password } = req.body;
+        const updatedUser = await this.usersService.updateUser(id, {
+            nomor_pelanggan,
+            nama,
+            alamat,
+            email,
+            password,
+        });
+        if (!updatedUser) {
+            const message = `User with id ${id} not found or no changes made`;
+            return new ResponseHandler(res).error404(message);
+        }   
+        return new ResponseHandler(res).success200Custom("Profile updated successfully", updatedUser);
+    } );
+
+    updatePasswordUserByToken = asyncHandler(async (req, res, next) => {
+        const { id } = req.user;
+        const { password, confirm_password } = req.body;
+        if(password !== confirm_password){
+            return new ResponseHandler(res).error400("Password and Confirm Password do not match");
+        }
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
+        const updatedUser = await this.usersService.updateUserPassword(id,
+            hashedPassword
+        );
+        if (!updatedUser) {
+            const message = `User with id ${id} not found or no changes made`;
+            return new ResponseHandler(res).error404(message);
+        }   
+        return new ResponseHandler(res).success200Custom("Profile updated successfully", updatedUser);
     } );
 
 }

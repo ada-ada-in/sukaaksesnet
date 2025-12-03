@@ -51,5 +51,12 @@ export class UserRepository {
           },  
       };
     }
+
+    async updatePassword(id, newPassword) {
+        return await this.model.update(
+            { password: newPassword },
+            { where: { id } }
+        );
+    }   
 }
     
