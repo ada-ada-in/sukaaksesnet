@@ -79,26 +79,39 @@ export class PaymentServices {
     }
   }
 
-  //getAllPayment
-  async getAllPaymentServices() {
-    return await this.paymentrepository.getAllPayment();
-  }
+    async callbackPaymentServices(merchantOrderId, resultCode) {
+            try {
 
-  //getPaymentByUser
-  async getPaymentByUserServices(id_users) {
-    return await this.paymentrepository.getPaymentByUser(id_users);
-  }
+                const trx = await this.paymentrepository.findByMerchantOrderId(merchantOrderId)
+                if (!trx) return { success: false };
+                const token = trx.jwtPayment
+                if (!token) {
+                logger.error("❌ No jwtPayment stored for this trx");
+                return { success: false };
+                }
+                let decoded;
+                try {
+                decoded = jwt.verify(token, ENV.jwt.payment);
+                } catch (err) {
+                logger.error("❌ INVALID INTERNAL JWT");
+                return { success: false };
+                }
+                if(decoded.merchantOrderId !== merchantOrderId) {
+                          logger.error("❌ merchantOrderId mismatch", decoded.merchantOrderId, merchantOrderId);
+                    return {success: false}
+                } 
+                if (resultCode === "00") {
+                    successPaymentSendWa(trx.handphone, trx.merchantOrderId, trx.customerName, trx.email, trx.product, trx.amount,trx.payment_url);
+                    sendWaToAdmin(trx.customerName, trx.email, trx.handphone, trx.merchantOrderId, trx.product, trx.amount, trx.payment_url);
 
-  //deletePayment
-  async deletePaymentServices(id) {
-    const deleted = await this.paymentrepository.getPaymentById(id);
-    if (!deleted) throw new Error("Payment not found");
-    return { deleted: true };
-  }
+                    return { success: true };
+                }
 
-  //updatePayment
-  async updatePaymentServices(id, data) {
-    await this.paymentrepository.updatePayment(id, data);
-    return { updated: true };
-  }
+                return { success: false };
+
+            } catch (err) {
+                logger.error(`CALLBACK ERROR: ${err.message}`);
+                return { success: false };
+            }
+        }
 }

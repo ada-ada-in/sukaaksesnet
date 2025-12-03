@@ -3013,6 +3013,7 @@ notNull Violation: payment.product cannot be null
     at async UserRepository.updatePassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/users.repository.js:56:16)
     at async UsersService.updateUserPassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/users.service.js:33:16)
     at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:102:29
+<<<<<<< HEAD
 [2025-12-03 13:41:05] [32minfo[39m: Database Connected Successfully
 [2025-12-03 13:41:05] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-12-03 13:52:15] [32minfo[39m: Database Connected Successfully
@@ -3059,3 +3060,5 @@ notNull Violation: payment.product cannot be null
 [2025-12-03 20:09:22] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-12-03 20:25:12] [32minfo[39m: Database Connected Successfully
 [2025-12-03 20:25:12] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+=======
+>>>>>>> parent of 72c7123 (add packet json)
