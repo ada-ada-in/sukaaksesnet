@@ -116,7 +116,7 @@ export class PaymentServices {
         }
 
           async getAllPaymentServices() {
-            return await this.paymentrepository.getAllPayment();
+            return await this.paymentrepository.getAllPayments();
           }
 
           async getPaymentByUserServices(id_users) {
