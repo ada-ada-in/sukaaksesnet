@@ -114,4 +114,24 @@ export class PaymentServices {
                 return { success: false };
             }
         }
+
+          async getAllPaymentServices() {
+            return await this.paymentrepository.getAllPayment();
+          }
+
+          async getPaymentByUserServices(id_users) {
+            return await this.paymentrepository.getPaymentByUser(id_users);
+          }
+
+          async deletePaymentServices(id) {
+            const deleted = await this.paymentrepository.getPaymentById(id);
+            if (!deleted) throw new Error("Payment not found");
+            return { deleted: true };
+          }
+
+          async updatePaymentServices(id, data) {
+            await this.paymentrepository.updatePayment(id, data);
+            return { updated: true };
+          }
+
 }
