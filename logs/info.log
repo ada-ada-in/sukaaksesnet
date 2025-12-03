@@ -3013,3 +3013,45 @@ notNull Violation: payment.product cannot be null
     at async UserRepository.updatePassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/users.repository.js:56:16)
     at async UsersService.updateUserPassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/users.service.js:33:16)
     at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:102:29
+[2025-12-03 13:41:05] [32minfo[39m: Database Connected Successfully
+[2025-12-03 13:41:05] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 13:52:15] [32minfo[39m: Database Connected Successfully
+[2025-12-03 13:52:15] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 19:22:15] [32minfo[39m: Database Connected Successfully
+[2025-12-03 19:22:15] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 19:24:23] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-03 19:24:23] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-03 19:24:23] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-03 19:24:23] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-03 19:24:37] [32minfo[39m: Database Connected Successfully
+[2025-12-03 19:24:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 19:25:03] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-03 19:25:03] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-03 19:25:03] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-03 19:25:03] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-03 19:25:08] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-03 19:25:08] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-03 19:25:08] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-03 19:25:08] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-03 19:28:35] [32minfo[39m: Database Connected Successfully
+[2025-12-03 19:28:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 19:28:38] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-12-03 19:28:38] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-12-03 19:28:49] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-12-03 19:28:49] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-12-03 19:29:08] [32minfo[39m: Database Connected Successfully
+[2025-12-03 19:29:08] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 19:29:10] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-12-03 19:29:10] [31merror[39m: ❌ Unhandled Rejection: Cannot read properties of undefined (reading 'replace')
+[2025-12-03 19:34:44] [32minfo[39m: Database Connected Successfully
+[2025-12-03 19:34:44] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 19:37:35] [32minfo[39m: Database Connected Successfully
+[2025-12-03 19:37:35] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 19:37:41] [31merror[39m: send Wa Error: Request failed with status code 500
+[2025-12-03 19:37:41] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 500
+[2025-12-03 19:44:10] [32minfo[39m: Database Connected Successfully
+[2025-12-03 19:44:10] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 19:56:02] [32minfo[39m: Database Connected Successfully
+[2025-12-03 19:56:02] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 20:07:17] [32minfo[39m: Database Connected Successfully
+[2025-12-03 20:07:17] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000

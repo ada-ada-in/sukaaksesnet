@@ -92,8 +92,8 @@ export class PaymentServices {
                     return {success: false}
                 } 
                 if (resultCode === "00") {
-                    successPaymentSendWa(trx.handphone, trx.merchantOrderId, trx.nama, trx.email, trx.productDetails, trx.amount,trx.paymentUrl);
-                    sendWaToAdmin(trx.nama, trx.email, trx.handphone, trx.merchantOrderId, trx.product, trx.amount, trx.paymentUrl);
+                    successPaymentSendWa(trx.handphone, trx.merchantOrderId, trx.customerName, trx.email, trx.product, trx.amount,trx.payment_url);
+                    sendWaToAdmin(trx.customerName, trx.email, trx.handphone, trx.merchantOrderId, trx.product, trx.amount, trx.payment_url);
 
                     return { success: true };
                 }

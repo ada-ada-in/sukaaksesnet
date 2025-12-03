@@ -53,10 +53,7 @@ SUKA AKSES NET
 }
 
 export const successPaymentSendWa = async (phoneNumber,merchantOrderId,customerName,email,productDetails,amount,payment_url) => {
-    let waNumber = phoneNumber.replace(/[^0-9]/g, '');
-    if (waNumber.startsWith("0")) waNumber = "62" + waNumber.slice(1);
-    if (!waNumber.startsWith("62")) waNumber = "62" + waNumber;
-    await sendWa(waNumber, `
+    await sendWa(phoneNumber, `
 Pembayaran BERHASIL!
 
 Nomor Pembayaran : ${merchantOrderId}
@@ -74,15 +71,12 @@ SUKA AKSES NET
 }
 
 export const sendWaToAdmin = async (customerName,email,phoneNumber,merchantOrderId,productDetails,amount,payment_url) => {
-    let waNumber = phoneNumber.replace(/[^0-9]/g, '');
-    if (waNumber.startsWith("0")) waNumber = "62" + waNumber.slice(1);
-    if (!waNumber.startsWith("62")) waNumber = "62" + waNumber;
                     await sendWa(ENV.wablas.adminPhone, `
 USER TELAH MELAKUKAN PEMBAYARAN!
 
 Nama : ${customerName}
 Email : ${email}
-HP : ${waNumber}
+HP : ${phoneNumber}
 Invoice : ${merchantOrderId}
 Paket : ${productDetails}
 Jumlah : Rp ${Number(amount).toLocaleString("id-ID")}
