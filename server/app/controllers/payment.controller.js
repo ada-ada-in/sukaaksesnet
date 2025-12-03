@@ -51,13 +51,7 @@ export class PaymentController {
 
   getAllPayment = asyncHandler(async (req, res, next) => {
     const result = await this.paymentservices.getAllPaymentServices();
-    return new ResponseHandler(res).paymentGetAll(result);
-  });
-
-  getPaymentById = asyncHandler(async (req, res, next) => {
-    const { id } = req.params;
-    const result = await this.paymentservices.getPaymentByIdServices(id);
-    return new ResponseHandler(res).paymentGetById(result);
+    return new ResponseHandler(res).success200(result);
   });
 
   getPaymentByUser = asyncHandler(async (req, res, next) => {
@@ -65,13 +59,13 @@ export class PaymentController {
     const result = await this.paymentservices.getPaymentByUserServices(
       id_users
     );
-    return new ResponseHandler(res).paymentGetByUser(result);
+    return new ResponseHandler(res).success200Custom("Success get payment by user",result);
   });
 
   deletePayment = asyncHandler(async (req, res, next) => {
     const { id } = req.params;
     const result = await this.paymentservices.deletePaymentServices(id);
-    return new ResponseHandler(res).paymentDeleted(result);
+    return new ResponseHandler(res).successDelete("Success deleted payment",result);
   });
 
   updatePayment = asyncHandler(async (req, res, next) => {
@@ -81,6 +75,6 @@ export class PaymentController {
       id,
       updateData
     );
-    return new ResponseHandler(res).paymentUpdated(result);
+    return new ResponseHandler(res).success200Custom("Success update payment",result);
   });
 }

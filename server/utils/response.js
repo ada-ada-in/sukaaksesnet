@@ -1,4 +1,3 @@
-import { data } from "alpinejs";
 import { logger } from "../configs/logger.js";
 import { deleteCookie } from "./auth.js";
 
@@ -166,54 +165,6 @@ class ResponseHandler {
     }); 
     logger.error(`Server error! - ${message}, Stack: ${stack}`);  
   }
-}
-
-//Payment Success Get All
-paymentGetAll(data) {
-  this.res.status(200).json({
-    status: { code: 200, message: "success get all payments" },
-    data,
-  });
-}
-
-//Payment Success Get By Id
-paymentGetById(data) {
-  this.res.status(200).json({
-    status: { code: 200, message: "success get payment by id" },
-    data,
-  });
-}
-
-//Payment Success Get By User
-paymentGetByUser(data) {
-  this.res.status(200).json({
-    status: { code: 200, message: "success get payments by user" },
-    data,
-  });
-}
-
-//Payment Created
-paymentCreated(data) {
-  this.res.status(201).json({
-    status: { code: 201, message: "payment created successfully" },
-    data,
-  });
-}
-
-//Payment Updated
-paymentUpdated(data) {
-  this.res.status(200).json({
-    status: { code: 200, message: "payment updated successfully" },
-    data,
-  });
-}
-
-//Payment Deleted
-paymentDeleted(data) {
-  this.res.status(200).json({
-    status: { code: 200, message: "payment deleted successfully" },
-    data,
-  });
 }
 
 export default ResponseHandler;
