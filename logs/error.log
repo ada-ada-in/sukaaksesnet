@@ -1314,3 +1314,6 @@ notNull Violation: payment.product cannot be null
     at async UserRepository.updatePassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/users.repository.js:56:16)
     at async UsersService.updateUserPassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/users.service.js:33:16)
     at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:102:29
+[2025-12-04 00:50:52] [31merror[39m: ⚠️ [ERROR] database error 
+[2025-12-04 00:50:56] [31merror[39m: ⚠️ [ERROR] database error 
+[2025-12-04 00:54:40] [31merror[39m: ⚠️ [ERROR] database error 

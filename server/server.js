@@ -3,6 +3,7 @@ import usersRouter from "./routes/users.routes.js";
 import authRouter from "./routes/auth.route.js";
 import paymentRouter from "./routes/payment.route.js";
 import viewRouter from "./routes/views.route.js";
+import productRouter from "./routes/product.route.js";
 import {errorHandler} from "./middleware/errorHandler.middleware.js";
 import {globalLimiter} from "./middleware/rateLimiter.middleware.js";
 
@@ -23,6 +24,7 @@ app.use(express.static("public"));
 app.use('/api/v1', usersRouter);
 app.use('/api/v1', authRouter);
 app.use('/api/v1', paymentRouter)
+app.use('/api/v1', productRouter)
 
 // View route
 app.use('/', viewRouter)

@@ -3062,3 +3062,18 @@ notNull Violation: payment.product cannot be null
 [2025-12-03 20:25:12] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 =======
 >>>>>>> parent of 72c7123 (add packet json)
+[2025-12-03 21:20:43] [32minfo[39m: Database Connected Successfully
+[2025-12-03 21:20:43] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-04 00:50:52] [31merror[39m: ⚠️ [ERROR] database error 
+[2025-12-04 00:50:56] [31merror[39m: ⚠️ [ERROR] database error 
+[2025-12-04 00:54:40] [31merror[39m: ⚠️ [ERROR] database error 
+[2025-12-04 00:55:05] [32minfo[39m: Database Connected Successfully
+[2025-12-04 00:55:05] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-04 00:56:00] [32minfo[39m: Database Connected Successfully
+[2025-12-04 00:56:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-04 00:57:11] [32minfo[39m: Database Connected Successfully
+[2025-12-04 00:57:11] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-04 00:57:30] [32minfo[39m: Database Connected Successfully
+[2025-12-04 00:57:30] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-04 01:00:16] [32minfo[39m: Database Connected Successfully
+[2025-12-04 01:00:16] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
