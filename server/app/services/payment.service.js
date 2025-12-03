@@ -4,12 +4,7 @@ import { ENV } from "../../configs/env.js";
 import { logger } from "../../configs/logger.js";
 import { payMent } from "../../utils/payment.js";
 import { PaymentRepository } from "../repositories/payment.repository.js";
-import {
-  createSendWaToUsers,
-  successPaymentSendWa,
-  sendWaToAdmin,
-} from "../../utils/sendwa.js";
-import jwt from "jsonwebtoken";
+import { createSendWaToUsers } from "../../utils/sendwa.js";
 
 export class PaymentServices {
   constructor() {
@@ -19,35 +14,29 @@ export class PaymentServices {
     this.paymentrepository = new PaymentRepository();
   }
 
-  async postPaymentServices(
-    amount,
-    product,
-    customerName,
-    email,
-    handphone,
-    id_users
-  ) {
+  async postPaymentServices({ amount, product, nama, email, handphone, id_users }) {
     try {
       const merchantCode = ENV.duitku.merchantCode;
       const apiKey = ENV.duitku.apiKey;
       const callbackUrl = ENV.duitku.callbackUrl;
       const returnUrl = ENV.duitku.returnUrl || "";
       const postUrl = ENV.duitku.postPaymentUrl;
+
       const timestamp = Date.now().toString();
       const signature = crypto
         .createHash("sha256")
         .update(merchantCode + timestamp + apiKey)
         .digest("hex");
-      const merchantOrderId = `SAN-${Date.now()}-${Math.floor(
-        Math.random() * 100000
-      )}`;
+
+      const merchantOrderId = `INV-${Date.now()}-${Math.floor(Math.random() * 100000)}`;
+
       const payload = {
         merchantCode,
         merchantOrderId,
         paymentAmount: amount,
         productDetails: product,
         customerDetail: {
-          firstName: customerName,
+          firstName: nama,
           email,
           phoneNumber: handphone,
         },
@@ -55,6 +44,7 @@ export class PaymentServices {
         signature,
         returnUrl,
       };
+
       const response = await axios.post(postUrl, payload, {
         headers: {
           "Content-Type": "application/json",
@@ -64,17 +54,15 @@ export class PaymentServices {
         },
         timeout: 10000,
       });
+
       const payment_url = response.data.paymentUrl;
-      const paymentPayload = {
-        merchantOrderId,
-        amount,
-        product,
-      };
+      const paymentPayload = { merchantOrderId, amount, product };
       const jwtPayment = payMent(paymentPayload);
 
-      // createSendWaToUsers(handphone,merchantOrderId,customerName,product,amount,payment_url)
+      createSendWaToUsers(handphone, merchantOrderId, nama, product, amount, payment_url);
+
       return await this.paymentrepository.createPayment({
-        customerName,
+        customerName: nama,
         handphone,
         amount,
         email,
@@ -84,61 +72,9 @@ export class PaymentServices {
         id_users,
         jwtPayment,
       });
-    } catch (error) {
-      logger.error(`DUITKU CREATE INVOICE ERROR: ${error.message}`);
-      throw error;
-    }
-    
-    async postPaymentServices({amount, product, nama, email, handphone, id_users}) {
-        try {
-            const merchantCode = ENV.duitku.merchantCode;
-            const apiKey = ENV.duitku.apiKey;
-            const callbackUrl = ENV.duitku.callbackUrl;
-            const returnUrl = ENV.duitku.returnUrl || "";
-            const postUrl = ENV.duitku.postPaymentUrl;
-            const timestamp = Date.now().toString();
-            const signature = crypto
-                .createHash("sha256")
-                .update(merchantCode + timestamp + apiKey)
-                .digest("hex");
-            const merchantOrderId = `INV-${Date.now()}-${Math.floor(Math.random() * 100000)}`;
-            const payload = {
-                merchantCode,
-                merchantOrderId,
-                paymentAmount: amount,
-                productDetails: product,
-                customerDetail: {
-                    firstName: nama,
-                    email,
-                    phoneNumber: handphone
-                },
-                callbackUrl,
-                signature,
-                returnUrl
-            };
-            const response = await axios.post(postUrl, payload, {
-                headers: {
-                    "Content-Type": "application/json",
-                    "x-duitku-timestamp": timestamp,
-                    "x-duitku-signature": signature,
-                    "x-duitku-merchantcode": merchantCode
-                },
-                timeout: 10000
-            });           
-            const payment_url = response.data.paymentUrl
-           const paymentPayload = {
-                merchantOrderId, 
-                amount,
-                product
-            }
-            const jwtPayment = payMent(paymentPayload)
 
-            createSendWaToUsers(handphone,merchantOrderId,nama,product,amount,payment_url)
-            return await this.paymentrepository.createPayment({customerName : nama, handphone, amount, email, merchantOrderId, payment_url, product, id_users, jwtPayment})
-
-      return { success: false };
     } catch (err) {
-      logger.error(`CALLBACK ERROR: ${err.message}`);
+      logger.error(`DUITKU CREATE INVOICE ERROR: ${err.message}`);
       return { success: false };
     }
   }
@@ -147,28 +83,6 @@ export class PaymentServices {
   async getAllPaymentServices() {
     return await this.paymentrepository.getAllPayment();
   }
-
-                const trx = await this.paymentrepository.findByMerchantOrderId(merchantOrderId)
-                if (!trx) return { success: false };
-                const token = trx.jwtPayment
-                if (!token) {
-                logger.error("❌ No jwtPayment stored for this trx");
-                return { success: false };
-                }
-                let decoded;
-                try {
-                decoded = jwt.verify(token, ENV.jwt.payment);
-                } catch (err) {
-                logger.error("❌ INVALID INTERNAL JWT");
-                return { success: false };
-                }
-                if(decoded.merchantOrderId !== merchantOrderId) {
-                          logger.error("❌ merchantOrderId mismatch", decoded.merchantOrderId, merchantOrderId);
-                    return {success: false}
-                } 
-                if (resultCode === "00") {
-                    successPaymentSendWa(trx.handphone, trx.merchantOrderId, trx.customerName, trx.email, trx.product, trx.amount,trx.payment_url);
-                    sendWaToAdmin(trx.customerName, trx.email, trx.handphone, trx.merchantOrderId, trx.product, trx.amount, trx.payment_url);
 
   //getPaymentByUser
   async getPaymentByUserServices(id_users) {
@@ -182,7 +96,7 @@ export class PaymentServices {
     return { deleted: true };
   }
 
-  //update Payment
+  //updatePayment
   async updatePaymentServices(id, data) {
     await this.paymentrepository.updatePayment(id, data);
     return { updated: true };

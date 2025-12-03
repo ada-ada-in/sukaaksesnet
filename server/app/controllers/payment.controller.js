@@ -1,92 +1,163 @@
-import ResponseHandler from "../../utils/response.js";
-import { PaymentServices } from "../services/payment.service.js";
-import { asyncHandler } from "../../middleware/asyncHandler.middleware.js";
-import { get } from "http";
+import axios from "axios";
+import crypto from "crypto";
+import jwt from "jsonwebtoken";
 
-export class PaymentController {
+import { ENV } from "../../configs/env.js";
+import { logger } from "../../configs/logger.js";
+import { payMent } from "../../utils/payment.js";
+import { PaymentRepository } from "../repositories/payment.repository.js";
+import {
+  createSendWaToUsers,
+  successPaymentSendWa,
+  sendWaToAdmin,
+} from "../../utils/sendwa.js";
+
+export class PaymentServices {
   constructor() {
-    this.paymentservices = new PaymentServices();
+    if (!ENV.duitku.merchantCode || !ENV.duitku.apiKey) {
+      throw new Error("Duitku environment variables missing");
+    }
+    this.paymentrepository = new PaymentRepository();
   }
 
-  postPayment = asyncHandler(async (req, res, next) => {
-    const {
-      amount,
-      product,
-      email,
-      customerName,
-      handphone,
-      id_users,
-      resultCode,
-    } = req.body;
-    const result = await this.paymentservices.postPaymentServices(
-      amount,
-      product,
-      customerName,
-      email,
-      handphone,
-      id_users,
-      resultCode
-    );
-    return new ResponseHandler(res).success201(result);
-  });
+  async postPaymentServices(amount, product, customerName, email, handphone, id_users) {
+    try {
+      const merchantCode = ENV.duitku.merchantCode;
+      const apiKey = ENV.duitku.apiKey;
+      const callbackUrl = ENV.duitku.callbackUrl;
+      const returnUrl = ENV.duitku.returnUrl || "";
+      const postUrl = ENV.duitku.postPaymentUrl;
 
-    postPayment = asyncHandler(async(req, res, next)=> {
-        const {amount, product, resultCode} = req.body
-        const {email, nama, handphone, id} = req.user
-        console.log(req.user)
-        const result = await this.paymentservices.postPaymentServices({amount, product, nama, email, handphone, id_users : id, resultCode})
-        return new ResponseHandler(res).success201(result)
-    })
+      const timestamp = Date.now().toString();
+      const signature = crypto
+        .createHash("sha256")
+        .update(merchantCode + timestamp + apiKey)
+        .digest("hex");
 
-    callbackPayment = asyncHandler(async(req, res, next) => {
-    const callbackData = req.body;
-    const { merchantOrderId, resultCode, amount, signature } = callbackData;
-    const responseHash = await this.paymentservices.callbackPaymentServices(
-      merchantOrderId,
-      resultCode,
-      amount,
-      signature
-    );
-    return res.send(responseHash);
-  });
+      const merchantOrderId = `SAN-${Date.now()}-${Math.floor(
+        Math.random() * 100000
+      )}`;
 
-  // getAllPayment
-  getAllPayment = asyncHandler(async (req, res, next) => {
-    const result = await this.paymentservices.getAllPaymentServices();
-    return new ResponseHandler(res).paymentGetAll(result);
-  });
+      const payload = {
+        merchantCode,
+        merchantOrderId,
+        paymentAmount: amount,
+        productDetails: product,
+        customerDetail: {
+          firstName: customerName,
+          email,
+          phoneNumber: handphone,
+        },
+        callbackUrl,
+        signature,
+        returnUrl,
+      };
 
-  // getPaymentById
-  getPaymentById = asyncHandler(async (req, res, next) => {
-    const { id } = req.params;
-    const result = await this.paymentservices.getPaymentByIdServices(id);
-    return new ResponseHandler(res).paymentGetById(result);
-  });
+      const response = await axios.post(postUrl, payload, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-duitku-timestamp": timestamp,
+          "x-duitku-signature": signature,
+          "x-duitku-merchantcode": merchantCode,
+        },
+        timeout: 10000,
+      });
 
-  // getPaymentByUser
-  getPaymentByUser = asyncHandler(async (req, res, next) => {
-    const { id_users } = req.params;
-    const result = await this.paymentservices.getPaymentByUserServices(
-      id_users
-    );
-    return new ResponseHandler(res).paymentGetByUser(result);
-  });
+      const payment_url = response.data.paymentUrl;
 
-  // deletePayment
-  deletePayment = asyncHandler(async (req, res, next) => {
-    const { id } = req.params;
-    const result = await this.paymentservices.deletePaymentServices(id);
-    return new ResponseHandler(res).paymentDeleted(result);
-  });
+      const paymentPayload = { merchantOrderId, amount, product };
+      const jwtPayment = payMent(paymentPayload);
 
-  // update Payment
-  updatePayment = asyncHandler(async (req, res, next) => {
-    const { id } = req.params;
-    const updateData = req.body;
-    const result = await this.paymentservices.updatePaymentServices(
-      id,
-      updateData
-    );
-    return new ResponseHandler(res).paymentUpdated(result);
-  });
+      return await this.paymentrepository.createPayment({
+        customerName,
+        handphone,
+        amount,
+        email,
+        merchantOrderId,
+        payment_url,
+        product,
+        id_users,
+        jwtPayment,
+      });
+
+    } catch (error) {
+      logger.error(`DUITKU CREATE INVOICE ERROR: ${error.message}`);
+      throw error;
+    }
+  }
+
+  async callbackPaymentServices(merchantOrderId, resultCode) {
+    try {
+      const trx = await this.paymentrepository.findByMerchantOrderId(merchantOrderId);
+      if (!trx) return { success: false };
+
+      const token = trx.jwtPayment;
+      if (!token) {
+        logger.error("❌ No jwtPayment stored for this trx");
+        return { success: false };
+      }
+
+      let decoded;
+      try {
+        decoded = jwt.verify(token, ENV.jwt.payment);
+      } catch (err) {
+        logger.error("❌ INVALID INTERNAL JWT");
+        return { success: false };
+      }
+
+      if (decoded.merchantOrderId !== merchantOrderId) {
+        logger.error("❌ merchantOrderId mismatch", decoded.merchantOrderId, merchantOrderId);
+        return { success: false };
+      }
+
+      if (resultCode === "00") {
+        successPaymentSendWa(
+          trx.handphone,
+          trx.merchantOrderId,
+          trx.customerName,
+          trx.email,
+          trx.productDetails,
+          trx.amount,
+          trx.paymentUrl
+        );
+
+        sendWaToAdmin(
+          trx.customerName,
+          trx.email,
+          trx.handphone,
+          trx.merchantOrderId,
+          trx.product,
+          trx.amount,
+          trx.paymentUrl
+        );
+
+        return { success: true };
+      }
+
+      return { success: false };
+
+    } catch (err) {
+      logger.error(`CALLBACK ERROR: ${err.message}`);
+      return { success: false };
+    }
+  }
+
+  async getAllPaymentServices() {
+    return await this.paymentrepository.getAllPayment();
+  }
+
+  async getPaymentByUserServices(id_users) {
+    return await this.paymentrepository.getPaymentByUser(id_users);
+  }
+
+  async deletePaymentServices(id) {
+    const deleted = await this.paymentrepository.getPaymentById(id);
+    if (!deleted) throw new Error("Payment not found");
+    return { deleted: true };
+  }
+
+  async updatePaymentServices(id, data) {
+    await this.paymentrepository.updatePayment(id, data);
+    return { updated: true };
+  }
 }
