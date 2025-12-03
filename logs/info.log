@@ -2981,3 +2981,35 @@ notNull Violation: payment.product cannot be null
 [2025-12-03 12:49:29] [31merror[39m: ⚠️ [ERROR] database error 
 [2025-12-03 12:49:46] [32minfo[39m: Database Connected Successfully
 [2025-12-03 12:49:46] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 13:28:13] [32minfo[39m: Database Connected Successfully
+[2025-12-03 13:28:13] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 13:33:33] [32minfo[39m: Database Connected Successfully
+[2025-12-03 13:33:33] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 13:38:52] [32minfo[39m: Database Connected Successfully
+[2025-12-03 13:38:52] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 13:38:57] [32minfo[39m: Database Connected Successfully
+[2025-12-03 13:38:57] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 13:39:20] [32minfo[39m: Database Connected Successfully
+[2025-12-03 13:39:20] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 13:40:00] [32minfo[39m: Database Connected Successfully
+[2025-12-03 13:40:00] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 13:40:14] [32minfo[39m: Database Connected Successfully
+[2025-12-03 13:40:14] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-03 13:40:35] [31merror[39m: [ERROR] PUT /api/v1/users/me/password - string violation: password cannot be an array or an object
+[2025-12-03 13:40:35] [31merror[39m: Server error! - string violation: password cannot be an array or an object, Stack: SequelizeValidationError: string violation: password cannot be an array or an object
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async users.update (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1933:26)
+    at async UserRepository.updatePassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/users.repository.js:56:16)
+    at async UsersService.updateUserPassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/users.service.js:33:16)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:102:29
+[2025-12-03 13:40:41] [31merror[39m: [ERROR] PUT /api/v1/users/me/password - string violation: password cannot be an array or an object
+[2025-12-03 13:40:41] [31merror[39m: Server error! - string violation: password cannot be an array or an object, Stack: SequelizeValidationError: string violation: password cannot be an array or an object
+    at InstanceValidator._validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async users.update (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\sequelize\lib\model.js:1933:26)
+    at async UserRepository.updatePassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/repositories/users.repository.js:56:16)
+    at async UsersService.updateUserPassword (file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/services/users.service.js:33:16)
+    at async file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/user.controller.js:102:29

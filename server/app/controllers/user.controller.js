@@ -99,9 +99,9 @@ export class UserController {
         }
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
-        const updatedUser = await this.usersService.updateUser(id, {
-            hashedPassword,
-        });
+        const updatedUser = await this.usersService.updateUserPassword(id,
+            hashedPassword
+        );
         if (!updatedUser) {
             const message = `User with id ${id} not found or no changes made`;
             return new ResponseHandler(res).error404(message);
