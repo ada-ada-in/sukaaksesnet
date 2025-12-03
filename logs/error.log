@@ -1295,3 +1295,4 @@ notNull Violation: payment.product cannot be null
     at Object.promise (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\promises.js:17:12)
     at Object.hash (C:\Users\MyBook Hype AMD\Documents\project\sukaaksesnet\node_modules\bcrypt\bcrypt.js:129:25)
     at file:///C:/Users/MyBook%20Hype%20AMD/Documents/project/sukaaksesnet/server/app/controllers/auth.controller.js:63:45
+[2025-12-03 12:49:29] [31merror[39m: ⚠️ [ERROR] database error 
