@@ -1,7 +1,27 @@
 [
-  { "id": 1, "name": "10 Mbps", "price": 180000, "keterangan": "Cocok untuk rumah tangga"  },
-  { "id": 2, "name": "20 Mbps", "price": 250000, "keterangan": "Untuk work from home" },
-  { "id": 3, "name": "30 Mbps", "price": 305000, "keterangan": "Untuk UKM & Kantor" },
-  { "id": 4, "name": "50 Mbps", "price": 450000, "keterangan": "Untuk bisnis menengah" },
-  { "id": 5, "name": "100 Mbps", "price": 560000, "keterangan": "Untuk entreprise" }
+  { "id": 1, "name": "10 Mbps", "price": 180000, "keterangan": "Cocok untuk rumah tangga",  "benefits": [
+      "Unlimited Kuota",
+      "Free Modem",
+      "Support 24/7"
+    ]  },
+  { "id": 2, "name": "20 Mbps", "price": 250000, "keterangan": "Untuk work from home", "benefits": [
+    "Unlimited Kuota",
+      "Free Modem",
+      "Support 24/7"
+    ] },
+  { "id": 3, "name": "30 Mbps", "price": 305000, "keterangan": "Untuk UKM & Kantor",  "benefits": [
+      "Unlimited Kuota",
+      "Free Modem",
+      "Support 24/7"
+    ] },
+  { "id": 4, "name": "50 Mbps", "price": 450000, "keterangan": "Untuk bisnis menengah",  "benefits": [
+      "Unlimited Kuota",
+      "Free Modem",
+      "Support 24/7"
+    ] },
+  { "id": 5, "name": "100 Mbps", "price": 560000, "keterangan": "Untuk entreprise",  "benefits": [
+      "Unlimited Kuota",
+      "Free Modem",
+      "Support 24/7"
+    ] }
 ]
