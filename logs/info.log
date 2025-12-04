@@ -3135,3 +3135,7 @@ notNull Violation: payment.product cannot be null
 [2025-12-04 14:34:48] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-12-04 14:35:37] [32minfo[39m: Database Connected Successfully
 [2025-12-04 14:35:37] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-04 14:37:31] [32minfo[39m: Database Connected Successfully
+[2025-12-04 14:37:31] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-04 14:37:34] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-04 14:37:34] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403

@@ -28,8 +28,13 @@ export class PaymentServices {
         .update(merchantCode + timestamp + apiKey)
         .digest("hex");
 
-      const merchantOrderId = `INV-${Date.now()}-${Math.floor(Math.random() * 100000)}`;
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0'); 
+      const uniqueCode = Math.floor(Math.random() * 100000);
 
+      const merchantOrderId = `INV/DPM/#SKMJ-${year}${month}${day}-${uniqueCode}`;
       const payload = {
         merchantCode,
         merchantOrderId,
