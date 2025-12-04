@@ -6,6 +6,7 @@ import payment from "./module/payment.js";
 import forgetPassword from "./module/forget-password.js";
 import fetchdata from "./module/fetchdata.js";
 import resetPassword from "./module/reset-password.js";
+import product from "./module/product.js";
 
 window.Alpine = Alpine;
 
@@ -17,6 +18,7 @@ document.addEventListener("alpine:init", () => {
     Alpine.data('payment', payment)
     Alpine.data('fetchdata', fetchdata)
     Alpine.data('resetPassword', resetPassword)
+    Alpine.data('product', product)
 });
 
 Alpine.start();

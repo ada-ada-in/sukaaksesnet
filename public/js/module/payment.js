@@ -1,77 +1,79 @@
 import ENV from "../env.js";
 
-
 export default function payment() {
-    return {
-        user: null,
-        loading: false,
-        message: '',
-        success: false,
-    
-        async submit() {
-            const token = localStorage.getItem('token');
+  return {
+    product: null,
+    user: null,
+    loading: false,
+    message: "",
+    success: false,
 
-            const storedData = localStorage.getItem('paketDipilih');
-            const paket = JSON.parse(storedData);
-    
-            try {
-                const res = await fetch(`/api/v1/payment`, {
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json'
-                    },
-                    method: 'POST',
-                    body: JSON.stringify({ 
-                        amount: parseInt(paket.price),
-                        product: paket.plan
-                     })
-                });
-    
-                const data = await res.json()
-                if(data.status.code === 201){
-                    this.success = true;
-                    this.message = data.status.message;
+    async init() {
+      await this.fetchUser();
+      await this.fetchProductById();
+    },
 
-                    this.user = data.data;
+    async fetchUser() {
+      const token = localStorage.getItem("token");
+      if (!token) return;
 
-                    setTimeout(() => {
-                        window.location.href = data.data.payment_url;
-                    }, 3000);
-                } else {
-                    this.success = false;
-                    this.message = data.status.message;
-                }
-
-                    // console.log(data);
-    
-                if(!data) throw new Error()
-                    
-                this.user = data
-            } catch (e) {
-                this.user = null;
-                console.error(e.message);
-            }
+      const res = await fetch("/api/v1/users/me", {
+        headers: {
+          Authorization: `Bearer ${token}`,
         },
+      });
+      const data = await res.json();
+      this.user = data.data;
+    },
 
-        async fetchNameAndHandphone() {
-            const token = localStorage.getItem('token');
-            if (!token) return;
-            try {
-                const res = await fetch('/api/v1/users/me', {
-                    headers: {
-                        'Authorization': `Bearer ${token}`
-                    }
-                });
-                const data = await res.json()
-                document.getElementById('namaPelanggan').innerText = data.data.nama;
-                document.getElementById('nomorPelanggan').innerText = data.data.nomor_pelanggan;
+    async fetchProductById() {
+      const id = window.location.pathname.split("/").pop();
+      const res = await fetch(`/api/v1/products/${id}`);
+      const data = await res.json();
+      this.product = data.data;
+    },
 
-            
-                if(!data) throw new Error()
-                }catch (e) {
-                console.error(e.message);
-            }
-        }
-    }
+    formatToIDR(amount) {
+      return new Intl.NumberFormat("id-ID", {
+        style: "currency",
+        currency: "IDR",
+      }).format(amount);
+    },
 
-};
+    async submit() {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        this.message = "Silakan login terlebih dahulu";
+        return;
+      }
+
+      this.loading = true;
+
+      const res = await fetch(`${ENV.frontend_url}/api/v1/payment`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          amount: Number(this.product.price),
+          product: this.product.name,
+        }),
+      });
+
+      const data = await res.json();
+      this.loading = false;
+
+      if (data.status.code === 201) {
+        this.success = true;
+        this.message = data.status.message;
+        setTimeout(() => {
+          window.location.href = data.data.payment_url;
+        }, 1500);
+      } else {
+        this.success = false;
+        this.message = data.status.message;
+      }
+    },
+  };
+}

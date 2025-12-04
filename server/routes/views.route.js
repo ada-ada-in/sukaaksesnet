@@ -28,7 +28,7 @@ viewRouter.get("/auth/reset-password", async (req, res) => {
   res.send(html);
 });
 
-viewRouter.get("/choose-packet", async (req, res) => {
+viewRouter.get("/choose-packet/:id", async (req, res) => {
   const html = await edge.render("pages/main/choose", { title: "Choose Packet" });
   res.send(html);
 });

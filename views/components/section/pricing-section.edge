@@ -10,14 +10,18 @@
         <div class="relative">
 
             <!-- Scroll Container -->
-            <div id="pricingScroll" class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 scrollbar-hide scroll-smooth">
+            <div x-data="product()" x-init="fetchProducts()" id="pricingScroll" class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 scrollbar-hide scroll-smooth">
                 
                 <!-- 10 MBPS -->
+                <template x-for="item in products" :key="item.id">
                 <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center">
                     <div class="card-gradient text-white p-6 text-center">
-                        <h3 class="text-xl font-bold mb-2">10 Mbps</h3>
-                        <p class="text-3xl font-bold mb-1">Rp 180.000<span class="text-lg font-normal">/bulan</span></p>
-                        <p class="text-sm opacity-75">Cocok untuk rumah tangga</p>
+                        <h3 class="text-xl font-bold mb-2" x-text="item.name"></h3>
+                        <p class="text-3xl font-bold mb-1">
+                            <span x-text="'Rp ' + item.price.toLocaleString('id-ID')"></span>
+                            <span class="text-lg font-normal">/bulan</span>
+                        </p>
+                        <p class="text-sm opacity-75" x-text="item.keterangan"></p>
                     </div>
                     <div class="p-6">
                         <ul class="space-y-3 mb-6">
@@ -26,82 +30,12 @@
                             <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
                             <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
                         </ul>
-                        <button onclick="pilihpaket('10 Mbps', '180000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
+                        <a :href="`/choose-packet/${item.id}`">
+                            <button  class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
+                        </a>
                     </div>
                 </div>
-
-                <!-- 20 MBPS -->
-                <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center">
-                    <div class="card-gradient text-white p-6 text-center">
-                        <h3 class="text-xl font-bold mb-2">20 Mbps</h3>
-                        <p class="text-3xl font-bold mb-1">Rp 250.000<span class="text-lg font-normal">/bulan</span></p>
-                        <p class="text-sm opacity-75">Untuk work from home</p>
-                    </div>
-                    <div class="p-6">
-                        <ul class="space-y-3 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Download 20 Mbps</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited Kuota</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
-                        </ul>
-                        <button onclick="pilihpaket('20 Mbps', '250000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
-                    </div>
-                </div>
-
-                <!-- 30 MBPS -->
-                <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center md:scale-105">
-                    <div class="card-gradient text-white p-6 text-center">
-                        <h3 class="text-xl font-bold mb-2">30 Mbps</h3>
-                        <p class="text-3xl font-bold mb-1">Rp 305.000<span class="text-lg font-normal">/bulan</span></p>
-                        <p class="text-sm opacity-75">Untuk UKM & Kantor</p>
-                    </div>
-                    <div class="p-6">
-                        <ul class="space-y-3 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Download 30 Mbps</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited Kuota</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
-                        </ul>
-                        <button onclick="pilihpaket('30 Mbps', '305000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
-                    </div>
-                </div>
-
-                <!-- 50 MBPS -->
-                <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center">
-                    <div class="card-gradient text-white p-6 text-center">
-                        <h3 class="text-xl font-bold mb-2">50 Mbps</h3>
-                        <p class="text-3xl font-bold mb-1">Rp 450.000<span class="text-lg font-normal">/bulan</span></p>
-                        <p class="text-sm opacity-75">Untuk bisnis menengah</p>
-                    </div>
-                    <div class="p-6">
-                        <ul class="space-y-3 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Download 50 Mbps</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited Kuota</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
-                        </ul>
-                        <button onclick="pilihpaket('50 Mbps', '450000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
-                    </div>
-                </div>
-
-                <!-- 100 MBPS -->
-                <div class="pricing-card bg-white rounded-xl overflow-hidden min-w-[300px] md:min-w-[350px] snap-center">
-                    <div class="card-gradient text-white p-6 text-center">
-                        <h3 class="text-xl font-bold mb-2">100 Mbps</h3>
-                        <p class="text-3xl font-bold mb-1">Rp 560.000<span class="text-lg font-normal">/bulan</span></p>
-                        <p class="text-sm opacity-75">Untuk enterprise</p>
-                    </div>
-                    <div class="p-6">
-                        <ul class="space-y-3 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Download 100 Mbps</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited Kuota</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Free Modem</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Support 24/7</li>
-                        </ul>
-                        <button onclick="pilihpaket('100 Mbps', '560000')" class="w-full btn-gradient text-white py-3 rounded-lg font-semibold">Pilih Paket</button>
-                    </div>
-                </div>
-
+                </template>
             </div>
 
             <!-- Left Arrow -->

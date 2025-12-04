@@ -14,35 +14,37 @@
     <main class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8 mt-10" x-data="payment()">
         
         <!-- User -->
-        <div class="flex items-center gap-3 mb-6" x-init="fetchNameAndHandphone()">
+        <div class="flex items-center gap-3 mb-6" x-init="fetchUser()">
             <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl">
                 <i class="fas fa-user"></i>
             </div>
             <div>
-                <h3 class="font-semibold text-lg" id="namaPelanggan"></h3>
-                <p class="text-gray-600 text-sm" id="nomorPelanggan"></p>
+                <h3 class="font-semibold text-lg" x-text="user?.nama"></h3>
+                <p class="text-gray-600 text-sm" x-text="user?.nomor_pelanggan"></p>
             </div>
         </div>
 
         <hr class="my-6">
 
         <!-- DETAIL -->
-        <div class="space-y-3 text-sm">
-            <div class="flex justify-between">
-                <span class="text-gray-600">Paket Internet</span>
-                <span class="font-semibold" id="paketinternet"></span>
+        <div  x-init="fetchProductById()">
+            <div class="space-y-3 text-sm">
+                <div class="flex justify-between">
+                    <span class="text-gray-600">Paket Internet</span>
+                    <span class="font-semibold" x-text="product?.name"></span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-600">Harga</span>
+                    <span class="font-semibold" x-text="formatToIDR(product?.price)"></span>
+                </div>
             </div>
-            <div class="flex justify-between">
-                <span class="text-gray-600">Harga</span>
-                <span class="font-semibold" id="hargaPaket"></span>
+    
+            <hr class="my-6">
+    
+            <div class="flex justify-between font-bold text-lg mb-6">
+                <span>Total</span>
+                <span x-text="formatToIDR(product?.price)"></span>
             </div>
-        </div>
-
-        <hr class="my-6">
-
-        <div class="flex justify-between font-bold text-lg mb-6">
-            <span>Total</span>
-            <span id="totalTagihan">Rp 180.000</span>
         </div>
 
         <!-- WA Payment Message -->
@@ -59,20 +61,6 @@
         </button>
 
     </main>
-
-    <script>
-        const storedData = localStorage.getItem("paketDipilih");
-
-        if (storedData) {
-            const paket = JSON.parse(storedData);
-            document.getElementById("paketinternet").innerText = paket.plan;
-            document.getElementById("hargaPaket").innerText =
-                "Rp " + Number(paket.price).toLocaleString("id-ID");
-            document.getElementById("totalTagihan").innerText =
-                "Rp " + Number(paket.price).toLocaleString("id-ID");
-        }
-
-    </script>
 
 </body>
 </html>
