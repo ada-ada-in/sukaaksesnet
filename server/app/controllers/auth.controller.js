@@ -54,7 +54,6 @@ export class AuthController {
     resetPassword = asyncHandler(async (req, res) => {
         const { newPassword, confirm_password } = req.body;
         const { email } = req.user;
-        console.log("REQ BODY:", req.body);
         if (newPassword !== confirm_password) {
             return new ResponseHandler(res)
                 .error400("New Password and Confirm Password do not match");
