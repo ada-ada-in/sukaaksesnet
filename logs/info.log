@@ -3173,3 +3173,18 @@ notNull Violation: payment.product cannot be null
 [2025-12-04 18:14:27] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
 [2025-12-04 18:36:58] [32minfo[39m: Database Connected Successfully
 [2025-12-04 18:36:58] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-04 19:13:03] [31merror[39m: send Wa Error: Request failed with status code 403
+[2025-12-04 19:13:03] [31merror[39m: ❌ Unhandled Rejection: Request failed with status code 403
+[2025-12-04 19:34:37] [32minfo[39m: [RATE LIMIT] GET /js/module/auth-navbar.js - Too many requests from this IP, please try again later.
+[2025-12-04 19:34:37] [32minfo[39m: [RATE LIMIT] GET /js/module/payment.js - Too many requests from this IP, please try again later.
+[2025-12-04 19:34:37] [32minfo[39m: [RATE LIMIT] GET /js/module/reset-password.js - Too many requests from this IP, please try again later.
+[2025-12-04 19:34:37] [32minfo[39m: [RATE LIMIT] GET /js/module/forget-password.js - Too many requests from this IP, please try again later.
+[2025-12-04 19:34:37] [32minfo[39m: [RATE LIMIT] GET /js/module/fetchdata.js - Too many requests from this IP, please try again later.
+[2025-12-04 19:34:37] [32minfo[39m: [RATE LIMIT] GET /js/module/product.js - Too many requests from this IP, please try again later.
+[2025-12-04 19:34:42] [32minfo[39m: [RATE LIMIT] GET / - Too many requests from this IP, please try again later.
+[2025-12-04 19:34:49] [32minfo[39m: [RATE LIMIT] GET /auth/login - Too many requests from this IP, please try again later.
+[2025-12-04 19:34:49] [32minfo[39m: [RATE LIMIT] GET /favicon.ico - Too many requests from this IP, please try again later.
+[2025-12-04 19:35:03] [32minfo[39m: Database Connected Successfully
+[2025-12-04 19:35:03] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
+[2025-12-04 20:01:19] [32minfo[39m: Database Connected Successfully
+[2025-12-04 20:01:19] [32minfo[39m: 🚀 [SERVER] is running on port http://localhost:3000
